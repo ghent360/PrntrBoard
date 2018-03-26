@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name tmc2660)(type Legacy)(uri /home/vne/projects/kicad_pcbs/PrntrBoardV1/tmc2660.lib)(options "")(descr ""))
+)

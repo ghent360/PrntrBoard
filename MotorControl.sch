@@ -1,0 +1,292 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 1400 1400 950  1450
+U 5AC337B9
+F0 "X Axis" 50
+F1 "MotorDriver_TMC2660.sch" 50
+F2 "V_IO" I L 1400 1550 50 
+F3 "V_MOTORS" I R 2350 1550 50 
+F4 "MOT1B" O L 1400 1750 50 
+F5 "MOT1A" O L 1400 1650 50 
+F6 "MOT2A" O L 1400 1850 50 
+F7 "MOT2B" O L 1400 1950 50 
+F8 "STEP" I L 1400 2100 50 
+F9 "DIR" I L 1400 2200 50 
+F10 "~CS" I L 1400 2400 50 
+F11 "SCK" I L 1400 2500 50 
+F12 "MOSI" I L 1400 2600 50 
+F13 "MISO" O L 1400 2700 50 
+F14 "~ENABLE" I R 2350 2750 50 
+F15 "SG_TST" I R 2350 2600 50 
+$EndSheet
+$Sheet
+S 4450 1400 950  1450
+U 5AC9476E
+F0 "Z Axis" 50
+F1 "MotorDriver_TMC2660.sch" 50
+F2 "V_IO" I L 4450 1550 50 
+F3 "V_MOTORS" I R 5400 1550 50 
+F4 "MOT1B" O L 4450 1750 50 
+F5 "MOT1A" O L 4450 1650 50 
+F6 "MOT2A" O L 4450 1850 50 
+F7 "MOT2B" O L 4450 1950 50 
+F8 "STEP" I L 4450 2100 50 
+F9 "DIR" I L 4450 2200 50 
+F10 "~CS" I L 4450 2400 50 
+F11 "SCK" I L 4450 2500 50 
+F12 "MOSI" I L 4450 2600 50 
+F13 "MISO" O L 4450 2700 50 
+F14 "~ENABLE" I R 5400 2750 50 
+F15 "SG_TST" I R 5400 2600 50 
+$EndSheet
+Wire Wire Line
+	2450 1250 2500 1250
+Wire Wire Line
+	3950 1250 3950 1550
+Wire Wire Line
+	3950 1550 3850 1550
+Wire Wire Line
+	5400 1550 5500 1550
+Wire Wire Line
+	5500 1550 5500 1250
+Wire Wire Line
+	5500 1250 3950 1250
+Connection ~ 3950 1250
+Text HLabel 1300 1150 0    50   Input ~ 0
+V_IO
+Text HLabel 2450 1250 0    50   Input ~ 0
+V_MOTORS
+Wire Wire Line
+	2350 2750 2450 2750
+Wire Wire Line
+	2450 2750 2450 3000
+Wire Wire Line
+	2450 3000 3950 3000
+Wire Wire Line
+	3950 3000 3950 2750
+Wire Wire Line
+	3950 2750 3850 2750
+Wire Wire Line
+	5400 2750 5500 2750
+Wire Wire Line
+	5500 2750 5500 3000
+Wire Wire Line
+	5500 3000 3950 3000
+Connection ~ 3950 3000
+Text HLabel 2400 3000 0    50   Input ~ 0
+~ENABLE
+Wire Wire Line
+	4450 2700 4350 2700
+Wire Wire Line
+	4350 2700 4350 3100
+Wire Wire Line
+	4350 3100 2800 3100
+Wire Wire Line
+	2800 3100 2800 2700
+Wire Wire Line
+	2800 2700 2900 2700
+Wire Wire Line
+	1400 2700 1300 2700
+Wire Wire Line
+	1300 2700 1300 3100
+Wire Wire Line
+	1300 3100 2800 3100
+Connection ~ 2800 3100
+Wire Wire Line
+	4450 2600 4300 2600
+Wire Wire Line
+	4300 2600 4300 3150
+Wire Wire Line
+	4300 3150 2750 3150
+Wire Wire Line
+	2750 3150 2750 2600
+Wire Wire Line
+	2750 2600 2900 2600
+Wire Wire Line
+	2750 3150 1250 3150
+Wire Wire Line
+	1250 3150 1250 2600
+Wire Wire Line
+	1250 2600 1400 2600
+Connection ~ 2750 3150
+Wire Wire Line
+	4450 2500 4250 2500
+Wire Wire Line
+	4250 2500 4250 3200
+Wire Wire Line
+	4250 3200 2700 3200
+Wire Wire Line
+	2700 3200 2700 2500
+Wire Wire Line
+	2700 2500 2900 2500
+Wire Wire Line
+	1400 2500 1200 2500
+Wire Wire Line
+	1200 2500 1200 3200
+Wire Wire Line
+	1200 3200 2700 3200
+Connection ~ 2700 3200
+Text HLabel 950  2500 0    50   Input ~ 0
+SCK
+Text HLabel 950  2600 0    50   Input ~ 0
+MOSI
+Text HLabel 950  2700 0    50   Output ~ 0
+MISO
+Wire Wire Line
+	1300 2700 950  2700
+Connection ~ 1300 2700
+Wire Wire Line
+	1250 2600 950  2600
+Connection ~ 1250 2600
+Wire Wire Line
+	1200 2500 950  2500
+Connection ~ 1200 2500
+Text HLabel 1300 2400 0    50   Input ~ 0
+~CS_X_SPI
+Wire Wire Line
+	1300 2400 1400 2400
+Text HLabel 2800 2400 0    50   Input ~ 0
+~CS_Y_SPI
+Wire Wire Line
+	2800 2400 2900 2400
+Wire Wire Line
+	1400 1550 1350 1550
+Wire Wire Line
+	1350 1550 1350 1150
+Connection ~ 1350 1150
+Wire Wire Line
+	1350 1150 1300 1150
+Wire Wire Line
+	2500 1550 2500 1250
+Wire Wire Line
+	2350 1550 2500 1550
+Connection ~ 2500 1250
+Wire Wire Line
+	2500 1250 3950 1250
+$Sheet
+S 2900 1400 950  1450
+U 5AC94605
+F0 "Y Axis" 50
+F1 "MotorDriver_TMC2660.sch" 50
+F2 "V_IO" I L 2900 1550 50 
+F3 "V_MOTORS" I R 3850 1550 50 
+F4 "MOT1B" O L 2900 1750 50 
+F5 "MOT1A" O L 2900 1650 50 
+F6 "MOT2A" O L 2900 1850 50 
+F7 "MOT2B" O L 2900 1950 50 
+F8 "STEP" I L 2900 2100 50 
+F9 "DIR" I L 2900 2200 50 
+F10 "~CS" I L 2900 2400 50 
+F11 "SCK" I L 2900 2500 50 
+F12 "MOSI" I L 2900 2600 50 
+F13 "MISO" O L 2900 2700 50 
+F14 "~ENABLE" I R 3850 2750 50 
+F15 "SG_TST" I R 3850 2600 50 
+$EndSheet
+Wire Wire Line
+	1350 1150 2800 1150
+Wire Wire Line
+	2900 1550 2800 1550
+Wire Wire Line
+	2800 1550 2800 1150
+Connection ~ 2800 1150
+Wire Wire Line
+	2800 1150 4350 1150
+Wire Wire Line
+	4350 1150 4350 1550
+Wire Wire Line
+	4350 1550 4450 1550
+Text HLabel 4350 2400 0    50   Input ~ 0
+~CS_Z_SPI
+Wire Wire Line
+	4350 2400 4450 2400
+Wire Wire Line
+	2400 3000 2450 3000
+Connection ~ 2450 3000
+Text HLabel 4350 2200 0    50   Input ~ 0
+Z_DIR
+Text HLabel 4350 2100 0    50   Input ~ 0
+Z_STEP
+Text HLabel 2800 2200 0    50   Input ~ 0
+Y_DIR
+Text HLabel 2800 2100 0    50   Input ~ 0
+Y_STEP
+Text HLabel 1300 2200 0    50   Input ~ 0
+X_DIR
+Text HLabel 1300 2100 0    50   Input ~ 0
+X_STEP
+Wire Wire Line
+	1300 2100 1400 2100
+Wire Wire Line
+	1400 2200 1300 2200
+Wire Wire Line
+	2800 2100 2900 2100
+Wire Wire Line
+	2900 2200 2800 2200
+Wire Wire Line
+	4450 2200 4350 2200
+Wire Wire Line
+	4450 2100 4350 2100
+Text HLabel 1300 1650 0    50   Output ~ 0
+X1A
+Text HLabel 1300 1750 0    50   Output ~ 0
+X1B
+Text HLabel 1300 1850 0    50   Output ~ 0
+X2A
+Text HLabel 1300 1950 0    50   Output ~ 0
+X2B
+Text HLabel 2800 1650 0    50   Output ~ 0
+Y1A
+Text HLabel 2800 1750 0    50   Output ~ 0
+Y1B
+Text HLabel 2800 1850 0    50   Output ~ 0
+Y2A
+Text HLabel 2800 1950 0    50   Output ~ 0
+Y2B
+Wire Wire Line
+	1300 1650 1400 1650
+Wire Wire Line
+	1400 1750 1300 1750
+Wire Wire Line
+	1300 1850 1400 1850
+Wire Wire Line
+	1400 1950 1300 1950
+Wire Wire Line
+	2800 1650 2900 1650
+Wire Wire Line
+	2900 1750 2800 1750
+Wire Wire Line
+	2900 1850 2800 1850
+Wire Wire Line
+	2900 1950 2800 1950
+Text HLabel 4350 1650 0    50   Output ~ 0
+Z1A
+Text HLabel 4350 1750 0    50   Output ~ 0
+Z1B
+Text HLabel 4350 1850 0    50   Output ~ 0
+Z2A
+Text HLabel 4350 1950 0    50   Output ~ 0
+Z2B
+Wire Wire Line
+	4350 1950 4450 1950
+Wire Wire Line
+	4450 1850 4350 1850
+Wire Wire Line
+	4450 1750 4350 1750
+Wire Wire Line
+	4450 1650 4350 1650
+$EndSCHEMATC
