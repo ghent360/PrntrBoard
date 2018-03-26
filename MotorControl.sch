@@ -3,7 +3,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -289,4 +289,10 @@ Wire Wire Line
 	4450 1750 4350 1750
 Wire Wire Line
 	4450 1650 4350 1650
+$Sheet
+S 6000 1400 1200 3050
+U 5ACBE919
+F0 "E0" 50
+F1 "Extruder.sch" 50
+$EndSheet
 $EndSCHEMATC
