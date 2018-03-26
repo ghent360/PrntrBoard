@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:PrntrBoardV1-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 24 29
+Sheet 24 35
 Title ""
 Date ""
 Rev ""
@@ -14,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector_Generic:Conn_01x04 J9
+L Connector_Generic:Conn_01x04 J3
 U 1 1 5AD04DCC
 P 4400 2700
-AR Path="/5AC337B6/5ACBE919/5AD4C411/5AD04DCC" Ref="J9"  Part="1" 
+AR Path="/5AC337B6/5ACBE919/5AD4C411/5AD04DCC" Ref="J3"  Part="1" 
 AR Path="/5AC337B6/5AD04C54/5AD04DCC" Ref="J11"  Part="1" 
 AR Path="/5AC337B6/5AD0CC96/5AD04DCC" Ref="J12"  Part="1" 
 AR Path="/5AC337B6/5AD1664A/5AD1665B/5AD04DCC" Ref="J13"  Part="1" 

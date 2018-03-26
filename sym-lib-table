@@ -2,4 +2,6 @@
   (lib (name tmc2660)(type Legacy)(uri /home/vne/projects/kicad_pcbs/PrntrBoardV1/tmc2660.lib)(options "")(descr ""))
   (lib (name ipd036n04l)(type Legacy)(uri /home/vne/projects/kicad_pcbs/PrntrBoardV1/ipd036n04l.lib)(options "")(descr ""))
   (lib (name bsh105)(type Legacy)(uri /home/vne/projects/kicad_pcbs/PrntrBoardV1/bsh105.lib)(options "")(descr ""))
+  (lib (name my_4xxx)(type Legacy)(uri /home/vne/projects/kicad_pcbs/PrntrBoardV1/Logic_CMOS_IEEE.lib)(options "")(descr ""))
+  (lib (name a4403)(type Legacy)(uri /home/vne/projects/kicad_pcbs/PrntrBoardV1/a4403.lib)(options "")(descr ""))
 )

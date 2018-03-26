@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:PrntrBoardV1-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 25 29
+Sheet 25 35
 Title ""
 Date ""
 Rev ""
@@ -90,10 +91,10 @@ FILAMENT
 Wire Wire Line
 	2600 4250 2700 4250
 $Comp
-L Connector_Generic:Conn_02x01 J7
+L Connector_Generic:Conn_02x01 J1
 U 1 1 5AD4BF35
 P 2300 4000
-AR Path="/5AC337B6/5ACBE919/5AD4BF35" Ref="J7"  Part="1" 
+AR Path="/5AC337B6/5ACBE919/5AD4BF35" Ref="J1"  Part="1" 
 AR Path="/5AC337B6/5AD9F95A/5AD4BF35" Ref="J15"  Part="1" 
 F 0 "J15" H 2350 4217 50  0000 C CNN
 F 1 "Probe" H 2350 4126 50  0000 C CNN
@@ -105,12 +106,12 @@ $EndComp
 Wire Wire Line
 	2600 4000 2700 4000
 $Comp
-L power:GND #PWR04
+L power:GND #PWR01
 U 1 1 5AD4C143
 P 2100 4100
-AR Path="/5AC337B6/5ACBE919/5AD4C143" Ref="#PWR04"  Part="1" 
-AR Path="/5AC337B6/5AD9F95A/5AD4C143" Ref="#PWR043"  Part="1" 
-F 0 "#PWR043" H 2100 3850 50  0001 C CNN
+AR Path="/5AC337B6/5ACBE919/5AD4C143" Ref="#PWR01"  Part="1" 
+AR Path="/5AC337B6/5AD9F95A/5AD4C143" Ref="#PWR046"  Part="1" 
+F 0 "#PWR046" H 2100 3850 50  0001 C CNN
 F 1 "GND" H 2105 3927 50  0000 C CNN
 F 2 "" H 2100 4100 50  0001 C CNN
 F 3 "" H 2100 4100 50  0001 C CNN
@@ -176,10 +177,10 @@ Wire Wire Line
 Wire Wire Line
 	6000 2900 6150 2900
 $Comp
-L Connector_Specialized:Screw_Terminal_01x02 J8
+L Connector_Specialized:Screw_Terminal_01x02 J2
 U 1 1 5AD53BDD
 P 6750 2700
-AR Path="/5AC337B6/5ACBE919/5AD53BDD" Ref="J8"  Part="1" 
+AR Path="/5AC337B6/5ACBE919/5AD53BDD" Ref="J2"  Part="1" 
 AR Path="/5AC337B6/5AD9F95A/5AD53BDD" Ref="J16"  Part="1" 
 F 0 "J16" H 6829 2692 50  0000 L CNN
 F 1 "Extruder Heater" H 6829 2601 50  0000 L CNN
