@@ -4,4 +4,6 @@
   (lib (name bsh105)(type Legacy)(uri /home/vne/projects/kicad_pcbs/PrntrBoardV1/bsh105.lib)(options "")(descr ""))
   (lib (name my_4xxx)(type Legacy)(uri /home/vne/projects/kicad_pcbs/PrntrBoardV1/Logic_CMOS_IEEE.lib)(options "")(descr ""))
   (lib (name a4403)(type Legacy)(uri /home/vne/projects/kicad_pcbs/PrntrBoardV1/a4403.lib)(options "")(descr ""))
+  (lib (name NUCLEO-64)(type Legacy)(uri /home/vne/projects/kicad_pcbs/PrntrBoardV1/NUCLEO-64.lib)(options "")(descr ""))
+  (lib (name ap1117-15)(type Legacy)(uri /home/vne/projects/kicad_pcbs/PrntrBoardV1/ap1117-15.lib)(options "")(descr ""))
 )
