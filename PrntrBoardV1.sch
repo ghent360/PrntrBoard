@@ -137,7 +137,7 @@ $Sheet
 S 6600 3800 1050 1050
 U 5AB8F10D
 F0 "Heated Bed" 50
-F1 "BasicHeater.sch" 50
+F1 "BedHeater.sch" 50
 F2 "AVREF" I L 6600 3950 50 
 F3 "TEMP" O L 6600 4300 50 
 F4 "PWM" I L 6600 4500 50 
