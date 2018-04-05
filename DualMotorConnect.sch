@@ -60,7 +60,7 @@ U 1 1 5AD16940
 P 5300 2600
 F 0 "JP2" H 5300 2785 50  0000 C CNN
 F 1 "Single Z" H 5300 2694 50  0000 C CNN
-F 2 "" H 5300 2600 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5300 2600 50  0001 C CNN
 F 3 "~" H 5300 2600 50  0001 C CNN
 	1    5300 2600
 	1    0    0    -1  
@@ -71,7 +71,7 @@ U 1 1 5AD169D3
 P 5350 3800
 F 0 "JP3" H 5350 3985 50  0000 C CNN
 F 1 "Single Z" H 5350 3894 50  0000 C CNN
-F 2 "" H 5350 3800 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5350 3800 50  0001 C CNN
 F 3 "~" H 5350 3800 50  0001 C CNN
 	1    5350 3800
 	1    0    0    -1  
