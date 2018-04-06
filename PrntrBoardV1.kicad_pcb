@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 0)
+    (drawings 4)
     (tracks 0)
     (zones 0)
     (modules 193)
@@ -8625,5 +8625,10 @@
     (pad 37 thru_hole circle (at 0 0 270) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask)
       (net 126 /Z_PROBE_MOD))
   )
+
+  (gr_line (start 101.6 143.51) (end 101.6 11.43) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 11.43 143.51) (end 101.6 143.51) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 11.43 11.43) (end 11.43 143.51) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 101.6 11.43) (end 11.43 11.43) (layer Edge.Cuts) (width 0.2))
 
 )
