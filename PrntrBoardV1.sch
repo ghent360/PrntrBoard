@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 35
+Sheet 1 34
 Title ""
 Date ""
 Rev ""
@@ -180,7 +180,7 @@ Wire Wire Line
 	6450 3750 6450 3950
 Wire Wire Line
 	6450 3950 6600 3950
-Text Label 6900 800  0    50   ~ 0
+Text Label 2900 800  0    50   ~ 0
 V_MOTORS
 Text Label 5500 1050 0    50   ~ 0
 3.3V
@@ -567,65 +567,36 @@ Text Label 5650 1800 0    50   ~ 0
 MOSI
 Text Label 5650 1900 0    50   ~ 0
 MISO
-$Sheet
-S 1200 850  1100 1050
-U 5ACBA915
-F0 "Power" 50
-F1 "PowerRegulator.sch" 50
-F2 "V_IN" I L 1200 1000 50 
-F3 "VBUS" I L 1200 1400 50 
-F4 "5V_IN" I L 1200 1650 50 
-F5 "5V" O R 2300 1050 50 
-F6 "PWR_FAIL_DET2" O R 2300 1800 50 
-F7 "PWR_FAIL_DET1" O R 2300 1650 50 
-F8 "3.3V" O R 2300 1250 50 
-$EndSheet
-Wire Wire Line
-	2300 1250 4400 1250
 Connection ~ 5400 1250
 Wire Wire Line
 	5400 1250 5400 1050
-Text Label 2750 1050 2    50   ~ 0
+Text Label 4000 1850 2    50   ~ 0
 5V
 Wire Wire Line
 	5900 800  2550 800 
-Wire Wire Line
-	2550 800  2550 650 
-Wire Wire Line
-	2550 650  1000 650 
-Wire Wire Line
-	1000 650  1000 1000
-Wire Wire Line
-	1000 1000 1200 1000
 Connection ~ 5900 800 
 $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 5AD9E37F
-P 600 1650
-F 0 "J1" H 520 1325 50  0000 C CNN
-F 1 "EXT 5V" H 520 1416 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 600 1650 50  0001 C CNN
-F 3 "~" H 600 1650 50  0001 C CNN
-	1    600  1650
+P 3500 1950
+F 0 "J1" H 3420 1625 50  0000 C CNN
+F 1 "EXT 5V" H 3420 1716 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3500 1950 50  0001 C CNN
+F 3 "~" H 3500 1950 50  0001 C CNN
+	1    3500 1950
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	800  1650 1200 1650
 $Comp
 L power:GND #PWR01
 U 1 1 5ADA2005
-P 950 1750
-F 0 "#PWR01" H 950 1500 50  0001 C CNN
-F 1 "GND" H 955 1577 50  0000 C CNN
-F 2 "" H 950 1750 50  0001 C CNN
-F 3 "" H 950 1750 50  0001 C CNN
-	1    950  1750
+P 3850 2050
+F 0 "#PWR01" H 3850 1800 50  0001 C CNN
+F 1 "GND" H 3855 1877 50  0000 C CNN
+F 2 "" H 3850 2050 50  0001 C CNN
+F 3 "" H 3850 2050 50  0001 C CNN
+	1    3850 2050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	800  1550 950  1550
-Wire Wire Line
-	950  1550 950  1750
 Wire Wire Line
 	8900 1950 9450 1950
 Wire Wire Line
@@ -843,10 +814,6 @@ Wire Wire Line
 	3250 5450 3950 5450
 Text Label 3750 5450 0    50   ~ 0
 VBUS
-Wire Wire Line
-	1200 1400 850  1400
-Text Label 900  1400 0    50   ~ 0
-VBUS
 NoConn ~ 3250 3100
 NoConn ~ 1750 3100
 NoConn ~ 1750 3200
@@ -926,8 +893,7 @@ Wire Wire Line
 Wire Wire Line
 	5400 3900 4400 3900
 Wire Wire Line
-	4400 3900 4400 1250
-Connection ~ 4400 1250
+	4400 3900 4400 3400
 Wire Wire Line
 	4400 1250 5400 1250
 Wire Wire Line
@@ -967,7 +933,6 @@ NoConn ~ 1750 6950
 NoConn ~ 1750 4100
 NoConn ~ 1750 4200
 NoConn ~ 3250 3300
-NoConn ~ 3250 3400
 NoConn ~ 3250 3500
 NoConn ~ 1750 2900
 NoConn ~ 1750 6650
@@ -1100,10 +1065,6 @@ Z_STEP
 Text Label 3700 6750 0    50   ~ 0
 X_DIR
 Wire Wire Line
-	4100 1050 4100 2900
-Wire Wire Line
-	2300 1050 4100 1050
-Wire Wire Line
 	3250 2900 4100 2900
 Wire Wire Line
 	4100 2900 4100 4150
@@ -1117,7 +1078,6 @@ Wire Wire Line
 	6400 4700 6400 5100
 Wire Wire Line
 	6400 5100 7150 5100
-Connection ~ 4100 2900
 Connection ~ 7150 5100
 Wire Wire Line
 	3400 6050 3400 6650
@@ -1125,54 +1085,50 @@ Wire Wire Line
 	3250 6150 3950 6150
 Wire Wire Line
 	3250 6450 3950 6450
-$Comp
-L Jumper:SolderJumper_2_Open JP6
-U 1 1 5B0BA4B9
-P 1400 3900
-F 0 "JP6" H 1550 3950 50  0000 C CNN
-F 1 "Open" H 1250 3950 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 1400 3900 50  0001 C CNN
-F 3 "~" H 1400 3900 50  0001 C CNN
-	1    1400 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP7
-U 1 1 5B0BA6F9
-P 1400 4050
-F 0 "JP7" H 1550 4100 50  0000 C CNN
-F 1 "Open" H 1250 4100 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 1400 4050 50  0001 C CNN
-F 3 "~" H 1400 4050 50  0001 C CNN
-	1    1400 4050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1550 3900 1750 3900
-Wire Wire Line
-	1550 4050 1650 4050
-Wire Wire Line
-	1650 4050 1650 4000
-Wire Wire Line
-	1650 4000 1750 4000
-Wire Wire Line
-	1250 4050 600  4050
-Wire Wire Line
-	1250 3900 600  3900
-Wire Wire Line
-	2300 1650 3100 1650
-Wire Wire Line
-	2300 1800 3100 1800
-Text Label 2650 1650 0    50   ~ 0
-PWR_FAIL_1
-Text Label 2650 1800 0    50   ~ 0
-PWR_FAIL_2
-Text Label 650  3900 0    50   ~ 0
-PWR_FAIL_1
-Text Label 650  4050 0    50   ~ 0
-PWR_FAIL_2
 Wire Wire Line
 	3400 3700 3400 6050
 Wire Wire Line
 	3250 5250 3950 5250
+Wire Wire Line
+	3250 3400 4400 3400
+Connection ~ 4400 3400
+Wire Wire Line
+	4400 3400 4400 1250
+Connection ~ 4100 2900
+$Comp
+L Connector_Specialized:Screw_Terminal_01x02 J29
+U 1 1 5ACB9063
+P 2350 900
+F 0 "J29" H 2270 575 50  0000 C CNN
+F 1 "12-24V" H 2270 666 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 2350 900 50  0001 C CNN
+F 3 "~" H 2350 900 50  0001 C CNN
+	1    2350 900 
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR075
+U 1 1 5ACB9195
+P 2600 950
+F 0 "#PWR075" H 2600 700 50  0001 C CNN
+F 1 "GND" H 2605 777 50  0000 C CNN
+F 2 "" H 2600 950 50  0001 C CNN
+F 3 "" H 2600 950 50  0001 C CNN
+	1    2600 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 950  2600 900 
+Wire Wire Line
+	2600 900  2550 900 
+Wire Wire Line
+	3700 1850 4100 1850
+Wire Wire Line
+	4100 1850 4100 2900
+Wire Wire Line
+	3850 2050 3850 1950
+Wire Wire Line
+	3850 1950 3700 1950
+NoConn ~ 1750 3900
+NoConn ~ 1750 4000
 $EndSCHEMATC
