@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 34
+Sheet 29 34
 Title ""
 Date ""
 Rev ""
@@ -162,7 +162,7 @@ F 3 "" H 5550 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5550 3600 5550 3750
+	5550 3600 5550 3650
 $Comp
 L Device:CP1_Small C17
 U 1 1 5AD51206
@@ -245,4 +245,14 @@ Text HLabel 5650 2550 2    50   Output ~ 0
 HEATER
 Wire Wire Line
 	5650 2550 5550 2550
+Wire Wire Line
+	3650 3950 4650 3950
+Wire Wire Line
+	4650 3950 4650 3650
+Connection ~ 3650 3950
+Wire Wire Line
+	4650 3650 5550 3650
+Connection ~ 5550 3650
+Wire Wire Line
+	5550 3650 5550 3750
 $EndSCHEMATC
