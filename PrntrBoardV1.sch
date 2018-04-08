@@ -228,7 +228,7 @@ U 1 1 5AB92C7F
 P 9400 3350
 F 0 "J7" H 9479 3342 50  0000 L CNN
 F 1 "E1 Part" H 9479 3251 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 9400 3350 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 9400 3350 50  0001 C CNN
 F 3 "~" H 9400 3350 50  0001 C CNN
 	1    9400 3350
 	1    0    0    -1  
@@ -239,7 +239,7 @@ U 1 1 5AB92D01
 P 9400 2800
 F 0 "J6" H 9479 2792 50  0000 L CNN
 F 1 "E1 Cool" H 9479 2701 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 9400 2800 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 9400 2800 50  0001 C CNN
 F 3 "~" H 9400 2800 50  0001 C CNN
 	1    9400 2800
 	1    0    0    -1  
@@ -250,7 +250,7 @@ U 1 1 5AB92D3C
 P 9400 2200
 F 0 "J5" H 9479 2192 50  0000 L CNN
 F 1 "E0 Part" H 9479 2101 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 9400 2200 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 9400 2200 50  0001 C CNN
 F 3 "~" H 9400 2200 50  0001 C CNN
 	1    9400 2200
 	1    0    0    -1  
@@ -261,7 +261,7 @@ U 1 1 5AB92D90
 P 9400 1650
 F 0 "J4" H 9479 1642 50  0000 L CNN
 F 1 "E0 Cool" H 9479 1551 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 9400 1650 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 9400 1650 50  0001 C CNN
 F 3 "~" H 9400 1650 50  0001 C CNN
 	1    9400 1650
 	1    0    0    -1  
@@ -485,7 +485,7 @@ U 1 1 5AC9DA10
 P 10150 1650
 F 0 "J8" H 10229 1642 50  0000 L CNN
 F 1 "Always On Fan 1" H 10229 1551 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 10150 1650 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 10150 1650 50  0001 C CNN
 F 3 "~" H 10150 1650 50  0001 C CNN
 	1    10150 1650
 	1    0    0    -1  
@@ -496,7 +496,7 @@ U 1 1 5AC9DAC8
 P 10150 2050
 F 0 "J9" H 10229 2042 50  0000 L CNN
 F 1 "Always On Fan 2" H 10229 1951 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 10150 2050 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 10150 2050 50  0001 C CNN
 F 3 "~" H 10150 2050 50  0001 C CNN
 	1    10150 2050
 	1    0    0    -1  
@@ -977,8 +977,6 @@ Wire Wire Line
 Wire Wire Line
 	3250 5850 3950 5850
 Wire Wire Line
-	3250 6250 3950 6250
-Wire Wire Line
 	3250 6350 3950 6350
 Wire Wire Line
 	3250 6550 3950 6550
@@ -1054,8 +1052,6 @@ Text Label 3750 5850 0    50   ~ 0
 Y_DIR
 Text Label 3450 6150 0    50   ~ 0
 E0_PART_PWM
-Text Label 3600 6250 0    50   ~ 0
-E0_STEP
 Text Label 3700 6350 0    50   ~ 0
 Z_DIR
 Text Label 3450 6450 0    50   ~ 0

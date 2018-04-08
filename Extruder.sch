@@ -184,7 +184,7 @@ AR Path="/5AC337B6/5ACBE919/5AD53BDD" Ref="J11"  Part="1"
 AR Path="/5AC337B6/5AD9F95A/5AD53BDD" Ref="J25"  Part="1" 
 F 0 "J25" H 6829 2692 50  0000 L CNN
 F 1 "Extruder Heater" H 6829 2601 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 6750 2700 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 6750 2700 50  0001 C CNN
 F 3 "~" H 6750 2700 50  0001 C CNN
 	1    6750 2700
 	1    0    0    -1  
