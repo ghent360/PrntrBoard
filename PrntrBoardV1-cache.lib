@@ -351,6 +351,22 @@ X GND 7 0 -500 200 U 50 50 5 0 W
 ENDDRAW
 ENDDEF
 #
+# Mechanical_Mounting_Hole
+#
+DEF Mechanical_Mounting_Hole MK 0 40 Y Y 1 F N
+F0 "MK" 0 200 50 H V C CNN
+F1 "Mechanical_Mounting_Hole" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Mounting?Hole*
+ Hole*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 50 N
+ENDDRAW
+ENDDEF
+#
 # NUCLEO-64_NUCLEO-64
 #
 DEF NUCLEO-64_NUCLEO-64 U 0 40 Y Y 2 F N

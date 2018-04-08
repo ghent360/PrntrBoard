@@ -65,7 +65,7 @@ U 1 1 5AB8C4A5
 P 5400 3200
 F 0 "U1" H 5600 3650 50  0000 C CNN
 F 1 "4078" H 5550 3750 50  0000 C CNN
-F 2 "Package_SO:TSSOP-14-1EP_4.4x5mm_P0.65mm" H 5400 3200 50  0001 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5400 3200 50  0001 C CNN
 F 3 "" H 5400 3200 50  0001 C CNN
 	1    5400 3200
 	-1   0    0    1   
@@ -360,7 +360,7 @@ U 1 1 5AB9C30F
 P 5750 6750
 F 0 "U2" H 5750 7075 50  0000 C CNN
 F 1 "74HCT02" H 5750 6984 50  0000 C CNN
-F 2 "Package_SO:TSSOP-14-1EP_4.4x5mm_P0.65mm" H 5750 6750 50  0001 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5750 6750 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hct02" H 5750 6750 50  0001 C CNN
 	1    5750 6750
 	1    0    0    -1  
@@ -371,7 +371,7 @@ U 2 1 5AB9E04D
 P 5750 5200
 F 0 "U2" H 5750 5525 50  0000 C CNN
 F 1 "74HCT02" H 5750 5434 50  0000 C CNN
-F 2 "Package_SO:TSSOP-14-1EP_4.4x5mm_P0.65mm" H 5750 5200 50  0001 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5750 5200 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hct02" H 5750 5200 50  0001 C CNN
 	2    5750 5200
 	1    0    0    -1  
@@ -382,7 +382,7 @@ U 3 1 5AB9E0C5
 P 5750 5750
 F 0 "U2" H 5750 6075 50  0000 C CNN
 F 1 "74HCT02" H 5750 5984 50  0000 C CNN
-F 2 "Package_SO:TSSOP-14-1EP_4.4x5mm_P0.65mm" H 5750 5750 50  0001 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5750 5750 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hct02" H 5750 5750 50  0001 C CNN
 	3    5750 5750
 	1    0    0    -1  
@@ -393,7 +393,7 @@ U 4 1 5AB9E15A
 P 5750 6250
 F 0 "U2" H 5750 6575 50  0000 C CNN
 F 1 "74HCT02" H 5750 6484 50  0000 C CNN
-F 2 "Package_SO:TSSOP-14-1EP_4.4x5mm_P0.65mm" H 5750 6250 50  0001 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5750 6250 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hct02" H 5750 6250 50  0001 C CNN
 	4    5750 6250
 	1    0    0    -1  
@@ -404,7 +404,7 @@ U 5 1 5AB9E1C8
 P 7650 5600
 F 0 "U2" H 7880 5646 50  0000 L CNN
 F 1 "74HCT02" H 7880 5555 50  0000 L CNN
-F 2 "Package_SO:TSSOP-14-1EP_4.4x5mm_P0.65mm" H 7650 5600 50  0001 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 7650 5600 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hct02" H 7650 5600 50  0001 C CNN
 	5    7650 5600
 	1    0    0    -1  
@@ -1127,4 +1127,88 @@ Wire Wire Line
 	3850 1950 3700 1950
 NoConn ~ 1750 3900
 NoConn ~ 1750 4000
+$Comp
+L Mechanical:Mounting_Hole MK1
+U 1 1 5ACC3347
+P 1000 1600
+F 0 "MK1" H 1100 1646 50  0000 L CNN
+F 1 "Mounting_Hole_3mm" H 1100 1555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1000 1600 50  0001 C CNN
+F 3 "" H 1000 1600 50  0001 C CNN
+	1    1000 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Mounting_Hole MK2
+U 1 1 5ACC33D5
+P 1000 1850
+F 0 "MK2" H 1100 1896 50  0000 L CNN
+F 1 "Mounting_Hole_3mm" H 1100 1805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1000 1850 50  0001 C CNN
+F 3 "" H 1000 1850 50  0001 C CNN
+	1    1000 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Mounting_Hole MK3
+U 1 1 5ACC3448
+P 1000 2100
+F 0 "MK3" H 1100 2146 50  0000 L CNN
+F 1 "Mounting_Hole_3mm" H 1100 2055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1000 2100 50  0001 C CNN
+F 3 "" H 1000 2100 50  0001 C CNN
+	1    1000 2100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1000 1600
+NoConn ~ 1000 1850
+NoConn ~ 1000 2100
+$Comp
+L Mechanical:Mounting_Hole FID1
+U 1 1 5ACF4B85
+P 1950 1600
+F 0 "FID1" H 2050 1646 50  0000 L CNN
+F 1 "Fiducial" H 2050 1555 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 1950 1600 50  0001 C CNN
+F 3 "" H 1950 1600 50  0001 C CNN
+	1    1950 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Mounting_Hole FID2
+U 1 1 5ACF4C64
+P 1950 1850
+F 0 "FID2" H 2050 1896 50  0000 L CNN
+F 1 "Fiducial" H 2050 1805 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 1950 1850 50  0001 C CNN
+F 3 "" H 1950 1850 50  0001 C CNN
+	1    1950 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Mounting_Hole FID3
+U 1 1 5ACF4CE0
+P 1950 2100
+F 0 "FID3" H 2050 2146 50  0000 L CNN
+F 1 "Fiducial" H 2050 2055 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 1950 2100 50  0001 C CNN
+F 3 "" H 1950 2100 50  0001 C CNN
+	1    1950 2100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1950 1600
+NoConn ~ 1950 1850
+NoConn ~ 1950 2100
+$Comp
+L Mechanical:Mounting_Hole FID4
+U 1 1 5AD38017
+P 1950 1400
+F 0 "FID4" H 2050 1446 50  0000 L CNN
+F 1 "Fiducial" H 2050 1355 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 1950 1400 50  0001 C CNN
+F 3 "" H 1950 1400 50  0001 C CNN
+	1    1950 1400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1950 1400
 $EndSCHEMATC
