@@ -58,6 +58,7 @@ F37 "E1_SG" O L 6050 3250 50
 F38 "E1_FLMT" O R 7350 3100 50 
 F39 "E1_TEMP" O L 6050 2250 50 
 F40 "E1_PWM" I L 6050 2600 50 
+F41 "5V" I L 6050 1350 50 
 $EndSheet
 $Comp
 L my_4xxx:4078 U1
@@ -575,17 +576,6 @@ Text Label 4000 1850 2    50   ~ 0
 Wire Wire Line
 	5900 800  2550 800 
 Connection ~ 5900 800 
-$Comp
-L Connector_Generic:Conn_01x02 J1
-U 1 1 5AD9E37F
-P 3500 1950
-F 0 "J1" H 3420 1625 50  0000 C CNN
-F 1 "EXT 5V" H 3420 1716 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3500 1950 50  0001 C CNN
-F 3 "~" H 3500 1950 50  0001 C CNN
-	1    3500 1950
-	-1   0    0    1   
-$EndComp
 $Comp
 L power:GND #PWR01
 U 1 1 5ADA2005
@@ -1211,4 +1201,20 @@ F 3 "" H 1950 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 1950 1400
+$Comp
+L Connector_Specialized:Screw_Terminal_01x02 J1
+U 1 1 5AEDA4A7
+P 3500 1950
+F 0 "J1" H 3420 1625 50  0000 C CNN
+F 1 "EXT 5V" H 3420 1716 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 3500 1950 50  0001 C CNN
+F 3 "~" H 3500 1950 50  0001 C CNN
+	1    3500 1950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6050 1350 4100 1350
+Wire Wire Line
+	4100 1350 4100 1850
+Connection ~ 4100 1850
 $EndSCHEMATC
