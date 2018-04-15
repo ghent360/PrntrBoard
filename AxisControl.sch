@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 34
+Sheet 12 34
 Title ""
 Date ""
 Rev ""
@@ -15,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 3550 3150 900  1050
+S 3550 3150 900  1200
 U 5ACC0B66
 F0 "MotorDriver" 50
-F1 "MotorDriver_TMC2660.sch" 50
+F1 "MotorDriver_TMC5130.sch" 50
 F2 "V_IO" I R 4450 3250 50 
 F3 "V_MOTORS" I R 4450 3450 50 
 F4 "MOT1B" O L 3550 3300 50 
@@ -34,6 +34,7 @@ F13 "MISO" O R 4450 3850 50
 F14 "~ENABLE" I R 4450 4000 50 
 F15 "SG_TST" O L 3550 4100 50 
 F16 "5V" I R 4450 3350 50 
+F17 "CLOCK" I R 4450 4200 50 
 $EndSheet
 Text HLabel 3450 3200 0    50   Output ~ 0
 MOT1A
@@ -205,4 +206,8 @@ Text HLabel 4550 3350 2    50   Input ~ 0
 5V
 Wire Wire Line
 	4550 3350 4450 3350
+Text HLabel 4550 4200 2    50   Input ~ 0
+CLOCK
+Wire Wire Line
+	4550 4200 4450 4200
 $EndSCHEMATC
