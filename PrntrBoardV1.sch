@@ -152,7 +152,7 @@ U 1 1 5AB8F2FF
 P 8100 4050
 F 0 "J2" H 8180 4042 50  0000 L CNN
 F 1 "Bed Heater" H 8180 3951 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 8100 4050 50  0001 C CNN
+F 2 "PrntrBoardV1:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 8100 4050 50  0001 C CNN
 F 3 "~" H 8100 4050 50  0001 C CNN
 	1    8100 4050
 	1    0    0    -1  
@@ -230,7 +230,7 @@ U 1 1 5AB92C7F
 P 9400 3350
 F 0 "J7" H 9479 3342 50  0000 L CNN
 F 1 "E1 Part" H 9479 3251 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 9400 3350 50  0001 C CNN
+F 2 "PrntrBoardV1:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 9400 3350 50  0001 C CNN
 F 3 "~" H 9400 3350 50  0001 C CNN
 	1    9400 3350
 	1    0    0    -1  
@@ -241,7 +241,7 @@ U 1 1 5AB92D01
 P 9400 2800
 F 0 "J6" H 9479 2792 50  0000 L CNN
 F 1 "E1 Cool" H 9479 2701 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 9400 2800 50  0001 C CNN
+F 2 "PrntrBoardV1:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 9400 2800 50  0001 C CNN
 F 3 "~" H 9400 2800 50  0001 C CNN
 	1    9400 2800
 	1    0    0    -1  
@@ -252,7 +252,7 @@ U 1 1 5AB92D3C
 P 9400 2200
 F 0 "J5" H 9479 2192 50  0000 L CNN
 F 1 "E0 Part" H 9479 2101 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 9400 2200 50  0001 C CNN
+F 2 "PrntrBoardV1:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 9400 2200 50  0001 C CNN
 F 3 "~" H 9400 2200 50  0001 C CNN
 	1    9400 2200
 	1    0    0    -1  
@@ -263,7 +263,7 @@ U 1 1 5AB92D90
 P 9400 1650
 F 0 "J4" H 9479 1642 50  0000 L CNN
 F 1 "E0 Cool" H 9479 1551 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 9400 1650 50  0001 C CNN
+F 2 "PrntrBoardV1:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 9400 1650 50  0001 C CNN
 F 3 "~" H 9400 1650 50  0001 C CNN
 	1    9400 1650
 	1    0    0    -1  
@@ -329,24 +329,9 @@ F 3 "~" H 8950 1050 50  0001 C CNN
 	1    8950 1050
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Fuse F1
-U 1 1 5AB99299
-P 8450 1050
-F 0 "F1" V 8350 1000 50  0000 C CNN
-F 1 "Mini blade fuse" V 8550 1000 50  0000 C CNN
-F 2 "Fuse:Fuse_Blade_Mini_directSolder" V 8380 1050 50  0001 C CNN
-F 3 "~" H 8450 1050 50  0001 C CNN
-	1    8450 1050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8300 1050 7900 1050
 Connection ~ 7900 1050
 Wire Wire Line
 	7900 1050 7900 3950
-Wire Wire Line
-	8600 1050 8700 1050
 Wire Wire Line
 	8950 1200 8950 1250
 Connection ~ 8950 1250
@@ -487,7 +472,7 @@ U 1 1 5AC9DA10
 P 10150 1650
 F 0 "J8" H 10229 1642 50  0000 L CNN
 F 1 "Always On Fan 1" H 10229 1551 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 10150 1650 50  0001 C CNN
+F 2 "PrntrBoardV1:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 10150 1650 50  0001 C CNN
 F 3 "~" H 10150 1650 50  0001 C CNN
 	1    10150 1650
 	1    0    0    -1  
@@ -498,7 +483,7 @@ U 1 1 5AC9DAC8
 P 10150 2050
 F 0 "J9" H 10229 2042 50  0000 L CNN
 F 1 "Always On Fan 2" H 10229 1951 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 10150 2050 50  0001 C CNN
+F 2 "PrntrBoardV1:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 10150 2050 50  0001 C CNN
 F 3 "~" H 10150 2050 50  0001 C CNN
 	1    10150 2050
 	1    0    0    -1  
@@ -1088,7 +1073,7 @@ U 1 1 5ACB9063
 P 2350 900
 F 0 "J29" H 2270 575 50  0000 C CNN
 F 1 "12-24V" H 2270 666 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 2350 900 50  0001 C CNN
+F 2 "PrntrBoardV1:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 2350 900 50  0001 C CNN
 F 3 "~" H 2350 900 50  0001 C CNN
 	1    2350 900 
 	-1   0    0    1   
@@ -1208,13 +1193,13 @@ U 1 1 5AEDA4A7
 P 3500 1950
 F 0 "J1" H 3420 1625 50  0000 C CNN
 F 1 "EXT 5V" H 3420 1716 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 3500 1950 50  0001 C CNN
+F 2 "PrntrBoardV1:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 3500 1950 50  0001 C CNN
 F 3 "~" H 3500 1950 50  0001 C CNN
 	1    3500 1950
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6050 1350 4100 1350
+	6050 1350 5050 1350
 Wire Wire Line
 	4100 1350 4100 1850
 Connection ~ 4100 1850
@@ -1247,7 +1232,7 @@ U 1 1 5AE7F628
 P 4300 5800
 F 0 "J30" H 4220 5475 50  0000 C CNN
 F 1 "Ext Motor Clock" H 4220 5566 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4300 5800 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4300 5800 50  0001 C CNN
 F 3 "~" H 4300 5800 50  0001 C CNN
 	1    4300 5800
 	-1   0    0    1   
@@ -1271,4 +1256,56 @@ Wire Wire Line
 	4750 5700 4750 6250
 Wire Wire Line
 	4750 6250 4650 6250
+Wire Wire Line
+	7900 1050 8700 1050
+$Comp
+L Device:CP C88
+U 1 1 5ADECB62
+P 4700 1500
+F 0 "C88" H 4500 1500 50  0000 L CNN
+F 1 "100uF" H 4450 1400 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 4738 1350 50  0001 C CNN
+F 3 "~" H 4700 1500 50  0001 C CNN
+	1    4700 1500
+	1    0    0    -1  
+$EndComp
+Connection ~ 4700 1350
+Wire Wire Line
+	4700 1350 4100 1350
+$Comp
+L Device:C C89
+U 1 1 5ADECC47
+P 5050 1500
+F 0 "C89" H 5165 1546 50  0000 L CNN
+F 1 "0.001uF" H 5050 1400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5088 1350 50  0001 C CNN
+F 3 "~" H 5050 1500 50  0001 C CNN
+	1    5050 1500
+	1    0    0    -1  
+$EndComp
+Connection ~ 5050 1350
+Wire Wire Line
+	5050 1350 4700 1350
+Wire Wire Line
+	3850 1950 4700 1950
+Wire Wire Line
+	4700 1950 4700 1650
+Connection ~ 3850 1950
+Wire Wire Line
+	5050 1650 5050 1950
+Wire Wire Line
+	5050 1950 4700 1950
+Connection ~ 4700 1950
+$Comp
+L Mechanical:Mounting_Hole MK4
+U 1 1 5AE11BDF
+P 1000 1350
+F 0 "MK4" H 1100 1396 50  0000 L CNN
+F 1 "Mounting_Hole" H 1100 1305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1000 1350 50  0001 C CNN
+F 3 "" H 1000 1350 50  0001 C CNN
+	1    1000 1350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1000 1350
 $EndSCHEMATC
