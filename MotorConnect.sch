@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 34
+Sheet 28 34
 Title ""
 Date ""
 Rev ""
@@ -32,13 +32,13 @@ F 3 "~" H 4400 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 3900 2600 0    50   Input ~ 0
-MOT1B
+MOTB1
 Text HLabel 3900 2700 0    50   Input ~ 0
-MOT1A
+MOTB2
 Text HLabel 3900 2900 0    50   Input ~ 0
-MOT2A
+MOTA2
 Text HLabel 3900 2800 0    50   Input ~ 0
-MOT2B
+MOTA1
 Wire Wire Line
 	3900 2600 4200 2600
 Wire Wire Line
