@@ -1,4 +1,4 @@
-(module SOT-669_LFPAK (layer F.Cu) (tedit 5AC7092C)
+(module SOT-669_LFPAK (layer F.Cu) (tedit 5AD97480)
   (descr "LFPAK https://assets.nexperia.com/documents/leaflet/939775016838_LR.pdf")
   (tags "LFPAK SOT-669 Power-SO8")
   (solder_mask_margin 0.07)
@@ -68,6 +68,11 @@
   (pad "" smd rect (at -0.665 -1.15) (size 0.6 0.9) (layers F.Paste))
   (pad "" smd rect (at 0.185 -1.15) (size 0.6 0.9) (layers F.Paste))
   (model ${KISYS3DMOD}/Package_TO_SOT_SMD.3dshapes/SOT-669_LFPAK.wrl
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
+  (model :V4:TO_SOT_Packages_SMD.3dshapes/SOT-669_LFPAK.step
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
