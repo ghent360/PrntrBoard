@@ -179,7 +179,7 @@ Wire Wire Line
 Wire Wire Line
 	6000 2900 6150 2900
 $Comp
-L Connector_Specialized:Screw_Terminal_01x02 J11
+L PrntrBoardV1-rescue:Screw_Terminal_01x02-Connector_Specialized J11
 U 1 1 5AD53BDD
 P 6750 2700
 AR Path="/5AC337B6/5ACBE919/5AD53BDD" Ref="J11"  Part="1" 

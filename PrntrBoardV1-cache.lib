@@ -62,29 +62,6 @@ X Pin_2 2 300 0 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Specialized:Screw_Terminal_01x02
-#
-DEF Connector_Specialized:Screw_Terminal_01x02 J 0 40 Y N 1 F N
-F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Specialized:Screw_Terminal_01x02" 0 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- TerminalBlock*:*
-$ENDFPLIST
-DRAW
-C 0 -100 25 1 1 6 N
-C 0 0 25 1 1 6 N
-S -50 50 50 -150 1 1 10 f
-P 2 1 1 6 -21 -87 13 -120 N
-P 2 1 1 6 -21 13 13 -20 N
-P 2 1 1 6 -14 -80 20 -113 N
-P 2 1 1 6 -14 20 20 -13 N
-X Pin_1 1 -200 0 150 R 50 50 1 1 P
-X Pin_2 2 -200 -100 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Device:C
 #
 DEF Device:C C 0 10 N Y 1 F N
@@ -171,7 +148,7 @@ ENDDEF
 #
 # Device:LED
 #
-DEF Device:LED D 0 40 Y N 1 F N
+DEF Device:LED D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
 F1 "Device:LED" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
@@ -484,6 +461,29 @@ X PA2 73 -750 -800 300 R 50 50 2 1 B
 X NC 74 750 -800 300 L 50 50 2 1 P
 X PA3 75 -750 -900 300 R 50 50 2 1 B
 X NC 76 750 -900 300 L 50 50 2 1 P
+ENDDRAW
+ENDDEF
+#
+# PrntrBoardV1-rescue:Screw_Terminal_01x02-Connector_Specialized
+#
+DEF PrntrBoardV1-rescue:Screw_Terminal_01x02-Connector_Specialized J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "PrntrBoardV1-rescue:Screw_Terminal_01x02-Connector_Specialized" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TerminalBlock*:*
+$ENDFPLIST
+DRAW
+C 0 -100 25 1 1 6 N
+C 0 0 25 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+P 2 1 1 6 -21 -87 13 -120 N
+P 2 1 1 6 -21 13 13 -20 N
+P 2 1 1 6 -14 -80 20 -113 N
+P 2 1 1 6 -14 20 20 -13 N
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
