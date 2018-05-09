@@ -560,7 +560,7 @@ Wire Wire Line
 Text Label 4000 1850 2    50   ~ 0
 5V
 Wire Wire Line
-	5900 800  2550 800 
+	5900 800  3350 800 
 Connection ~ 5900 800 
 $Comp
 L power:GND #PWR01
@@ -855,7 +855,6 @@ Text Label 1050 5450 0    50   ~ 0
 AVREF
 NoConn ~ 1750 4300
 NoConn ~ 3250 3200
-NoConn ~ 3250 3800
 NoConn ~ 1750 3000
 Wire Wire Line
 	5750 3550 5750 3800
@@ -1096,7 +1095,7 @@ Wire Wire Line
 Wire Wire Line
 	3700 1850 4100 1850
 Wire Wire Line
-	4100 1850 4100 2900
+	4100 1850 4100 2500
 Wire Wire Line
 	3850 2050 3850 1950
 Wire Wire Line
@@ -1277,7 +1276,7 @@ L Device:C C89
 U 1 1 5ADECC47
 P 5050 1500
 F 0 "C89" H 5165 1546 50  0000 L CNN
-F 1 "0.001uF" H 5050 1400 50  0000 L CNN
+F 1 "1000pF" H 5050 1400 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5088 1350 50  0001 C CNN
 F 3 "~" H 5050 1500 50  0001 C CNN
 	1    5050 1500
@@ -1308,4 +1307,42 @@ F 3 "" H 1000 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 1000 1350
+$Comp
+L Jumper:Jumper_2_Open JP8
+U 1 1 5AF4F08D
+P 3350 1350
+F 0 "JP8" V 3304 1448 50  0000 L CNN
+F 1 "Use VIn" V 3395 1448 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3350 1350 50  0001 C CNN
+F 3 "~" H 3350 1350 50  0001 C CNN
+	1    3350 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3350 1150 3350 800 
+Connection ~ 3350 800 
+Wire Wire Line
+	3350 800  2550 800 
+Wire Wire Line
+	3350 1550 3350 3800
+Wire Wire Line
+	3350 3800 3250 3800
+$Comp
+L Jumper:Jumper_2_Open JP9
+U 1 1 5AF74BAA
+P 3900 2500
+F 0 "JP9" H 4200 2500 50  0000 C CNN
+F 1 "Use USB" H 3900 2644 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3900 2500 50  0001 C CNN
+F 3 "~" H 3900 2500 50  0001 C CNN
+	1    3900 2500
+	1    0    0    -1  
+$EndComp
+Connection ~ 4100 2500
+Wire Wire Line
+	4100 2500 4100 2900
+Wire Wire Line
+	3700 2500 3450 2500
+Text Label 3500 2500 0    50   ~ 0
+VBUS
 $EndSCHEMATC
