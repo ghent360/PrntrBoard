@@ -129,7 +129,7 @@ F 3 "" H 5150 2500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5150 2450 5150 2500
-Text Notes 4800 4750 0    50   ~ 0
+Text Notes 4250 4750 0    50   ~ 0
 Pin budget:\n17 GPIO out\n7 GPIO PWM out\n12 GPIO in\n3 ADC in\n1 SPI
 Wire Wire Line
 	4750 3350 4650 3350
@@ -707,7 +707,7 @@ Wire Wire Line
 Text Label 6750 6750 2    50   ~ 0
 Z_PROBE_MOD_BUF
 Wire Wire Line
-	5450 6850 4850 6850
+	5450 6850 4750 6850
 Text Label 5350 6850 2    50   ~ 0
 Z_PROBE_MOD
 Wire Wire Line
@@ -1213,7 +1213,7 @@ L Jumper:Jumper_3_Bridged12 JP2
 U 1 1 5AE5CEDD
 P 4400 6250
 F 0 "JP2" H 4250 6350 50  0000 C CNN
-F 1 "Motor Clock Select" H 4550 6050 50  0000 C CNN
+F 1 "Motor Clock Select" H 4350 6450 50  0000 C CNN
 F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 4400 6250 50  0001 C CNN
 F 3 "~" H 4400 6250 50  0001 C CNN
 	1    4400 6250
@@ -1223,7 +1223,7 @@ Wire Wire Line
 	3250 6250 4150 6250
 Wire Wire Line
 	4400 6400 4400 6900
-Text Label 4400 6700 0    50   ~ 0
+Text Label 4400 6850 1    50   ~ 0
 MOT_CLOCK
 $Comp
 L Connector_Generic:Conn_01x02 J30
@@ -1345,4 +1345,72 @@ Wire Wire Line
 	3700 2500 3450 2500
 Text Label 3500 2500 0    50   ~ 0
 VBUS
+$Comp
+L Device:R R29
+U 1 1 5AFAB4C8
+P 4900 4900
+F 0 "R29" H 4970 4946 50  0000 L CNN
+F 1 "10k" H 4970 4855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4830 4900 50  0001 C CNN
+F 3 "~" H 4900 4900 50  0001 C CNN
+	1    4900 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R23
+U 1 1 5AFAB5E3
+P 4850 5600
+F 0 "R23" H 4920 5646 50  0000 L CNN
+F 1 "10k" H 4920 5555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4780 5600 50  0001 C CNN
+F 3 "~" H 4850 5600 50  0001 C CNN
+	1    4850 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R28
+U 1 1 5AFAB683
+P 4850 6100
+F 0 "R28" H 4920 6146 50  0000 L CNN
+F 1 "10k" H 4920 6055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4780 6100 50  0001 C CNN
+F 3 "~" H 4850 6100 50  0001 C CNN
+	1    4850 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R22
+U 1 1 5AFAB73E
+P 4750 6650
+F 0 "R22" H 4820 6696 50  0000 L CNN
+F 1 "10k" H 4820 6605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4680 6650 50  0001 C CNN
+F 3 "~" H 4750 6650 50  0001 C CNN
+	1    4750 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 6800 4750 6850
+Wire Wire Line
+	4850 6250 4850 6350
+Wire Wire Line
+	4850 5750 4850 5850
+Wire Wire Line
+	4900 5050 4900 5100
+Wire Wire Line
+	4750 6500 4750 6350
+Wire Wire Line
+	4850 5950 5050 5950
+Wire Wire Line
+	4850 5450 4850 5250
+Wire Wire Line
+	4900 4750 4900 4550
+Text Label 4900 4650 0    50   ~ 0
+3.3V
+Text Label 4850 5350 0    50   ~ 0
+3.3V
+Text Label 4850 5950 0    50   ~ 0
+3.3V
+Text Label 4750 6450 0    50   ~ 0
+3.3V
 $EndSCHEMATC
