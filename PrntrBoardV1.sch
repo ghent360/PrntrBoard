@@ -59,8 +59,6 @@ F38 "E1_FLMT" O R 7350 3100 50
 F39 "E1_TEMP" O L 6050 2250 50 
 F40 "E1_PWM" I L 6050 2600 50 
 F41 "5V" I L 6050 1350 50 
-F42 "CLOCK" I L 6050 3400 50 
-F43 "SD_MODE" I L 6050 2000 50 
 $EndSheet
 $Comp
 L my_4xxx:4078 U1
@@ -1204,59 +1202,6 @@ Wire Wire Line
 	4100 1350 4100 1850
 Connection ~ 4100 1850
 Wire Wire Line
-	6050 3400 5850 3400
-Wire Wire Line
-	5850 3400 5850 4050
-Text Label 5850 3950 0    50   ~ 0
-MOT_CLOCK
-$Comp
-L Jumper:Jumper_3_Bridged12 JP2
-U 1 1 5AE5CEDD
-P 4400 6250
-F 0 "JP2" H 4250 6350 50  0000 C CNN
-F 1 "Motor Clock Select" H 4350 6450 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 4400 6250 50  0001 C CNN
-F 3 "~" H 4400 6250 50  0001 C CNN
-	1    4400 6250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3250 6250 4150 6250
-Wire Wire Line
-	4400 6400 4400 6900
-Text Label 4400 6850 1    50   ~ 0
-MOT_CLOCK
-$Comp
-L Connector_Generic:Conn_01x02 J30
-U 1 1 5AE7F628
-P 4300 5800
-F 0 "J30" H 4220 5475 50  0000 C CNN
-F 1 "Ext Motor Clock" H 4220 5566 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4300 5800 50  0001 C CNN
-F 3 "~" H 4300 5800 50  0001 C CNN
-	1    4300 5800
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR086
-U 1 1 5AE7F7F3
-P 4500 5900
-F 0 "#PWR086" H 4500 5650 50  0001 C CNN
-F 1 "GND" H 4650 5800 50  0000 C CNN
-F 2 "" H 4500 5900 50  0001 C CNN
-F 3 "" H 4500 5900 50  0001 C CNN
-	1    4500 5900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4500 5800 4500 5900
-Wire Wire Line
-	4500 5700 4750 5700
-Wire Wire Line
-	4750 5700 4750 6250
-Wire Wire Line
-	4750 6250 4650 6250
-Wire Wire Line
 	7900 1050 8700 1050
 $Comp
 L Device:CP C88
@@ -1414,27 +1359,4 @@ Text Label 4850 5950 0    50   ~ 0
 3.3V
 Text Label 4750 6450 0    50   ~ 0
 3.3V
-Wire Wire Line
-	6050 2000 5500 2000
-Text Label 5550 2000 0    50   ~ 0
-SD_MODE
-$Comp
-L Jumper:Jumper_2_Open JP11
-U 1 1 5AFFD02A
-P 8450 5850
-F 0 "JP11" V 8496 5948 50  0000 L CNN
-F 1 "Use Ramp Generator" V 8405 5948 50  0000 L CNN
-F 2 "" H 8450 5850 50  0001 C CNN
-F 3 "~" H 8450 5850 50  0001 C CNN
-	1    8450 5850
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	8450 6050 8450 6150
-Wire Wire Line
-	8450 6150 7650 6150
-Wire Wire Line
-	8450 5650 8450 5350
-Text Label 8450 5450 0    50   ~ 0
-SD_MODE
 $EndSCHEMATC

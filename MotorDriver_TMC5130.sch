@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 34
+Sheet 17 34
 Title ""
 Date ""
 Rev ""
@@ -692,38 +692,9 @@ Wire Wire Line
 Wire Wire Line
 	6050 4950 5950 4950
 Connection ~ 5950 4950
-Wire Wire Line
-	5950 4700 8150 4700
 Text HLabel 8350 4700 2    50   Input ~ 0
 CLOCK
-$Comp
-L Jumper:Jumper_2_Open JP5
-U 1 1 5AEA3C62
-P 8150 5100
-AR Path="/5AC337B6/5ACCA309/5ACC0B66/5AEA3C62" Ref="JP5"  Part="1" 
-AR Path="/5AC337B6/5AD9F95A/5AD4B0F5/5AEA3C62" Ref="JP7"  Part="1" 
-AR Path="/5AC337B6/5ACBE919/5AD4B0F5/5AEA3C62" Ref="JP3"  Part="1" 
-AR Path="/5AC337B6/5ACC0AA2/5ACC0B66/5AEA3C62" Ref="JP4"  Part="1" 
-AR Path="/5AC337B6/5ACE1C6D/5ACC0B66/5AEA3C62" Ref="JP6"  Part="1" 
-F 0 "JP7" V 8104 5198 50  0000 L CNN
-F 1 "Clock Disable" V 8195 5198 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 8150 5100 50  0001 C CNN
-F 3 "~" H 8150 5100 50  0001 C CNN
-	1    8150 5100
-	0    1    1    0   
-$EndComp
+NoConn ~ 3850 3800
 Wire Wire Line
-	8150 4900 8150 4700
-Connection ~ 8150 4700
-Wire Wire Line
-	8150 4700 8350 4700
-Wire Wire Line
-	8150 5300 8150 5600
-Wire Wire Line
-	8150 5600 7550 5600
-Connection ~ 7550 5600
-Text HLabel 3100 3800 0    50   Input ~ 0
-SD_MODE
-Wire Wire Line
-	3100 3800 3850 3800
+	5950 4700 8350 4700
 $EndSCHEMATC

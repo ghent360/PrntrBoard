@@ -1,25 +1,6 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Generic:Conn_01x02
-#
-DEF Connector_Generic:Conn_01x02 J 0 40 Y N 1 F N
-F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Generic:Conn_01x02" 0 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
-DRAW
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 50 50 -150 1 1 10 f
-X Pin_1 1 -200 0 150 R 50 50 1 1 P
-X Pin_2 2 -200 -100 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Connector_Generic:Conn_01x04
 #
 DEF Connector_Generic:Conn_01x04 J 0 40 Y N 1 F N
@@ -146,22 +127,6 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:Jumper
-#
-DEF Device:Jumper JP 0 30 Y N 1 F N
-F0 "JP" 0 150 50 H V C CNN
-F1 "Device:Jumper" 0 -80 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-A 0 -26 125 1426 373 0 1 0 N -98 50 99 50
-C -100 0 35 0 1 0 N
-C 100 0 35 0 1 0 N
-X 1 1 -300 0 165 R 50 50 0 1 P
-X 2 2 300 0 165 L 50 50 0 1 P
-ENDDRAW
-ENDDEF
-#
 # Device:LED
 #
 DEF Device:LED D 0 40 N N 1 F N
@@ -218,28 +183,6 @@ C -80 0 20 0 0 0 N
 C 80 0 20 0 0 0 N
 X A 1 -200 0 100 R 50 50 1 1 P
 X B 2 200 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Jumper:Jumper_3_Bridged12
-#
-DEF Jumper:Jumper_3_Bridged12 JP 0 0 Y N 1 F N
-F0 "JP" -100 -100 50 H V C CNN
-F1 "Jumper:Jumper_3_Bridged12" 0 110 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Jumper*Bridged12*
-$ENDFPLIST
-DRAW
-A -65 -50 89 1282 518 0 1 0 N -120 20 -10 20
-C -130 0 20 0 0 0 N
-C 0 0 20 0 0 0 N
-C 130 0 20 0 0 0 N
-P 2 0 1 0 0 -50 0 -20 N
-X A 1 -250 0 100 R 50 50 1 1 P
-X C 2 0 -150 100 U 50 50 1 1 I
-X B 3 250 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -477,6 +420,26 @@ X PA2 73 -750 -800 300 R 50 50 2 1 B
 X NC 74 750 -800 300 L 50 50 2 1 P
 X PA3 75 -750 -900 300 R 50 50 2 1 B
 X NC 76 750 -900 300 L 50 50 2 1 P
+ENDDRAW
+ENDDEF
+#
+# Oscillator:XO32
+#
+DEF Oscillator:XO32 X 0 10 Y Y 1 F N
+F0 "X" -200 250 50 H V L CNN
+F1 "Oscillator:XO32" 50 -250 50 H V L CNN
+F2 "Oscillator:Oscillator_SMD_EuroQuartz_XO32-4Pin_3.2x2.5mm" 700 -350 50 H I C CNN
+F3 "" -100 0 50 H I C CNN
+$FPLIST
+ *:Oscillator*SMD*EuroQuartz*XO32*3.2x2.5mm*
+$ENDFPLIST
+DRAW
+S -200 200 200 -200 0 1 10 f
+P 10 0 1 0 -50 -30 -40 -30 -40 30 -20 30 -20 -30 0 -30 0 30 20 30 20 -30 30 -30 N
+X EN 1 -300 0 100 R 50 50 1 1 I
+X GND 2 0 -300 100 U 50 50 1 1 W
+X OUT 3 300 0 100 L 50 50 1 1 O
+X V+ 4 0 300 100 D 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
