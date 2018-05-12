@@ -26,4 +26,8 @@ I have made prototypes of the TMC2130 board design (rev0) - the board has a few 
 
 The TMC2660 branch status is: the rev0 board is fully routed and passes DRC checks. I have not made any prototypes of the board, because 2660 drivers are hard to find due to low stock levels at suppliers.
 
-The software for the board is a clone of Marlin at [bugfix-2.0.x branch] (https://github.com/ghent360/Marlin/tree/bugfix-2.0.x/ "Github.com")
+The software for the board is a clone of Marlin at [bugfix-2.0.x branch](https://github.com/ghent360/Marlin/tree/bugfix-2.0.x/ "Github.com") of my repository. I keep it relatively in sync with the Marlin branch. *Note: there are other branches of Marlin as well only the bugfix-2.0.x supports the STM32 microcontroller.*
+
+To compile the code you would need to install the [STM32 Arduino port](https://github.com/stm32duino/Arduino_Core_STM32 "www.stm32duino.com").
+
+Visit [my blog](http://blog.pcbxprt.com/) for status updates on the development of the board.
