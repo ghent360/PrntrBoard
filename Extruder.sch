@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 25 34
+Sheet 3 34
 Title ""
 Date ""
 Rev ""
@@ -35,6 +35,7 @@ F14 "MOTB1" O L 2700 2050 50
 F15 "MOTA1" O L 2700 2250 50 
 F16 "MOTA2" O L 2700 2350 50 
 F17 "MOTB2" O L 2700 2150 50 
+F18 "SD_MODE" I L 2700 3650 50 
 $EndSheet
 Text HLabel 2600 2600 0    50   Input ~ 0
 STEP
@@ -204,4 +205,8 @@ Text HLabel 2600 3550 0    50   Input ~ 0
 CLOCK
 Wire Wire Line
 	2600 3550 2700 3550
+Text HLabel 2600 3650 0    50   Input ~ 0
+SD_MODE
+Wire Wire Line
+	2600 3650 2700 3650
 $EndSCHEMATC

@@ -571,11 +571,6 @@ Wire Wire Line
 	3850 4050 3600 4050
 Wire Wire Line
 	3600 4050 3600 4150
-Wire Wire Line
-	3850 3800 3600 3800
-Wire Wire Line
-	3600 3800 3600 4050
-Connection ~ 3600 4050
 NoConn ~ 3850 3700
 NoConn ~ 3850 3900
 NoConn ~ 3850 4150
@@ -727,4 +722,8 @@ Wire Wire Line
 Wire Wire Line
 	8150 5600 7550 5600
 Connection ~ 7550 5600
+Text HLabel 3100 3800 0    50   Input ~ 0
+SD_MODE
+Wire Wire Line
+	3100 3800 3850 3800
 $EndSCHEMATC

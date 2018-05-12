@@ -60,6 +60,7 @@ F39 "E1_TEMP" O L 6050 2250 50
 F40 "E1_PWM" I L 6050 2600 50 
 F41 "5V" I L 6050 1350 50 
 F42 "CLOCK" I L 6050 3400 50 
+F43 "SD_MODE" I L 6050 2000 50 
 $EndSheet
 $Comp
 L my_4xxx:4078 U1
@@ -1413,4 +1414,27 @@ Text Label 4850 5950 0    50   ~ 0
 3.3V
 Text Label 4750 6450 0    50   ~ 0
 3.3V
+Wire Wire Line
+	6050 2000 5500 2000
+Text Label 5550 2000 0    50   ~ 0
+SD_MODE
+$Comp
+L Jumper:Jumper_2_Open JP11
+U 1 1 5AFFD02A
+P 8450 5850
+F 0 "JP11" V 8496 5948 50  0000 L CNN
+F 1 "Use Ramp Generator" V 8405 5948 50  0000 L CNN
+F 2 "" H 8450 5850 50  0001 C CNN
+F 3 "~" H 8450 5850 50  0001 C CNN
+	1    8450 5850
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	8450 6050 8450 6150
+Wire Wire Line
+	8450 6150 7650 6150
+Wire Wire Line
+	8450 5650 8450 5350
+Text Label 8450 5450 0    50   ~ 0
+SD_MODE
 $EndSCHEMATC
