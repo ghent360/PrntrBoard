@@ -9,7 +9,7 @@ Some features of the board:
   + 4x controllable fans and 2x "always on" fan connectors
   + selectable fan voltage (5V or Vin)
 
-Because the NUCLEO-64 has limited number of IO pins, some compromizes had to be made:
+Because the NUCLEO-64 has limited number of IO pins, some compromises had to be made:
   + No sd-card
   + No display support
 
@@ -20,13 +20,13 @@ Generic shortcuts I don't plan to improve:
 
 Details
 ------
-I use the daily build of KiCad (soon to be released V5) - let me know if you have trouble openning the files.
+I use the daily build of KiCad (soon to be released V5) - let me know if you have trouble opening the files.
 
-Once the design is validated I would add support for NUCLEO-144 kits, these have many mode avaliable I/O pins, which would enable more extruders, SD-card and LCD screen utilities to be added. The downside is that they are quite big and I'm trying to limit the design to 10x10cm to reduce the cost of the PCB fabrication.
+Once the design is validated I would add support for NUCLEO-144 kits, these have many mode available I/O pins, which would enable more extruders, SD-card and LCD screen utilities to be added. The downside is that they are quite big and I'm trying to limit the design to 10x10cm to reduce the cost of the PCB fabrication.
 
 The current desing is using 4 layer board, 6/6 mil clearance, 12 mil via hole size and 20 mil via diameter.
 
-There are two active breanches:
+There are two active branches:
   + tmc2130 - the board design for TMC2130 series drivers
   + master - the board design for TMC2660 drivers
 
@@ -43,6 +43,6 @@ Software
 
 The software for the board is a clone of Marlin at [bugfix-2.0.x branch](https://github.com/ghent360/Marlin/tree/bugfix-2.0.x/ "Github.com") of my repository. I keep it relatively in sync with the Marlin branch. *Note: there are other branches of Marlin as well only the bugfix-2.0.x supports the STM32 microcontroller.*
 
-Marlin is using Adruino IDE or Plarform IO. I personally had issues with Platform IO not supporting the STM32F4 board, so I use Arduino version 1.8.5. To compile the firmware code you would need to install the [STM32 Arduino port](https://github.com/stm32duino/Arduino_Core_STM32 "www.stm32duino.com").
+Marlin is using Adruino IDE or Platform IO. I personally had issues with Platform IO not supporting the STM32F4 board, so I use Arduino version 1.8.5. To compile the firmware code you would need to install the [STM32 Arduino port](https://github.com/stm32duino/Arduino_Core_STM32 "www.stm32duino.com").
 
 Visit [my blog](http://blog.pcbxprt.com/) for status updates on the development of the board.
