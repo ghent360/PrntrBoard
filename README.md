@@ -12,7 +12,11 @@ Because the NUCLEO-64 has limited number of IO pins, some compromizes had to be 
   + No sd-card
   + No display support
 
-Once the design is validated I would add support for NUCLEO-144 kits, these have much mode avaliable I/O pins, which would enable more extruders, SD-card and LCD screen utilities to be added.
+I use the daily build of KiCad (soon to be released V5) - let me know if you have trouble openning the files.
+
+Once the design is validated I would add support for NUCLEO-144 kits, these have many mode avaliable I/O pins, which would enable more extruders, SD-card and LCD screen utilities to be added. The downside is that they are quite big and I'm trying to limit the design to 10x10cm to reduce the cost of the PCB fabrication.
+
+The current desing is using 4 layer board, 6/6 mil clearance, 15 mil via hole size and 25 mil via diameter.
 
 There are two active breanches:
   + tmc2130 - the board design for TMC2130 series drivers
