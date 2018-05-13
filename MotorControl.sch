@@ -787,7 +787,7 @@ U 1 1 5AFB04B7
 P 10050 4450
 F 0 "X1" H 10391 4496 50  0000 L CNN
 F 1 "16MHz" H 10391 4405 50  0000 L CNN
-F 2 "Oscillator:Oscillator_SMD_EuroQuartz_XO32-4Pin_3.2x2.5mm_HandSoldering" H 10750 4100 50  0001 C CNN
+F 2 "PrntrBoardV1:Oscillator_SMD_EuroQuartz_XO32-4Pin_3.2x2.5mm_HandSoldering" H 10750 4100 50  0001 C CNN
 F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/XO32.pdf" H 9950 4450 50  0001 C CNN
 	1    10050 4450
 	1    0    0    -1  
