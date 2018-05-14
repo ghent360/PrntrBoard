@@ -23,7 +23,7 @@ A0
 Text HLabel 3450 2150 0    50   Input ~ 0
 ~RESET
 Text HLabel 4100 1850 2    50   Input ~ 0
-3.3V
+VCC
 Text HLabel 4100 1950 2    50   Input ~ 0
 LED+
 Text HLabel 4100 2050 2    50   Input ~ 0
