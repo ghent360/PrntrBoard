@@ -2,16 +2,17 @@ Prntr Board V1
 ======================
 PrntrBoard is a 3D printer controller board designed to work with STM32 NUCLEO dev kits. The current version (V1) supports NUCLEO-64 series kits. The design is being developed on F446-RE kit, but other models could work as well. IMO the STM32F446 NUCLEO-64 kit offers very good performance (180MHz CPU) for the price ($15).
 
+![Picture of Rev0 Kicad Rendering](Rev1_1.png)
 Some features of the board:
 -----
   + 5x Trinamic super quiet drivers (TMC2130 or TMC2660)
   + Marlin firmware
   + 4x controllable fans and 2x "always on" fan connectors
+  + SPI lcd connector for ST7735 screen
   + selectable fan voltage (5V or Vin)
 
 Because the NUCLEO-64 has limited number of IO pins, some compromises had to be made:
   + No sd-card
-  + No display support
 
 Generic shortcuts I don't plan to improve:
 ------
@@ -34,7 +35,18 @@ Both PCB designs use the QFP version of the driver ICs, because they can handle 
 
 Status
 ------
-I have made prototypes of the TMC2130 board design (rev0) - the board has a few bugs, that are corrected in the rev1 version. I have validated the heaters and fan controls are operational. Working the kinks out of the motor driver wiring.
+I have made prototypes of the TMC2130 board design (rev0) - the board has a few bugs, that are corrected in the rev1 version. Rev0 did not have LCD screen, it was added in Rev1. I'm trying to work-out the thermal design issues.
+
+Tested circuits:
+  + Heater control
+  + Thermistor input
+  + Fan control
+  + Motor driver control (only E1)
+
+Circuits that need verification:
+  + End stops
+  + Stall guard alerd from the motor driver
+  + Z probe
 
 The TMC2660 branch status is: the rev0 board is fully routed and passes DRC checks. I have not made any prototypes of the board, because 2660 drivers are hard to find due to low stock levels at suppliers.
 

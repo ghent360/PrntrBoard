@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 34
+Sheet 2 35
 Title ""
 Date ""
 Rev ""
@@ -260,12 +260,12 @@ Wire Wire Line
 	8650 2000 8550 2000
 Connection ~ 6400 3150
 Wire Wire Line
-	8700 3250 8700 1900
+	8700 3250 8700 3050
 Wire Wire Line
 	8700 1900 8550 1900
 Connection ~ 6450 3250
 Wire Wire Line
-	8750 3350 8750 1800
+	8750 3350 8750 2900
 Wire Wire Line
 	8750 1800 8550 1800
 Connection ~ 6500 3350
@@ -832,4 +832,18 @@ Wire Wire Line
 Connection ~ 9450 4950
 Wire Wire Line
 	9450 4950 8700 4950
+Text HLabel 8950 3050 2    50   Output ~ 0
+MOSI_BUF
+Text HLabel 8950 2900 2    50   Output ~ 0
+SCK_BUF
+Wire Wire Line
+	8700 3050 8950 3050
+Connection ~ 8700 3050
+Wire Wire Line
+	8700 3050 8700 1900
+Wire Wire Line
+	8950 2900 8750 2900
+Connection ~ 8750 2900
+Wire Wire Line
+	8750 2900 8750 1800
 $EndSCHEMATC
