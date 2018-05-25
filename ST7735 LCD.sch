@@ -63,7 +63,7 @@ U 1 1 5B08E113
 P 3700 2050
 F 0 "J30" H 3750 2467 50  0000 C CNN
 F 1 "LCD" H 3750 2376 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 3700 2050 50  0001 C CNN
+F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" H 3700 2050 50  0001 C CNN
 F 3 "~" H 3700 2050 50  0001 C CNN
 	1    3700 2050
 	1    0    0    -1  
