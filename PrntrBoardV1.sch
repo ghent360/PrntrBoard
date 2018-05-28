@@ -973,8 +973,6 @@ Wire Wire Line
 Wire Wire Line
 	1750 6150 1000 6150
 Wire Wire Line
-	1750 6250 1000 6250
-Wire Wire Line
 	1750 6350 1000 6350
 Wire Wire Line
 	1750 6450 1000 6450
@@ -992,7 +990,7 @@ Text Label 1050 5350 0    50   ~ 0
 ~E1_CS
 Text Label 3650 5350 0    50   ~ 0
 Y_STEP
-Text Label 3450 5250 0    50   ~ 0
+Text Label 3600 4850 0    50   ~ 0
 E0_COOL_PWM
 Text Label 1050 5650 0    50   ~ 0
 ~EN_MOTORS
@@ -1006,8 +1004,6 @@ Text Label 1050 6050 0    50   ~ 0
 E0_STEP
 Text Label 1050 6150 0    50   ~ 0
 E1_DIR
-Text Label 1050 6250 0    50   ~ 0
-E1_COOL_PWM
 Text Label 1050 6350 0    50   ~ 0
 SCK
 Text Label 1050 6450 0    50   ~ 0
@@ -1055,8 +1051,6 @@ Wire Wire Line
 	3250 6450 3950 6450
 Wire Wire Line
 	3400 3700 3400 6050
-Wire Wire Line
-	3250 5250 3950 5250
 Wire Wire Line
 	3250 3400 4400 3400
 Connection ~ 4400 3400
@@ -1585,4 +1579,161 @@ Wire Wire Line
 	10000 4300 9400 4300
 Text Label 9450 4300 0    50   ~ 0
 5V
+$Comp
+L Connector_Generic:Conn_01x06 J31
+U 1 1 5B0DCBB0
+P 10400 6000
+F 0 "J31" H 10450 5950 50  0000 L CNN
+F 1 "TC1" H 10350 6550 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 10400 6000 50  0001 C CNN
+F 3 "~" H 10400 6000 50  0001 C CNN
+	1    10400 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J32
+U 1 1 5B0DCCBB
+P 10900 6000
+F 0 "J32" H 10950 5950 50  0000 L CNN
+F 1 "TC2" H 10850 6550 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 10900 6000 50  0001 C CNN
+F 3 "~" H 10900 6000 50  0001 C CNN
+	1    10900 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 6000 10600 6000
+Wire Wire Line
+	10600 6000 10600 5700
+Wire Wire Line
+	10600 5700 10100 5700
+Wire Wire Line
+	10100 5700 10100 6000
+Wire Wire Line
+	10100 6000 10200 6000
+Wire Wire Line
+	10700 5900 10650 5900
+Wire Wire Line
+	10650 5900 10650 5650
+Wire Wire Line
+	10650 5650 10150 5650
+Wire Wire Line
+	10150 5650 10150 5900
+Wire Wire Line
+	10150 5900 10200 5900
+Wire Wire Line
+	10700 5800 10700 5600
+Wire Wire Line
+	10700 5600 10200 5600
+Wire Wire Line
+	10200 5600 10200 5800
+Wire Wire Line
+	10700 6100 10600 6100
+Wire Wire Line
+	10600 6100 10600 6400
+Wire Wire Line
+	10600 6400 10100 6400
+Wire Wire Line
+	10100 6400 10100 6100
+Wire Wire Line
+	10100 6100 10200 6100
+Wire Wire Line
+	10700 6200 10650 6200
+Wire Wire Line
+	10650 6200 10650 6450
+Wire Wire Line
+	10650 6450 10150 6450
+Wire Wire Line
+	10150 6450 10150 6200
+Wire Wire Line
+	10150 6200 10200 6200
+Wire Wire Line
+	10700 6300 10700 6500
+Text Label 10350 5600 0    50   ~ 0
+5V
+$Comp
+L power:GND #PWR091
+U 1 1 5B1853F1
+P 11050 5650
+F 0 "#PWR091" H 11050 5400 50  0001 C CNN
+F 1 "GND" H 11055 5477 50  0000 C CNN
+F 2 "" H 11050 5650 50  0001 C CNN
+F 3 "" H 11050 5650 50  0001 C CNN
+	1    11050 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10650 5650 11050 5650
+Connection ~ 10650 5650
+Wire Wire Line
+	10100 6000 9650 6000
+Connection ~ 10100 6000
+Wire Wire Line
+	10100 6100 9650 6100
+Connection ~ 10100 6100
+Wire Wire Line
+	10150 6200 9650 6200
+Connection ~ 10150 6200
+Wire Wire Line
+	10200 6300 9650 6300
+Wire Wire Line
+	9650 6500 10700 6500
+Text Label 9650 6000 0    50   ~ 0
+SCK_BUF
+Text Label 9650 6100 0    50   ~ 0
+MOSI_BUF
+Text Label 9650 6200 0    50   ~ 0
+MISO
+Text Label 9650 6300 0    50   ~ 0
+~TC1_CS
+Text Label 9650 6500 0    50   ~ 0
+~TC2_CS
+$Comp
+L Jumper:Jumper_3_Bridged12 JP3
+U 1 1 5B24639E
+P 4200 5250
+F 0 "JP3" V 4154 5317 50  0000 L CNN
+F 1 "E0_TC1" V 4245 5317 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4200 5250 50  0001 C CNN
+F 3 "~" H 4200 5250 50  0001 C CNN
+	1    4200 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:Jumper_3_Bridged12 JP2
+U 1 1 5B2464D1
+P 750 6250
+F 0 "JP2" V 796 6316 50  0000 L CNN
+F 1 "E1_TC2" H 300 6350 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 750 6250 50  0001 C CNN
+F 3 "~" H 750 6250 50  0001 C CNN
+	1    750  6250
+	0    -1   -1   0   
+$EndComp
+Text Label 900  7200 0    50   ~ 0
+E1_COOL_PWM
+Wire Wire Line
+	750  6500 750  7200
+Wire Wire Line
+	750  7200 1450 7200
+Wire Wire Line
+	900  6250 1750 6250
+Wire Wire Line
+	750  6000 750  5650
+Text Label 750  6000 1    50   ~ 0
+~TC2_CS
+Wire Wire Line
+	4200 5000 4200 4850
+Wire Wire Line
+	4200 4850 3500 4850
+Wire Wire Line
+	3250 5250 4050 5250
+Wire Wire Line
+	4200 5500 4200 5850
+Text Label 4200 5550 3    50   ~ 0
+~TC1_CS
+Text Label 1000 6250 0    50   ~ 0
+E1_COOL_TC2
+Text Label 3450 5250 0    50   ~ 0
+E0_COOL_TC1
 $EndSCHEMATC
