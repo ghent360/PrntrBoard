@@ -58,9 +58,8 @@ F37 "E1_SG" O L 6050 3250 50
 F38 "E1_FLMT" O R 7350 3100 50 
 F39 "E1_TEMP" O L 6050 2350 50 
 F40 "E1_PWM" I L 6050 2600 50 
-F41 "5V" I L 6050 1350 50 
-F42 "MOSI_BUF" O L 6050 2000 50 
-F43 "SCK_BUF" O L 6050 2100 50 
+F41 "MOSI_BUF" O L 6050 2000 50 
+F42 "SCK_BUF" O L 6050 2100 50 
 $EndSheet
 $Comp
 L my_4xxx:4078 U1
@@ -1187,8 +1186,6 @@ F 3 "~" H 3500 1950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6050 1350 5050 1350
-Wire Wire Line
 	4100 1350 4100 1850
 Connection ~ 4100 1850
 Wire Wire Line
@@ -1218,7 +1215,6 @@ F 3 "~" H 5050 1500 50  0001 C CNN
 	1    5050 1500
 	1    0    0    -1  
 $EndComp
-Connection ~ 5050 1350
 Wire Wire Line
 	5050 1350 4700 1350
 Wire Wire Line
