@@ -8,6 +8,8 @@ Some features of the board:
   + 5x Trinamic super quiet drivers (TMC2130 or TMC2660)
   + Marlin firmware
   + (2+2) controllable fans and 2x "always on" fan connectors
+  + 3x min and max endstops for the x, y and z axis
+  + 2x end stops for fillament end detection
   + SPI lcd connector for ST7735 screen
   + Dual thermocouple connectors (for MAX31866, MAX31855 or MAX6675 boards)
   + selectable fan voltage (5V or Vin)
@@ -25,11 +27,11 @@ Details
 ------
 I use the daily build of KiCad (soon to be released V5) - let me know if you have trouble opening the files.
 
-The current desing is using 4 layer board, 6/6 mil track width/clearance, 12 mil min via hole size and 20 mil via diameter.
+The current PCB desing is using 4 layer board, 6/6 mil track width/clearance, 12 mil min via hole size and 20 mil via diameter.
 
 There are two active branches:
   + tmc2130 - the board design for TMC2130 drivers
-  + tmc2550 - the board design for TMC2660 drivers
+  + tmc2660 - the board design for TMC2660 drivers
 
 Both PCB designs use the QFP version of the driver ICs, because they can handle a bit more power.
 
@@ -50,8 +52,6 @@ Circuits that need verification:
   + Z probe
   + LCD ubterface
   + Thermocuple interface
-
-The TMC2660 branch status is: the rev0 board is fully routed and passes DRC checks. I have not made any prototypes of the board, because 2660 drivers are hard to find due to low stock levels at suppliers.
 
 Software
 ------
