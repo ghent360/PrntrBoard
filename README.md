@@ -2,19 +2,21 @@ Prntr Board V1
 ======================
 PrntrBoard is a 3D printer controller board designed to work with STM32 NUCLEO dev kits. The current version (V1) supports NUCLEO-64 series kits. The design is being developed on F446-RE kit, but other models could work as well. IMO the STM32F446 NUCLEO-64 kit offers very good performance (180MHz CPU) for the price ($15).
 
-![Picture of Rev0 Kicad Rendering](Rev2_1.png)
+![Picture of Rev0 Kicad Rendering](Rev1_1.png)
 Some features of the board:
 -----
   + 5x Trinamic super quiet drivers (TMC2130 or TMC2660)
   + Marlin firmware
   + (2+2) controllable fans and 2x "always on" fan connectors
+  + 3 min and 3 max limit switches for the xyz axis.
+  + 2 limit switches for fillament detection.
   + SPI lcd connector for ST7735 screen
   + Dual thermocouple connectors (for MAX31866, MAX31855 or MAX6675 boards)
   + selectable fan voltage (5V or Vin)
 
 Because the NUCLEO-64 has limited number of IO pins, some compromises had to be made:
   + No sd-card
-  + The thermocouple connectors share pins with the E0 and E1 coolond fan controls. You'll have to decide to use one or the other via jumpers on the board. Most printers I've seen come with "always on" extruder fans, the choice seemed like a worthy sacrifice.
+  + The thermocouple connectors share pins with the E0 and E1 cool fan controls. You'll have to decide to use one or the other via jumpers on the board. Most printers I've seen come with "always on" extruder fans, the choice seemed like a worthy sacrifice.
 
 Generic shortcuts I don't plan to improve:
 ------
@@ -23,37 +25,19 @@ Generic shortcuts I don't plan to improve:
 
 Details
 ------
-I use the daily build of KiCad (soon to be released V5) - let me know if you have trouble opening the files.
+I use the daily build of KiCad (soon to be released V5) - let me know if you have trouble opening the files. The schematics uses hierarchical components, which was not supported in earlied versions of KiCad.
 
-Once the design is validated I would add support for NUCLEO-144 kits, these have many mode available I/O pins, which would enable more extruders, SD-card and LCD screen utilities to be added. The downside is that they are quite big and I'm trying to limit the design to 10x10cm to reduce the cost of the PCB fabrication.
-
-The current desing is using 4 layer board, 6/6 mil clearance, 12 mil via hole size and 20 mil via diameter.
+The current PCB desing is using 4 layer board, 6/6 mil track width/clearance, 12 mil via hole size and 20 mil via diameter.
 
 There are two active branches:
-  + tmc2130 - the board design for TMC2130 series drivers
-  + master - the board design for TMC2660 drivers
+  + tmc2130 - the board design for TMC2130 drivers
+  + tmc2660 - the board design for TMC2660 drivers
 
 Both PCB designs use the QFP version of the driver ICs, because they can handle a bit more power.
 
 Status
 ------
-I have made prototypes of the TMC2130 board design (rev0) - the board has a few bugs, that are corrected in the rev1 version. Rev0 did not have LCD screen, it was added in Rev1. I'm trying to work-out the thermal design issues.
-Rev1 board have been ordered and the dev branch is now switched to Rev2. The thermocouple connectors are added Rev2.
-
-Tested circuits:
-  + Heater control
-  + Thermistor input
-  + Fan control
-  + Motor driver control (only E1)
-  + End stops
-
-Circuits that need verification:
-  + Stall guard alert from the motor driver
-  + Z probe
-  + LCD ubterface
-  + Thermocuple interface
-
-The TMC2660 branch status is: the rev0 board is fully routed and passes DRC checks. I have not made any prototypes of the board, because 2660 drivers are hard to find due to low stock levels at suppliers.
+I have re-designed the tmc2660 pcb. Incorporated changes I made from the tmc2130 branch. I ordered a batch of PCBs for validation. Still not happy with the layout of the E1 driver. I may reposition the E1 driver relative to the 5V input connector. I'm considering switching to JST connectors for the stepper motor drivers.
 
 Software
 ------
