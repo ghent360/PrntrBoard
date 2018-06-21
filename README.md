@@ -14,7 +14,7 @@ Some features of the board:
 
 Because the NUCLEO-64 has limited number of IO pins, some compromises had to be made:
   + No sd-card
-  + The thermocouple connectors share pins with the E0 and E1 coolond fan controls. You'll have to decide to use one or the other via jumpers on the board. Most printers I've seen come with "always on" extruder fans, the choice seemed like a worthy sacrifice.
+  + The thermocouple connectors share pins with the E0 and E1 cool fan controls. You'll have to decide to use one or the other via jumpers on the board. Most printers I've seen come with "always on" extruder fans, the choice seemed like a worthy sacrifice.
 
 Generic shortcuts I don't plan to improve:
 ------
@@ -25,13 +25,11 @@ Details
 ------
 I use the daily build of KiCad (soon to be released V5) - let me know if you have trouble opening the files.
 
-Once the design is validated I would add support for NUCLEO-144 kits, these have many mode available I/O pins, which would enable more extruders, SD-card and LCD screen utilities to be added. The downside is that they are quite big and I'm trying to limit the design to 10x10cm to reduce the cost of the PCB fabrication.
-
-The current desing is using 4 layer board, 6/6 mil clearance, 12 mil via hole size and 20 mil via diameter.
+The current desing is using 4 layer board, 6/6 mil track width/clearance, 12 mil min via hole size and 20 mil via diameter.
 
 There are two active branches:
-  + tmc2130 - the board design for TMC2130 series drivers
-  + master - the board design for TMC2660 drivers
+  + tmc2130 - the board design for TMC2130 drivers
+  + tmc2550 - the board design for TMC2660 drivers
 
 Both PCB designs use the QFP version of the driver ICs, because they can handle a bit more power.
 
