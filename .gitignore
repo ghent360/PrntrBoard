@@ -1,3 +1,5 @@
 *.bak
 *.bck
+*.STEP
+*.step
 *.kicad_pcb-bak
