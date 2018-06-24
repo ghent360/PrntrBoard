@@ -47,7 +47,7 @@
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )
-  (model /home/vne/projects/kicad_pcbs/libraries/3Dshapes/custom.3dshapes/xtal_osc_3.2x2.5.step
+  (model ${KIPRJMOD}/xtal_osc_3.2x2.5.step
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

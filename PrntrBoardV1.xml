@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>/home/vne/projects/kicad_pcbs/PrntrBoardV1/PrntrBoardV1.sch</source>
+    <source>${KIPRJMOD}/PrntrBoardV1.sch</source>
     <date>Mon 23 Apr 2018 07:51:00 PM PDT</date>
     <tool>Eeschema 5.0.0-rc2-dev-unknown-268aeeb~64~ubuntu17.10.1</tool>
     <sheet number="1" name="/" tstamps="/">
@@ -508,7 +508,7 @@
       <value>74HCT02</value>
       <footprint>Package_SO:TSSOP-14_4.4x5mm_P0.65mm</footprint>
       <datasheet>http://www.ti.com/lit/gpn/sn74hct02</datasheet>
-      <libsource lib="Logic_74xx" part="74HCT02"/>
+      <libsource lib="74ls02" part="74HCT02"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5AB9C30F</tstamp>
     </comp>
@@ -657,7 +657,7 @@
       <value>74LVC125</value>
       <footprint>Package_SO:TSSOP-14_4.4x5mm_P0.65mm</footprint>
       <datasheet>http://www.ti.com/lit/gpn/sn74LVC125</datasheet>
-      <libsource lib="Logic_74xx" part="74LVC125"/>
+      <libsource lib="74ls125" part="74LVC125"/>
       <sheetpath names="/MotorControl/" tstamps="/5AC337B6/"/>
       <tstamp>5ABD1500</tstamp>
     </comp>
@@ -1983,7 +1983,7 @@
         <pin num="14" name="Vdd" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib="Logic_74xx" part="74LS02">
+    <libpart lib="74ls02" part="74LS02">
       <aliases>
         <alias>74HC02</alias>
         <alias>74HCT02</alias>
@@ -2017,7 +2017,7 @@
         <pin num="14" name="VCC" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib="Logic_74xx" part="74LS125">
+    <libpart lib="74ls125" part="74LS125">
       <aliases>
         <alias>74LVC125</alias>
       </aliases>
@@ -2435,26 +2435,29 @@
     <library logical="Jumper">
       <uri>/usr/share/kicad/library/Jumper.lib</uri>
     </library>
-    <library logical="Logic_74xx">
-      <uri>/usr/share/kicad/library/74xx.lib</uri>
+    <library logical="74ls02">
+      <uri>${KIPRJMOD}/74ls02.lib</uri>
+    </library>
+    <library logical="74ls125">
+      <uri>${KIPRJMOD}/74ls125.lib</uri>
     </library>
     <library logical="Mechanical">
       <uri>/usr/share/kicad/library/Mechanical.lib</uri>
     </library>
     <library logical="NUCLEO-64">
-      <uri>/home/vne/projects/kicad_pcbs/PrntrBoardV1/NUCLEO-64.lib</uri>
+      <uri>${KIPRJMOD}/NUCLEO-64.lib</uri>
     </library>
     <library logical="bsh105">
-      <uri>/home/vne/projects/kicad_pcbs/PrntrBoardV1/bsh105.lib</uri>
+      <uri>${KIPRJMOD}/bsh105.lib</uri>
     </library>
     <library logical="ipd036n04l">
-      <uri>/home/vne/projects/kicad_pcbs/PrntrBoardV1/ipd036n04l.lib</uri>
+      <uri>${KIPRJMOD}/ipd036n04l.lib</uri>
     </library>
     <library logical="my_4xxx">
-      <uri>/home/vne/projects/kicad_pcbs/PrntrBoardV1/Logic_CMOS_IEEE.lib</uri>
+      <uri>${KIPRJMOD}/Logic_CMOS_IEEE.lib</uri>
     </library>
     <library logical="tmc5130">
-      <uri>/home/vne/projects/kicad_pcbs/PrntrBoardV1/tmc5130.lib</uri>
+      <uri>${KIPRJMOD}/tmc5130.lib</uri>
     </library>
   </libraries>
   <nets>

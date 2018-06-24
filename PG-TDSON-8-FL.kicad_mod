@@ -49,7 +49,7 @@
   (pad "" smd rect (at 1 -1.5) (size 1.5 1.5) (layers F.Paste F.Mask))
   (pad "" smd rect (at 1 0.5) (size 1.5 1.5) (layers F.Paste F.Mask))
   (pad "" smd rect (at -1 0.5) (size 1.5 1.5) (layers F.Paste F.Mask))
-  (model /home/vne/projects/kicad_pcbs/libraries/3Dshapes/custom.3dshapes/PG-TDSON-8.STEP
+  (model ${KIPRJMOD}/PG-TDSON-8.STEP
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 0))

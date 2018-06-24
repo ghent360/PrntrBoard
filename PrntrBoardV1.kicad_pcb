@@ -8863,7 +8863,7 @@
       (net 2 GND))
     (pad G smd rect (at 1.905 2.825) (size 0.65 1.2) (layers F.Cu F.Paste F.Mask)
       (net 125 "Net-(R48-Pad1)"))
-    (model /home/vne/projects/kicad_pcbs/libraries/3Dshapes/custom.3dshapes/PG-TDSON-8.STEP
+    (model ${KIPRJMOD}/PG-TDSON-8.STEP
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
@@ -9883,7 +9883,7 @@
       (net 50 /BED_TEMP))
     (pad 37 thru_hole circle (at 0 0) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask)
       (net 117 /Z_PROBE_MOD))
-    (model /home/vne/Downloads/NUCLEO-F411RE.STEP
+    (model ${KIPRJMOD}/NUCLEO-F411RE.STEP
       (offset (xyz 40.5 -2.5 9))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -9945,7 +9945,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/vne/projects/kicad_pcbs/libraries/3Dshapes/custom.3dshapes/xtal_osc_3.2x2.5.step
+    (model ${KIPRJMOD}/xtal_osc_3.2x2.5.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
