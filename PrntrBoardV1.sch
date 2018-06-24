@@ -343,7 +343,7 @@ Wire Wire Line
 Text Label 9350 1050 0    50   ~ 0
 5V
 $Comp
-L Logic_74xx:74HCT02 U2
+L 74ls02:74HCT02 U2
 U 1 1 5AB9C30F
 P 5750 6750
 F 0 "U2" H 5750 7075 50  0000 C CNN
@@ -354,7 +354,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74hct02" H 5750 6750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Logic_74xx:74HCT02 U2
+L 74ls02:74HCT02 U2
 U 2 1 5AB9E04D
 P 5750 5200
 F 0 "U2" H 5750 5525 50  0000 C CNN
@@ -365,7 +365,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74hct02" H 5750 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Logic_74xx:74HCT02 U2
+L 74ls02:74HCT02 U2
 U 3 1 5AB9E0C5
 P 5750 5750
 F 0 "U2" H 5750 6075 50  0000 C CNN
@@ -376,7 +376,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74hct02" H 5750 5750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Logic_74xx:74HCT02 U2
+L 74ls02:74HCT02 U2
 U 4 1 5AB9E15A
 P 5750 6250
 F 0 "U2" H 5750 6575 50  0000 C CNN
@@ -387,7 +387,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74hct02" H 5750 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Logic_74xx:74HCT02 U2
+L 74ls02:74HCT02 U2
 U 5 1 5AB9E1C8
 P 7650 5600
 F 0 "U2" H 7880 5646 50  0000 L CNN

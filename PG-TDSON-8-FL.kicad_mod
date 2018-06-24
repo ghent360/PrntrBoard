@@ -43,9 +43,12 @@
   (pad D smd rect (at 0.665 -3.175) (size 0.7 0.5) (layers F.Cu F.Paste F.Mask))
   (pad D smd rect (at -0.665 -3.175) (size 0.7 0.5) (layers F.Cu F.Paste F.Mask))
   (pad D smd rect (at -2 -3.175) (size 0.7 0.5) (layers F.Cu F.Paste F.Mask))
-  (pad D smd rect (at 0 -0.675) (size 4.7 4.5) (layers F.Cu F.Paste F.Mask)
-    (solder_paste_margin_ratio -0.09))
-  (model /home/vne/projects/kicad_pcbs/libraries/3Dshapes/custom.3dshapes/PG-TDSON-8.STEP
+  (pad D smd rect (at 0 -0.675) (size 4.7 4.5) (layers F.Cu F.Mask))
+  (pad "" smd rect (at -1 -1.5) (size 1.5 1.5) (layers F.Paste F.Mask))
+  (pad "" smd rect (at 1 -1.5) (size 1.5 1.5) (layers F.Paste F.Mask))
+  (pad "" smd rect (at 1 0.5) (size 1.5 1.5) (layers F.Paste F.Mask))
+  (pad "" smd rect (at -1 0.5) (size 1.5 1.5) (layers F.Paste F.Mask))
+  (model ${KIPRJMOD}/PG-TDSON-8.STEP
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 0))
