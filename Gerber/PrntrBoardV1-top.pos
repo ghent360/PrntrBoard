@@ -1,5 +1,5 @@
-### Module positions - created on Sat Jul 14 20:59:18 2018 ###
-### Printed by Pcbnew version kicad 5.0.0-rc3-unknown-eaf938c~65~ubuntu18.04.1
+### Module positions - created on Wed Jul 18 02:18:54 2018 ###
+### Printed by Pcbnew version kicad 6.0.0-rc1-unknown-1a22918~65~ubuntu18.04.1
 ## Unit = mm, Angle = deg.
 ## Side : top
 # Ref     Val           Package                                                           PosX       PosY       Rot  Side
@@ -19,7 +19,7 @@ C13       1000pF        C_0603_1608Metric                                       
 C14       0.1uF         C_0603_1608Metric                                              22.3138    69.3293  180.0000  top
 C15       1000pF        C_0603_1608Metric                                              14.0720    43.1890    0.0000  top
 C16       1000pF        C_0603_1608Metric                                              60.0720    28.9388  180.0000  top
-C17       10uF_50V      C_1206_3216Metric                                              59.9440    95.4583  270.0000  top
+C17       10uF_50V      C_1206_3216Metric                                              59.9280    95.4597   90.0000  top
 C18       10uF_50V      C_1206_3216Metric                                              79.4182     9.3345  180.0000  top
 C19       100uF_35V     CP_Elec_6.3x7.7                                                77.0110    28.8465  180.0000  top
 C20       0.1uF_50V     C_0402_1005Metric                                              80.2514    11.3157  180.0000  top
@@ -72,9 +72,9 @@ C66       1000pF        C_0603_1608Metric                                       
 C67       0.1uF         C_0603_1608Metric                                              75.9842    41.8465    0.0000  top
 C68       1000pF        C_0603_1608Metric                                              50.4065    38.5460    0.0000  top
 C69       1000pF        C_0603_1608Metric                                              60.0466    22.4491  180.0000  top
-C70       10uF_50V      C_1206_3216Metric                                              48.5140    95.4329  270.0000  top
+C70       10uF_50V      C_1206_3216Metric                                              48.1580    95.2601   90.0000  top
 C71       1000pF        C_0603_1608Metric                                              60.0466    15.8197  180.0000  top
-C72       10uF_50V      C_1206_3216Metric                                              75.2602    91.4451  270.0000  top
+C72       10uF_50V      C_1206_3216Metric                                              75.0118    95.1229   90.0000  top
 C73       10uF_50V      C_1206_3216Metric                                              18.5242    76.8985    0.0000  top
 C74       10uF_50V      C_1206_3216Metric                                              79.4182    24.1965  180.0000  top
 C75       10uF_50V      C_1206_3216Metric                                              79.5706    34.7345  180.0000  top
