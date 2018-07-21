@@ -1,5 +1,5 @@
-### Module positions - created on Thu Jul 19 21:47:41 2018 ###
-### Printed by Pcbnew version kicad 6.0.0-rc1-unknown-879ffa4~65~ubuntu18.04.1
+### Module positions - created on Fri Jul 20 20:53:45 2018 ###
+### Printed by Pcbnew version kicad 6.0.0-rc1-unknown-da35b16~65~ubuntu18.04.1
 ## Unit = mm, Angle = deg.
 ## Side : top
 # Ref     Val           Package                                                           PosX       PosY       Rot  Side
@@ -60,7 +60,7 @@ C54       0.1uF_50V     C_0402_1005Metric                                       
 C55       1000pF        C_0603_1608Metric                                              14.0595    26.1075    0.0000  top
 C56       1000pF        C_0603_1608Metric                                              58.2045    46.9280    0.0000  top
 C57       10uF_50V      C_1206_3216Metric                                              34.1426    81.6941  270.0000  top
-C58       100uF_35V     CP_Elec_6.3x7.7                                                28.7610    72.6465  180.0000  top
+C58       100uF_35V     CP_Elec_6.3x7.7                                                42.2110    71.3965  270.0000  top
 C59       0.1uF_50V     C_0402_1005Metric                                              32.1614    82.5017  270.0000  top
 C60       0.47uF        C_0603_1608Metric                                              28.4610    77.9465   90.0000  top
 C61       0.1uF         C_0603_1608Metric                                              23.3350    90.8965  180.0000  top
