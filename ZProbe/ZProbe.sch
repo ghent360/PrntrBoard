@@ -1,0 +1,221 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_BJT:DTA124E Q1
+U 1 1 5B547971
+P 4550 3050
+F 0 "Q1" H 4738 3096 50  0000 L CNN
+F 1 "DTA124E" H 4738 3005 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4550 3050 50  0001 L CNN
+F 3 "" H 4550 3050 50  0001 L CNN
+	1    4550 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:DTC124E Q2
+U 1 1 5B547A2A
+P 5100 3350
+F 0 "Q2" H 5287 3396 50  0000 L CNN
+F 1 "DTC124E" H 5287 3305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5100 3350 50  0001 L CNN
+F 3 "" H 5100 3350 50  0001 L CNN
+	1    5100 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5B547A8B
+P 5200 2900
+F 0 "R2" H 5270 2946 50  0000 L CNN
+F 1 "10k" H 5270 2855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5130 2900 50  0001 C CNN
+F 3 "~" H 5200 2900 50  0001 C CNN
+	1    5200 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5B547B2E
+P 3650 3050
+F 0 "R1" V 3443 3050 50  0000 C CNN
+F 1 "1k" V 3534 3050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3580 3050 50  0001 C CNN
+F 3 "~" H 3650 3050 50  0001 C CNN
+	1    3650 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5B547C10
+P 3900 3350
+F 0 "C1" H 4015 3396 50  0000 L CNN
+F 1 "0.01uF" H 4015 3305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3938 3200 50  0001 C CNN
+F 3 "~" H 3900 3350 50  0001 C CNN
+	1    3900 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 5B547C86
+P 4100 3050
+F 0 "D1" H 4100 3266 50  0000 C CNN
+F 1 "1N4148" H 4100 3175 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 4100 3050 50  0001 C CNN
+F 3 "~" H 4100 3050 50  0001 C CNN
+	1    4100 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 3050 3500 3050
+Wire Wire Line
+	3800 3050 3900 3050
+Wire Wire Line
+	3900 3200 3900 3050
+Connection ~ 3900 3050
+Wire Wire Line
+	3900 3050 3950 3050
+Wire Wire Line
+	4250 3050 4300 3050
+Wire Wire Line
+	4650 3250 4650 3350
+Wire Wire Line
+	4650 3350 4850 3350
+Wire Wire Line
+	5200 3150 5200 3100
+Wire Wire Line
+	5200 2750 5200 2450
+Wire Wire Line
+	5200 2450 4650 2450
+Wire Wire Line
+	4650 2450 4650 2850
+Wire Wire Line
+	5200 3550 5200 3750
+Wire Wire Line
+	5200 3750 3900 3750
+Wire Wire Line
+	3900 3750 3900 3500
+$Comp
+L power:GND #PWR01
+U 1 1 5B547FB2
+P 3900 3750
+F 0 "#PWR01" H 3900 3500 50  0001 C CNN
+F 1 "GND" H 3905 3577 50  0000 C CNN
+F 2 "" H 3900 3750 50  0001 C CNN
+F 3 "" H 3900 3750 50  0001 C CNN
+	1    3900 3750
+	1    0    0    -1  
+$EndComp
+Connection ~ 3900 3750
+$Comp
+L power:+5V #PWR02
+U 1 1 5B548007
+P 5200 2450
+F 0 "#PWR02" H 5200 2300 50  0001 C CNN
+F 1 "+5V" H 5215 2623 50  0000 C CNN
+F 2 "" H 5200 2450 50  0001 C CNN
+F 3 "" H 5200 2450 50  0001 C CNN
+	1    5200 2450
+	1    0    0    -1  
+$EndComp
+Connection ~ 5200 2450
+Wire Wire Line
+	5850 3100 5200 3100
+Connection ~ 5200 3100
+Wire Wire Line
+	5200 3100 5200 3050
+$Comp
+L Connector_Generic:Conn_01x04 J3
+U 1 1 5B548555
+P 6050 3200
+F 0 "J3" H 6129 3192 50  0000 L CNN
+F 1 "Z-Probe" H 6129 3101 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 6050 3200 50  0001 C CNN
+F 3 "~" H 6050 3200 50  0001 C CNN
+	1    6050 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 5B5488F6
+P 2750 3050
+F 0 "J1" H 2670 2725 50  0000 C CNN
+F 1 "SENSOR" H 2670 2816 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 2750 3050 50  0001 C CNN
+F 3 "~" H 2750 3050 50  0001 C CNN
+	1    2750 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5B548A52
+P 3450 2550
+F 0 "J2" H 3529 2542 50  0000 L CNN
+F 1 "Vin" H 3529 2451 50  0000 L CNN
+F 2 "Connector_JST:JST_EH_B02B-EH-A_1x02_P2.50mm_Vertical" H 3450 2550 50  0001 C CNN
+F 3 "~" H 3450 2550 50  0001 C CNN
+	1    3450 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 3200 5650 3200
+Wire Wire Line
+	5650 3200 5650 3750
+Wire Wire Line
+	5650 3750 5500 3750
+Connection ~ 5200 3750
+Wire Wire Line
+	5850 3400 5750 3400
+Wire Wire Line
+	5750 3400 5750 2450
+Wire Wire Line
+	5750 2450 5500 2450
+NoConn ~ 5850 3300
+Wire Wire Line
+	2950 3150 2950 3750
+Wire Wire Line
+	3250 2650 3250 3750
+Wire Wire Line
+	2950 3750 3250 3750
+Connection ~ 3250 3750
+Wire Wire Line
+	3250 3750 3900 3750
+Wire Wire Line
+	3250 2550 2950 2550
+Wire Wire Line
+	2950 2550 2950 2950
+$Comp
+L Device:C C2
+U 1 1 5B54A388
+P 5500 2850
+F 0 "C2" H 5615 2896 50  0000 L CNN
+F 1 "0.1uF" H 5615 2805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5538 2700 50  0001 C CNN
+F 3 "~" H 5500 2850 50  0001 C CNN
+	1    5500 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 2700 5500 2450
+Connection ~ 5500 2450
+Wire Wire Line
+	5500 2450 5200 2450
+Wire Wire Line
+	5500 3000 5500 3750
+Connection ~ 5500 3750
+Wire Wire Line
+	5500 3750 5200 3750
+$EndSCHEMATC
