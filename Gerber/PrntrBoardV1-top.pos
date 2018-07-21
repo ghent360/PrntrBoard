@@ -1,4 +1,4 @@
-### Module positions - created on Fri Jul 20 20:53:45 2018 ###
+### Module positions - created on Fri Jul 20 22:18:43 2018 ###
 ### Printed by Pcbnew version kicad 6.0.0-rc1-unknown-da35b16~65~ubuntu18.04.1
 ## Unit = mm, Angle = deg.
 ## Side : top
@@ -120,10 +120,10 @@ D19       LED           LED_0603_1608Metric                                     
 D20       LED           LED_0603_1608Metric                                            12.1110    87.4465  180.0000  top
 D21       LED           LED_0603_1608Metric                                            68.2118     4.4577    0.0000  top
 D22       LED           LED_0603_1608Metric                                            16.3804    48.7539  180.0000  top
-FID1      Fiducial      Fiducial_1mm_Dia_2.54mm_Outer_CopperTop                         0.8890     0.9525    0.0000  top
-FID2      Fiducial      Fiducial_1mm_Dia_2.54mm_Outer_CopperTop                        98.1710     0.9525    0.0000  top
-FID3      Fiducial      Fiducial_1mm_Dia_2.54mm_Outer_CopperTop                        98.1710    98.0440    0.0000  top
-FID4      Fiducial      Fiducial_1mm_Dia_2.54mm_Outer_CopperTop                         0.8890    98.0440    0.0000  top
+FID1      Fiducial      Fiducial_1mm_Dia_2.54mm_Outer_CopperTop                         1.7860     1.7465    0.0000  top
+FID2      Fiducial      Fiducial_1mm_Dia_2.54mm_Outer_CopperTop                        97.3360     1.7465    0.0000  top
+FID3      Fiducial      Fiducial_1mm_Dia_2.54mm_Outer_CopperTop                        97.3360    97.2965    0.0000  top
+FID4      Fiducial      Fiducial_1mm_Dia_2.54mm_Outer_CopperTop                         1.7860    97.2965    0.0000  top
 R1        10k           R_0603_1608Metric                                              60.1110    30.8465  180.0000  top
 R2        0R15_0.5W     R_1206_3216Metric                                              13.7414    59.3141  270.0000  top
 R3        0R15_0.5W     R_1206_3216Metric                                              12.9810    77.1017  180.0000  top
