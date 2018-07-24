@@ -1132,7 +1132,7 @@ U 1 1 5ACF4B85
 P 1950 1600
 F 0 "FID1" H 2050 1646 50  0000 L CNN
 F 1 "Fiducial" H 2050 1555 50  0000 L CNN
-F 2 "Fiducial:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 1950 1600 50  0001 C CNN
+F 2 "PrntrBoardV1:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 1950 1600 50  0001 C CNN
 F 3 "" H 1950 1600 50  0001 C CNN
 	1    1950 1600
 	1    0    0    -1  
@@ -1143,7 +1143,7 @@ U 1 1 5ACF4C64
 P 1950 1850
 F 0 "FID2" H 2050 1896 50  0000 L CNN
 F 1 "Fiducial" H 2050 1805 50  0000 L CNN
-F 2 "Fiducial:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 1950 1850 50  0001 C CNN
+F 2 "PrntrBoardV1:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 1950 1850 50  0001 C CNN
 F 3 "" H 1950 1850 50  0001 C CNN
 	1    1950 1850
 	1    0    0    -1  
@@ -1154,7 +1154,7 @@ U 1 1 5ACF4CE0
 P 1950 2100
 F 0 "FID3" H 2050 2146 50  0000 L CNN
 F 1 "Fiducial" H 2050 2055 50  0000 L CNN
-F 2 "Fiducial:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 1950 2100 50  0001 C CNN
+F 2 "PrntrBoardV1:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 1950 2100 50  0001 C CNN
 F 3 "" H 1950 2100 50  0001 C CNN
 	1    1950 2100
 	1    0    0    -1  
@@ -1168,7 +1168,7 @@ U 1 1 5AD38017
 P 1950 1400
 F 0 "FID4" H 2050 1446 50  0000 L CNN
 F 1 "Fiducial" H 2050 1355 50  0000 L CNN
-F 2 "Fiducial:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 1950 1400 50  0001 C CNN
+F 2 "PrntrBoardV1:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 1950 1400 50  0001 C CNN
 F 3 "" H 1950 1400 50  0001 C CNN
 	1    1950 1400
 	1    0    0    -1  
