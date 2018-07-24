@@ -556,7 +556,7 @@ Wire Wire Line
 Text Label 4000 1850 2    50   ~ 0
 5V
 Wire Wire Line
-	5900 800  3350 800 
+	5900 800  4100 800 
 Connection ~ 5900 800 
 $Comp
 L power:GND #PWR01
@@ -732,7 +732,7 @@ L Device:R R1
 U 1 1 5AE5F39C
 P 9050 5200
 F 0 "R1" V 9150 5150 50  0000 C CNN
-F 1 "10k" V 9150 5300 50  0000 C CNN
+F 1 "1k" V 9150 5300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 8980 5200 50  0001 C CNN
 F 3 "~" H 9050 5200 50  0001 C CNN
 	1    9050 5200
@@ -1032,7 +1032,7 @@ Wire Wire Line
 Wire Wire Line
 	4100 2900 4100 4150
 Wire Wire Line
-	4100 4150 5850 4150
+	4100 4150 5050 4150
 Wire Wire Line
 	5850 4150 5850 4700
 Wire Wire Line
@@ -1241,8 +1241,8 @@ $Comp
 L Jumper:Jumper_2_Open JP8
 U 1 1 5AF4F08D
 P 3350 1350
-F 0 "JP8" V 3304 1448 50  0000 L CNN
-F 1 "Use VIn" V 3395 1448 50  0000 L CNN
+F 0 "JP8" V 3400 1450 50  0000 L CNN
+F 1 "Use VIn" V 3500 1450 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3350 1350 50  0001 C CNN
 F 3 "~" H 3350 1350 50  0001 C CNN
 	1    3350 1350
@@ -1803,4 +1803,106 @@ Wire Wire Line
 Connection ~ 6950 5100
 Wire Wire Line
 	6950 5100 7200 5100
+$Comp
+L Connector_Generic:Conn_01x02 J33
+U 1 1 5B5B23D5
+P 3850 1000
+F 0 "J33" H 3929 992 50  0000 L CNN
+F 1 "XF1" H 3929 901 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3850 1000 50  0001 C CNN
+F 3 "~" H 3850 1000 50  0001 C CNN
+	1    3850 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J34
+U 1 1 5B5B249F
+P 4300 1000
+F 0 "J34" H 4379 992 50  0000 L CNN
+F 1 "XF2" H 4379 901 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4300 1000 50  0001 C CNN
+F 3 "~" H 4300 1000 50  0001 C CNN
+	1    4300 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 1000 3650 800 
+Connection ~ 3650 800 
+Wire Wire Line
+	3650 800  3350 800 
+Wire Wire Line
+	4100 1000 4100 800 
+Connection ~ 4100 800 
+Wire Wire Line
+	4100 800  3650 800 
+Wire Wire Line
+	4100 1100 4100 1200
+Wire Wire Line
+	4100 1200 3650 1200
+Wire Wire Line
+	3650 1200 3650 1100
+$Comp
+L power:GND #PWR078
+U 1 1 5B623979
+P 3650 1200
+F 0 "#PWR078" H 3650 950 50  0001 C CNN
+F 1 "GND" H 3800 1150 50  0000 C CNN
+F 2 "" H 3650 1200 50  0001 C CNN
+F 3 "" H 3650 1200 50  0001 C CNN
+	1    3650 1200
+	1    0    0    -1  
+$EndComp
+Connection ~ 3650 1200
+$Comp
+L Connector_Generic:Conn_01x02 J35
+U 1 1 5B6240A6
+P 5250 4250
+F 0 "J35" H 4850 4150 50  0000 L CNN
+F 1 "XF3" H 4850 4250 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5250 4250 50  0001 C CNN
+F 3 "~" H 5250 4250 50  0001 C CNN
+	1    5250 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J36
+U 1 1 5B62417C
+P 5650 4250
+F 0 "J36" H 5700 4150 50  0000 L CNN
+F 1 "XF4" H 5650 4050 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5650 4250 50  0001 C CNN
+F 3 "~" H 5650 4250 50  0001 C CNN
+	1    5650 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR079
+U 1 1 5B624259
+P 5350 4500
+F 0 "#PWR079" H 5350 4250 50  0001 C CNN
+F 1 "GND" H 5355 4327 50  0000 C CNN
+F 2 "" H 5350 4500 50  0001 C CNN
+F 3 "" H 5350 4500 50  0001 C CNN
+	1    5350 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4250 5450 4150
+Connection ~ 5450 4150
+Wire Wire Line
+	5450 4150 5850 4150
+Wire Wire Line
+	5050 4250 5050 4150
+Connection ~ 5050 4150
+Wire Wire Line
+	5050 4150 5450 4150
+Wire Wire Line
+	5050 4350 5050 4500
+Wire Wire Line
+	5050 4500 5350 4500
+Wire Wire Line
+	5450 4350 5450 4500
+Wire Wire Line
+	5450 4500 5350 4500
+Connection ~ 5350 4500
 $EndSCHEMATC
