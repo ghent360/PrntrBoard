@@ -1092,7 +1092,7 @@ Wire Wire Line
 Wire Wire Line
 	3850 1950 3700 1950
 $Comp
-L Mechanical:Mounting_Hole MK1
+L Mechanical:MountingHole MK1
 U 1 1 5ACC3347
 P 1000 1600
 F 0 "MK1" H 1100 1646 50  0000 L CNN
@@ -1103,7 +1103,7 @@ F 3 "" H 1000 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole MK2
+L Mechanical:MountingHole MK2
 U 1 1 5ACC33D5
 P 1000 1850
 F 0 "MK2" H 1100 1896 50  0000 L CNN
@@ -1114,7 +1114,7 @@ F 3 "" H 1000 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole MK3
+L Mechanical:MountingHole MK3
 U 1 1 5ACC3448
 P 1000 2100
 F 0 "MK3" H 1100 2146 50  0000 L CNN
@@ -1128,7 +1128,7 @@ NoConn ~ 1000 1600
 NoConn ~ 1000 1850
 NoConn ~ 1000 2100
 $Comp
-L Mechanical:Mounting_Hole FID1
+L Mechanical:MountingHole FID1
 U 1 1 5ACF4B85
 P 1950 1600
 F 0 "FID1" H 2050 1646 50  0000 L CNN
@@ -1139,7 +1139,7 @@ F 3 "" H 1950 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole FID2
+L Mechanical:MountingHole FID2
 U 1 1 5ACF4C64
 P 1950 1850
 F 0 "FID2" H 2050 1896 50  0000 L CNN
@@ -1150,7 +1150,7 @@ F 3 "" H 1950 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole FID3
+L Mechanical:MountingHole FID3
 U 1 1 5ACF4CE0
 P 1950 2100
 F 0 "FID3" H 2050 2146 50  0000 L CNN
@@ -1164,7 +1164,7 @@ NoConn ~ 1950 1600
 NoConn ~ 1950 1850
 NoConn ~ 1950 2100
 $Comp
-L Mechanical:Mounting_Hole FID4
+L Mechanical:MountingHole FID4
 U 1 1 5AD38017
 P 1950 1400
 F 0 "FID4" H 2050 1446 50  0000 L CNN
@@ -1230,7 +1230,7 @@ Wire Wire Line
 	5050 1950 4700 1950
 Connection ~ 4700 1950
 $Comp
-L Mechanical:Mounting_Hole MK4
+L Mechanical:MountingHole MK4
 U 1 1 5AE11BDF
 P 1000 1350
 F 0 "MK4" H 1100 1396 50  0000 L CNN
