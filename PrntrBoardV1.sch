@@ -878,12 +878,10 @@ Text Label 3750 4400 0    50   ~ 0
 MOSI
 Wire Wire Line
 	1750 4400 1000 4400
-Text Label 1000 4400 0    50   ~ 0
+Text Label 1050 4400 0    50   ~ 0
 MISO
 Wire Wire Line
 	1000 4500 1750 4500
-Text Label 1000 4500 0    50   ~ 0
-Z_PROBE_MOD
 Wire Wire Line
 	3250 4000 3950 4000
 Wire Wire Line
@@ -907,9 +905,6 @@ NoConn ~ 1750 4200
 NoConn ~ 3250 3300
 NoConn ~ 3250 3500
 NoConn ~ 1750 2900
-NoConn ~ 1750 6650
-NoConn ~ 1750 3300
-NoConn ~ 1750 3400
 Wire Wire Line
 	1750 3800 1000 3800
 Wire Wire Line
@@ -984,10 +979,6 @@ Text Label 1050 5150 0    50   ~ 0
 E1_STEP
 Text Label 3650 5150 0    50   ~ 0
 E0_DIR
-Text Label 1050 5250 0    50   ~ 0
-~E0_CS
-Text Label 1050 5350 0    50   ~ 0
-~E1_CS
 Text Label 3650 5350 0    50   ~ 0
 Y_STEP
 Text Label 3600 4850 0    50   ~ 0
@@ -1504,27 +1495,26 @@ F2 "SDA" I L 10000 3800 50
 F3 "SCL" I L 10000 3900 50 
 F4 "A0" I L 10000 4000 50 
 F5 "~RESET" I L 10000 4100 50 
-F6 "LED+" I L 10000 4500 50 
-F7 "LED-" I L 10000 4650 50 
+F6 "LED+" I L 10000 4700 50 
+F7 "LED-" I L 10000 4800 50 
 F8 "~CS" I L 10000 4200 50 
 F9 "VCC" I L 10000 4300 50 
+F10 "BTN_IN" I L 10000 4400 50 
+F11 "ENC_A" I L 10000 4500 50 
+F12 "ENC_B" I L 10000 4600 50 
 $EndSheet
 $Comp
 L power:GND #PWR089
 U 1 1 5AFBABF4
-P 9800 4700
-F 0 "#PWR089" H 9800 4450 50  0001 C CNN
-F 1 "GND" H 9805 4527 50  0000 C CNN
-F 2 "" H 9800 4700 50  0001 C CNN
-F 3 "" H 9800 4700 50  0001 C CNN
-	1    9800 4700
+P 9800 4850
+F 0 "#PWR089" H 9800 4600 50  0001 C CNN
+F 1 "GND" H 9805 4677 50  0000 C CNN
+F 2 "" H 9800 4850 50  0001 C CNN
+F 3 "" H 9800 4850 50  0001 C CNN
+	1    9800 4850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9800 4700 9800 4650
-Wire Wire Line
-	9800 4650 10000 4650
-Text Label 9450 4500 0    50   ~ 0
+Text Label 9450 4700 0    50   ~ 0
 3.3V
 Wire Wire Line
 	10000 3800 9400 3800
@@ -1544,20 +1534,14 @@ Text Label 9450 3800 0    50   ~ 0
 MOSI_BUF
 Wire Wire Line
 	3250 6250 3950 6250
-Text Label 3900 6250 2    50   ~ 0
-~LCD_RESET
 Wire Wire Line
 	1750 3900 1000 3900
-Text Label 1050 3900 0    50   ~ 0
-LCD_A0
 Wire Wire Line
 	10000 4200 9400 4200
 Text Label 9450 4200 0    50   ~ 0
 ~LCD_CS
 Wire Wire Line
 	1750 4000 1000 4000
-Text Label 1050 4000 0    50   ~ 0
-~LCD_CS
 Wire Wire Line
 	6050 2350 5600 2350
 Wire Wire Line
@@ -1571,7 +1555,7 @@ MOSI_BUF
 Text Label 5650 2100 0    50   ~ 0
 SCK_BUF
 Wire Wire Line
-	9400 4500 10000 4500
+	9400 4700 10000 4700
 Wire Wire Line
 	10000 4300 9400 4300
 Text Label 9450 4300 0    50   ~ 0
@@ -1911,4 +1895,44 @@ Wire Wire Line
 Connection ~ 4950 4150
 Wire Wire Line
 	4950 4150 5400 4150
+Text Label 1050 3900 0    50   ~ 0
+BTN_IN
+Text Label 1050 4000 0    50   ~ 0
+Z_PROBE_MOD
+Text Label 1050 4500 0    50   ~ 0
+~LCD_CS
+Text Label 3700 6250 0    50   ~ 0
+~E1_CS
+Wire Wire Line
+	1750 6650 1000 6650
+Text Label 1050 6650 0    50   ~ 0
+~E0_CS
+Text Label 1050 5350 0    50   ~ 0
+LCD_A0
+Text Label 1050 5250 0    50   ~ 0
+~LCD_RESET
+Wire Wire Line
+	1750 3300 1000 3300
+Wire Wire Line
+	1750 3400 1000 3400
+Text Label 1050 3300 0    50   ~ 0
+ENC_A
+Text Label 1050 3400 0    50   ~ 0
+ENC_B
+Wire Wire Line
+	10000 4800 9800 4800
+Wire Wire Line
+	9800 4800 9800 4850
+Wire Wire Line
+	10000 4400 9400 4400
+Wire Wire Line
+	10000 4500 9400 4500
+Wire Wire Line
+	10000 4600 9400 4600
+Text Label 9700 4400 2    50   ~ 0
+BTN_IN
+Text Label 9450 4500 0    50   ~ 0
+ENC_A
+Text Label 9450 4600 0    50   ~ 0
+ENC_B
 $EndSCHEMATC

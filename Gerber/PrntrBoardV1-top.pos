@@ -1,5 +1,5 @@
-### Module positions - created on Fri Jul 27 20:42:32 2018 ###
-### Printed by Pcbnew version kicad 6.0.0-rc1-unknown-0cca1c6~65~ubuntu18.04.1
+### Module positions - created on Tue Jul 31 01:35:05 2018 ###
+### Printed by Pcbnew version kicad 6.0.0-rc1-unknown-516cf47~65~ubuntu18.04.1
 ## Unit = mm, Angle = deg.
 ## Side : top
 # Ref     Val           Package                                                           PosX       PosY       Rot  Side
@@ -124,7 +124,7 @@ FID1      Fiducial      Fiducial_1mm_Dia_2.54mm_Outer_CopperTop                 
 FID2      Fiducial      Fiducial_1mm_Dia_2.54mm_Outer_CopperTop                        97.3360     1.7465    0.0000  top
 FID3      Fiducial      Fiducial_1mm_Dia_2.54mm_Outer_CopperTop                        97.3360    97.2965    0.0000  top
 FID4      Fiducial      Fiducial_1mm_Dia_2.54mm_Outer_CopperTop                         1.7860    97.2965    0.0000  top
-R1        10k           R_0603_1608Metric                                              60.1110    30.8465  180.0000  top
+R1        1k            R_0603_1608Metric                                              60.1110    30.8465  180.0000  top
 R2        0R15_0.5W     R_1206_3216Metric                                              13.7414    59.3141  270.0000  top
 R3        0R15_0.5W     R_1206_3216Metric                                              12.9810    77.1017  180.0000  top
 R4        0R15_0.5W     R_1206_3216Metric                                              84.0486    27.0053   90.0000  top
