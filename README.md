@@ -6,11 +6,11 @@ PrntrBoard is a 3D printer controller board designed to work with STM32 NUCLEO d
 Some features of the board:
 -----
   + 5x Trinamic super quiet drivers (TMC2130 or TMC2660)
-  + Marlin firmware
+  + Marlin 2.0 firmware
   + (2+2) controllable fans and 2x "always on" fan connectors
   + 3x min and max endstops for the x, y and z axis
   + 2x end stops for fillament end detection
-  + SPI lcd connector for ST7735 screen
+  + SPI or I2C display connector for ST7735 or SSD1306 screen + one button and rotary encoder
   + Dual thermocouple connectors (for MAX31866, MAX31855 or MAX6675 boards)
   + selectable fan voltage (5V or Vin)
 
@@ -40,6 +40,9 @@ Status
 ------
 I have made prototypes of the TMC2130 board design (rev0) - the board has a few bugs, that are corrected in the rev1 version. Rev0 did not have LCD screen, it was added in Rev1. I'm trying to work-out the thermal design issues.
 Rev1 board have been ordered and the dev branch is now switched to Rev2. The thermocouple connectors are added Rev2.
+Rev2 borads have been ordered. The current working board is rev3. Added 2 more pins to the LCD connector
+for the rotary encoder input. I also re-connected the E1 and E0 CS pins, so the LCD pins can be connected
+to the hardware I2C pins. This way one can use SPI or I2C screens.
 
 This branch is a redesign of the TMC2130 board. The main difference is that the NUCLEO board is flipped in a more natural position. In addition I'm now using a dedicated ground plane, larger heatsink areas for the mosfets. I'm much happier with the thermal layout of this branch.
 
