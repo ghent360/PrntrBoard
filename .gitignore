@@ -3,3 +3,8 @@
 *.STEP
 *.step
 *.kicad_pcb-bak
+fp-info-cache
+ZProbe/
+Gerber/PrntrBoard.zip
+Gerber/PrntrBoardV1-bottom.pos
+drivers/
