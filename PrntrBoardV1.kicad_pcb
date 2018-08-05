@@ -36,7 +36,7 @@
   )
 
   (setup
-    (last_trace_width 0.2032)
+    (last_trace_width 0.1524)
     (user_trace_width 0.1524)
     (user_trace_width 0.2032)
     (user_trace_width 0.3)
@@ -1234,11 +1234,6 @@
       (net 29 /BED_TEMP))
     (pad 37 thru_hole circle (at 0 0 180) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask)
       (net 209 /~LCD_CS))
-    (model ${KIPRJMOD}/NUCLEO-F411RE.STEP
-      (offset (xyz 40.5 -2.5 9))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
   )
 
   (module PrntrBoardV1:PG-TDSON-8-FL (layer F.Cu) (tedit 5AF8009D) (tstamp 5B039682)
@@ -4365,6 +4360,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ${KIPRJMOD}/pxc_1715721_03_MKDS-1-5-2-5-08_3D.stp
+      (offset (xyz -3.3 -4 0.1))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 90))
+    )
   )
 
   (module PrntrBoardV1:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal (layer F.Cu) (tedit 5AD44744) (tstamp 5AF93C14)
@@ -4432,6 +4432,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ${KIPRJMOD}/pxc_1715721_03_MKDS-1-5-2-5-08_3D.stp
+      (offset (xyz -3.3 -4 0.1))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 90))
+    )
   )
 
   (module PrntrBoardV1:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal (layer F.Cu) (tedit 5AD447B1) (tstamp 5AF93BEB)
@@ -4494,6 +4499,11 @@
     )
     (model :V4:TerminalBlock_Phoenix.3dshapes/TerminalBlock_Phoenix_PT-3.5mm_2pol.wrl
       (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model ${KIPRJMOD}/pxc_1751248_04_MKDS-1-2-3-5_3D.stp
+      (offset (xyz -2 -3.5 0.1))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -4562,6 +4572,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ${KIPRJMOD}/pxc_1751248_04_MKDS-1-2-3-5_3D.stp
+      (offset (xyz -2 -3.5 0.1))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module PrntrBoardV1:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal (layer F.Cu) (tedit 5AD447B1) (tstamp 5AF93B99)
@@ -4624,6 +4639,11 @@
     )
     (model :V4:TerminalBlock_Phoenix.3dshapes/TerminalBlock_Phoenix_PT-3.5mm_2pol.wrl
       (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model ${KIPRJMOD}/pxc_1751248_04_MKDS-1-2-3-5_3D.stp
+      (offset (xyz -2 -3.5 0.1))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -4692,6 +4712,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ${KIPRJMOD}/pxc_1751248_04_MKDS-1-2-3-5_3D.stp
+      (offset (xyz -2 -3.5 0.1))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module PrntrBoardV1:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal (layer F.Cu) (tedit 5AD447B1) (tstamp 5AF93B47)
@@ -4754,6 +4779,11 @@
     )
     (model :V4:TerminalBlock_Phoenix.3dshapes/TerminalBlock_Phoenix_PT-3.5mm_2pol.wrl
       (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model ${KIPRJMOD}/pxc_1751248_04_MKDS-1-2-3-5_3D.stp
+      (offset (xyz -2 -3.5 0.1))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -4822,6 +4852,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ${KIPRJMOD}/pxc_1751248_04_MKDS-1-2-3-5_3D.stp
+      (offset (xyz -2 -3.5 0.1))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module PrntrBoardV1:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal (layer F.Cu) (tedit 5AD447B1) (tstamp 5AF93AF5)
@@ -4884,6 +4919,11 @@
     )
     (model :V4:TerminalBlock_Phoenix.3dshapes/TerminalBlock_Phoenix_PT-3.5mm_2pol.wrl
       (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model ${KIPRJMOD}/pxc_1751248_04_MKDS-1-2-3-5_3D.stp
+      (offset (xyz -2 -3.5 0.1))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -4952,6 +4992,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ${KIPRJMOD}/pxc_1751248_04_MKDS-1-2-3-5_3D.stp
+      (offset (xyz -2 -3.5 0.1))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module PrntrBoardV1:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal (layer F.Cu) (tedit 5AD447B1) (tstamp 5AF93AA3)
@@ -5014,6 +5059,11 @@
     )
     (model :V4:TerminalBlock_Phoenix.3dshapes/TerminalBlock_Phoenix_PT-3.5mm_2pol.wrl
       (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model ${KIPRJMOD}/pxc_1751248_04_MKDS-1-2-3-5_3D.stp
+      (offset (xyz -2 -3.5 0.1))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )

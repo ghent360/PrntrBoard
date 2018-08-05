@@ -2,6 +2,7 @@
 *.bck
 *.STEP
 *.step
+*.stp
 *.kicad_pcb-bak
 fp-info-cache
 ZProbe/
