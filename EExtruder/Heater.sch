@@ -1,0 +1,269 @@
+EESchema Schematic File Version 4
+LIBS:EExtruder-cache
+EELAYER 28 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_FET:PSMN5R2-60YL Q?
+U 1 1 5BBB34F6
+P 5750 3150
+AR Path="/5BBB34F6" Ref="Q?"  Part="1" 
+AR Path="/5BBB311C/5BBB34F6" Ref="Q2"  Part="1" 
+AR Path="/5BBB43B6/5BBB34F6" Ref="Q4"  Part="1" 
+F 0 "Q2" H 5956 3196 50  0000 L CNN
+F 1 "PSMN7R0-30YL" H 5956 3105 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:LFPAK56" H 5900 3150 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PSMN5R2-60YL.pdf" H 5750 3150 50  0001 C CNN
+	1    5750 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:DTC124E Q?
+U 1 1 5BBB34FD
+P 5050 3300
+AR Path="/5BBB34FD" Ref="Q?"  Part="1" 
+AR Path="/5BBB311C/5BBB34FD" Ref="Q1"  Part="1" 
+AR Path="/5BBB43B6/5BBB34FD" Ref="Q3"  Part="1" 
+F 0 "Q1" H 5237 3346 50  0000 L CNN
+F 1 "DTC124E" H 4750 3500 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5050 3300 50  0001 L CNN
+F 3 "" H 5050 3300 50  0001 L CNN
+	1    5050 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5BBB3504
+P 5400 3350
+AR Path="/5BBB3504" Ref="R?"  Part="1" 
+AR Path="/5BBB311C/5BBB3504" Ref="R11"  Part="1" 
+AR Path="/5BBB43B6/5BBB3504" Ref="R15"  Part="1" 
+F 0 "R11" H 5470 3396 50  0000 L CNN
+F 1 "10K" H 5470 3305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5330 3350 50  0001 C CNN
+F 3 "~" H 5400 3350 50  0001 C CNN
+	1    5400 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5BBB350B
+P 5400 2700
+AR Path="/5BBB350B" Ref="R?"  Part="1" 
+AR Path="/5BBB311C/5BBB350B" Ref="R10"  Part="1" 
+AR Path="/5BBB43B6/5BBB350B" Ref="R14"  Part="1" 
+F 0 "R10" H 5330 2654 50  0000 R CNN
+F 1 "10K" H 5330 2745 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5330 2700 50  0001 C CNN
+F 3 "~" H 5400 2700 50  0001 C CNN
+	1    5400 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5BBB3512
+P 5850 2400
+AR Path="/5BBB3512" Ref="R?"  Part="1" 
+AR Path="/5BBB311C/5BBB3512" Ref="R12"  Part="1" 
+AR Path="/5BBB43B6/5BBB3512" Ref="R16"  Part="1" 
+F 0 "R12" H 5920 2446 50  0000 L CNN
+F 1 "10K" H 5920 2355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5780 2400 50  0001 C CNN
+F 3 "~" H 5850 2400 50  0001 C CNN
+	1    5850 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5BBB3519
+P 5850 2750
+AR Path="/5BBB3519" Ref="D?"  Part="1" 
+AR Path="/5BBB311C/5BBB3519" Ref="D1"  Part="1" 
+AR Path="/5BBB43B6/5BBB3519" Ref="D3"  Part="1" 
+F 0 "D1" V 5888 2632 50  0000 R CNN
+F 1 "RED" V 5797 2632 50  0000 R CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 5850 2750 50  0001 C CNN
+F 3 "~" H 5850 2750 50  0001 C CNN
+	1    5850 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D?
+U 1 1 5BBB3520
+P 6200 2650
+AR Path="/5BBB3520" Ref="D?"  Part="1" 
+AR Path="/5BBB311C/5BBB3520" Ref="D2"  Part="1" 
+AR Path="/5BBB43B6/5BBB3520" Ref="D4"  Part="1" 
+F 0 "D2" V 6154 2729 50  0000 L CNN
+F 1 "1N4148" V 6245 2729 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 6200 2475 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 6200 2650 50  0001 C CNN
+	1    6200 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5BBB3527
+P 4900 2550
+AR Path="/5BBB3527" Ref="C?"  Part="1" 
+AR Path="/5BBB311C/5BBB3527" Ref="C11"  Part="1" 
+AR Path="/5BBB43B6/5BBB3527" Ref="C12"  Part="1" 
+F 0 "C11" H 5015 2596 50  0000 L CNN
+F 1 "10uF 50V" H 5015 2505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 4938 2400 50  0001 C CNN
+F 3 "~" H 4900 2550 50  0001 C CNN
+	1    4900 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 2250 5850 2050
+Wire Wire Line
+	5850 2050 6200 2050
+Wire Wire Line
+	5850 2550 5850 2600
+Wire Wire Line
+	5850 2900 5850 2950
+Wire Wire Line
+	6200 2500 6200 2050
+Connection ~ 6200 2050
+Wire Wire Line
+	6200 2050 6700 2050
+Wire Wire Line
+	5850 2900 6200 2900
+Wire Wire Line
+	6200 2900 6200 2800
+Connection ~ 5850 2900
+Wire Wire Line
+	6200 2900 6950 2900
+Connection ~ 6200 2900
+$Comp
+L power:GND #PWR?
+U 1 1 5BBB353A
+P 5750 3650
+AR Path="/5BBB353A" Ref="#PWR?"  Part="1" 
+AR Path="/5BBB311C/5BBB353A" Ref="#PWR010"  Part="1" 
+AR Path="/5BBB43B6/5BBB353A" Ref="#PWR012"  Part="1" 
+F 0 "#PWR010" H 5750 3400 50  0001 C CNN
+F 1 "GND" H 5755 3477 50  0000 C CNN
+F 2 "" H 5750 3650 50  0001 C CNN
+F 3 "" H 5750 3650 50  0001 C CNN
+	1    5750 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BBB3540
+P 4900 2750
+AR Path="/5BBB3540" Ref="#PWR?"  Part="1" 
+AR Path="/5BBB311C/5BBB3540" Ref="#PWR09"  Part="1" 
+AR Path="/5BBB43B6/5BBB3540" Ref="#PWR011"  Part="1" 
+F 0 "#PWR09" H 4900 2500 50  0001 C CNN
+F 1 "GND" H 4905 2577 50  0000 C CNN
+F 2 "" H 4900 2750 50  0001 C CNN
+F 3 "" H 4900 2750 50  0001 C CNN
+	1    4900 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2400 4900 2050
+Connection ~ 5850 2050
+Wire Wire Line
+	5400 2550 5400 2050
+Wire Wire Line
+	4900 2050 5400 2050
+Connection ~ 5400 2050
+Wire Wire Line
+	5400 2050 5850 2050
+Wire Wire Line
+	4900 2700 4900 2750
+Wire Wire Line
+	5400 2850 5400 3050
+Wire Wire Line
+	5150 3100 5150 3050
+Wire Wire Line
+	5150 3050 5400 3050
+Connection ~ 5400 3050
+Wire Wire Line
+	5400 3050 5400 3150
+Wire Wire Line
+	5550 3150 5400 3150
+Connection ~ 5400 3150
+Wire Wire Line
+	5400 3150 5400 3200
+Wire Wire Line
+	5400 3500 5400 3650
+Wire Wire Line
+	5400 3650 5750 3650
+Wire Wire Line
+	5150 3500 5150 3650
+Wire Wire Line
+	5150 3650 5400 3650
+Connection ~ 5400 3650
+Wire Wire Line
+	5750 3650 5850 3650
+Wire Wire Line
+	5850 3650 5850 3350
+Connection ~ 5750 3650
+$Comp
+L Device:R R?
+U 1 1 5BBB355D
+P 4500 3050
+AR Path="/5BBB355D" Ref="R?"  Part="1" 
+AR Path="/5BBB311C/5BBB355D" Ref="R9"  Part="1" 
+AR Path="/5BBB43B6/5BBB355D" Ref="R13"  Part="1" 
+F 0 "R9" H 4570 3096 50  0000 L CNN
+F 1 "10k" H 4570 3005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4430 3050 50  0001 C CNN
+F 3 "~" H 4500 3050 50  0001 C CNN
+	1    4500 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3200 4500 3300
+Wire Wire Line
+	4500 3300 4800 3300
+Wire Wire Line
+	4500 3300 3900 3300
+Connection ~ 4500 3300
+Wire Wire Line
+	4500 2900 4500 2800
+Wire Wire Line
+	4500 2800 3900 2800
+Text HLabel 7000 2050 2    50   Input ~ 0
+VIN
+Text HLabel 3900 2800 0    50   Input ~ 0
+3.3V
+Text HLabel 3900 3300 0    50   Input ~ 0
+CONTROL
+Wire Wire Line
+	6950 2800 6700 2800
+Wire Wire Line
+	6700 2800 6700 2050
+Connection ~ 6700 2050
+Wire Wire Line
+	6700 2050 7000 2050
+$Comp
+L Connector:Screw_Terminal_01x02 J3
+U 1 1 5BBED217
+P 7150 2800
+AR Path="/5BBB311C/5BBED217" Ref="J3"  Part="1" 
+AR Path="/5BBB43B6/5BBED217" Ref="J4"  Part="1" 
+F 0 "J3" H 7230 2792 50  0000 L CNN
+F 1 "6A 50V" H 7230 2701 50  0000 L CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_2-G-3.5_1x02_P3.50mm_Vertical" H 7150 2800 50  0001 C CNN
+F 3 "~" H 7150 2800 50  0001 C CNN
+	1    7150 2800
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

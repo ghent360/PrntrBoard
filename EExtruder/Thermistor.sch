@@ -1,0 +1,147 @@
+EESchema Schematic File Version 4
+LIBS:EExtruder-cache
+EELAYER 28 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R17
+U 1 1 5BBB4586
+P 5250 2250
+AR Path="/5BBB446C/5BBB4586" Ref="R17"  Part="1" 
+AR Path="/5BBB560B/5BBB4586" Ref="R19"  Part="1" 
+F 0 "R19" H 5100 2400 50  0000 L CNN
+F 1 "4k7 1%" H 4900 2300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5180 2250 50  0001 C CNN
+F 3 "~" H 5250 2250 50  0001 C CNN
+	1    5250 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 5BBB460D
+P 5650 2450
+AR Path="/5BBB446C/5BBB460D" Ref="R18"  Part="1" 
+AR Path="/5BBB560B/5BBB460D" Ref="R20"  Part="1" 
+F 0 "R20" V 5443 2450 50  0000 C CNN
+F 1 "10k" V 5534 2450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5580 2450 50  0001 C CNN
+F 3 "~" H 5650 2450 50  0001 C CNN
+	1    5650 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C13
+U 1 1 5BBB4655
+P 5400 2700
+AR Path="/5BBB446C/5BBB4655" Ref="C13"  Part="1" 
+AR Path="/5BBB560B/5BBB4655" Ref="C14"  Part="1" 
+F 0 "C14" H 5515 2746 50  0000 L CNN
+F 1 "1uF" H 5515 2655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5438 2550 50  0001 C CNN
+F 3 "~" H 5400 2700 50  0001 C CNN
+	1    5400 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 5BBB46DE
+P 5250 2900
+AR Path="/5BBB446C/5BBB46DE" Ref="#PWR013"  Part="1" 
+AR Path="/5BBB560B/5BBB46DE" Ref="#PWR014"  Part="1" 
+F 0 "#PWR014" H 5250 2650 50  0001 C CNN
+F 1 "GND" H 5255 2727 50  0000 C CNN
+F 2 "" H 5250 2900 50  0001 C CNN
+F 3 "" H 5250 2900 50  0001 C CNN
+	1    5250 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 5BBB47CD
+P 4700 2650
+AR Path="/5BBB446C/5BBB47CD" Ref="J5"  Part="1" 
+AR Path="/5BBB560B/5BBB47CD" Ref="J6"  Part="1" 
+F 0 "J6" H 4620 2325 50  0000 C CNN
+F 1 "Conn_01x02" H 4620 2416 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4700 2650 50  0001 C CNN
+F 3 "~" H 4700 2650 50  0001 C CNN
+	1    4700 2650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4900 2550 5100 2550
+Wire Wire Line
+	5100 2550 5100 2450
+Wire Wire Line
+	5100 2450 5250 2450
+Wire Wire Line
+	5250 2400 5250 2450
+Connection ~ 5250 2450
+Wire Wire Line
+	5250 2450 5400 2450
+Wire Wire Line
+	5400 2550 5400 2450
+Connection ~ 5400 2450
+Wire Wire Line
+	5400 2450 5500 2450
+Wire Wire Line
+	4900 2650 5100 2650
+Wire Wire Line
+	5100 2650 5100 2850
+Wire Wire Line
+	5100 2850 5250 2850
+Wire Wire Line
+	5250 2900 5250 2850
+Connection ~ 5250 2850
+Wire Wire Line
+	5250 2850 5400 2850
+Wire Wire Line
+	5800 2450 5900 2450
+Wire Wire Line
+	5250 2100 5250 1800
+Wire Wire Line
+	5250 1800 4850 1800
+Text HLabel 4850 1800 0    50   Input ~ 0
+AVREF
+Text HLabel 5900 2600 2    50   Input ~ 0
+TEMP
+$Comp
+L Device:D_Schottky_x2_Serial_AKC D5
+U 1 1 5BBB4CDD
+P 6300 2450
+AR Path="/5BBB446C/5BBB4CDD" Ref="D5"  Part="1" 
+AR Path="/5BBB560B/5BBB4CDD" Ref="D6"  Part="1" 
+F 0 "D6" V 6346 2529 50  0000 L CNN
+F 1 "BAT54S" V 6255 2529 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6300 2450 50  0001 C CNN
+F 3 "~" H 6300 2450 50  0001 C CNN
+	1    6300 2450
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5900 2450 5900 2600
+Connection ~ 5900 2450
+Wire Wire Line
+	5900 2450 6100 2450
+Wire Wire Line
+	6300 2750 6300 2850
+Wire Wire Line
+	6300 2850 5400 2850
+Connection ~ 5400 2850
+Wire Wire Line
+	6300 2150 6300 1800
+Wire Wire Line
+	6300 1800 5250 1800
+Connection ~ 5250 1800
+$EndSCHEMATC
