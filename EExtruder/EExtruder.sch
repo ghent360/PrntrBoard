@@ -372,7 +372,7 @@ U 1 1 5BC3CAD8
 P 5650 2450
 F 0 "Y1" V 5696 2319 50  0000 R CNN
 F 1 "8MHz" V 5605 2319 50  0000 R CNN
-F 2 "Crystal:Crystal_SMD_HC49-SD_HandSoldering" H 5650 2450 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_HC49-SD" H 5650 2450 50  0001 C CNN
 F 3 "~" H 5650 2450 50  0001 C CNN
 	1    5650 2450
 	0    -1   -1   0   
@@ -1228,30 +1228,42 @@ Wire Wire Line
 	1800 4250 2300 4250
 Text Label 2050 4250 0    50   ~ 0
 3.3V
-$Comp
-L BuckConverter:DCBuck U2
-U 1 1 5C1F761F
-P 1450 4400
-F 0 "U2" H 1450 4865 50  0000 C CNN
-F 1 "DCBuck" H 1450 4774 50  0000 C CNN
-F 2 "" H 1450 4400 50  0001 C CNN
-F 3 "" H 1450 4400 50  0001 C CNN
-	1    1450 4400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1800 4800 1800 5000
-Wire Wire Line
-	1100 4700 1100 5000
 $Comp
 L Connector:AudioJack4_Ground J2
 U 1 1 5C23C3B0
 P 1900 5550
 F 0 "J2" H 1868 5892 50  0000 C CNN
 F 1 "AudioJack4_Ground" H 1868 5801 50  0000 C CNN
-F 2 "Connector_Audio:Jack_3.5mm_PJ320D_Horizontal" H 1900 5550 50  0001 C CNN
+F 2 "PJ320D:Jack_3.5mm_PJ320D_Horizontal" H 1900 5550 50  0001 C CNN
 F 3 "~" H 1900 5550 50  0001 C CNN
 	1    1900 5550
 	1    0    0    -1  
 $EndComp
+$Comp
+L BuckConverter:DCBuck U2
+U 1 1 5BC116EF
+P 1450 4400
+F 0 "U2" H 1450 4865 50  0000 C CNN
+F 1 "DCBuck" H 1450 4774 50  0000 C CNN
+F 2 "DCBuck:Buck2217" H 1450 4400 50  0001 C CNN
+F 3 "" H 1450 4400 50  0001 C CNN
+	1    1450 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 4800 1100 5000
+Wire Wire Line
+	1100 4250 1100 4350
+Connection ~ 1100 4250
+Wire Wire Line
+	1800 4350 1800 4250
+Connection ~ 1800 4250
+Wire Wire Line
+	1800 4700 1800 4800
+Connection ~ 1800 4800
+Wire Wire Line
+	1100 4700 1100 4800
+Connection ~ 1100 4800
 $EndSCHEMATC
