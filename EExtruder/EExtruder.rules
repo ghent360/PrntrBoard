@@ -1,0 +1,117 @@
+
+(rules PCB EExtruder
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 2831)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.4)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.7)
+    )
+  )
+  (rule
+    (width 152.4)
+    (clear 152.6)
+    (clear 76.2 (type smd_to_turn_gap))
+    (clear 38.2 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-V24" "Via[0-1]_800:400_um" V24
+  )
+  (via 
+    "Via[0-1]_800:400_um-V33" "Via[0-1]_800:400_um" V33
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (via_rule
+    V24 "Via[0-1]_800:400_um-V24"
+  )
+  (via_rule
+    V33 "Via[0-1]_800:400_um-V33"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 152.4)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "Net-(D3-Pad1)" "Net-(D1-Pad1)" "Net-(C3-Pad1)" "Net-(C4-Pad1)" /~RESET /AVREF "Net-(C13-Pad1)" "Net-(C14-Pad1)"
+    "Net-(D1-Pad2)" "Net-(D3-Pad2)" /TEMP0 /TEMP1 "Net-(D7-Pad2)" "/TACH_E0" "Net-(D8-Pad1)" "Net-(D9-Pad2)"
+    "/TACH_E1" "Net-(D10-Pad1)" "Net-(D11-Pad2)" /TACH0 "Net-(D12-Pad1)" "Net-(J7-Pad3)" "Net-(J8-Pad3)" "Net-(J9-Pad3)"
+    "/UART_TX" "/UART_RX" "Net-(JP1-Pad2)" "/TEMP_EX" /EXT2 "/SPI_CLK" /EXT1 /MISO
+    "/LCD_LED" /MOSI /SCL2 /SDA2 /TACH1 /PWM1 /TACH2 /PWM2
+    /TACH3 /PWM3 /TACH4 /PWM4 /TACH5 /PWM5 "Net-(Q1-Pad3)" /HEAT0
+    "Net-(Q3-Pad3)" /HEAT1 "Net-(Q5-Pad1)" "Net-(Q6-Pad1)" "Net-(Q7-Pad1)" /SDA /SCL "Net-(R3-Pad1)"
+    "Net-(R4-Pad1)" "/E0_FAN" "/E1_FAN" /PWM0 /SWDIO /SWCLK "/~TC0_CS" "/~TC1_CS"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 152.4)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class V24
+    /VIN
+    (clearance_class V24)
+    (via_rule V24)
+    (rule
+      (width 762.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class V33
+    GND /3.3V
+    (clearance_class V33)
+    (via_rule V33)
+    (rule
+      (width 508.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
