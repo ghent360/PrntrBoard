@@ -115,8 +115,6 @@ Wire Wire Line
 	2100 5650 2450 5650
 Wire Wire Line
 	2100 5550 2400 5550
-Wire Wire Line
-	2850 5550 2850 5900
 $Comp
 L power:GND #PWR02
 U 1 1 5BC06059
@@ -1288,4 +1286,17 @@ F 3 "~" H 9450 5450 50  0001 C CNN
 	1    9450 5450
 	1    0    0    -1  
 $EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 5BC4D384
+P 2850 5700
+F 0 "JP2" V 2804 5768 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 2895 5768 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2850 5700 50  0001 C CNN
+F 3 "~" H 2850 5700 50  0001 C CNN
+	1    2850 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 5850 2850 5900
 $EndSCHEMATC
