@@ -1,4 +1,5 @@
 (fp_lib_table
   (lib (name DCBuck)(type KiCad)(uri ${KIPRJMOD}/DCBuck.pretty)(options "")(descr ""))
   (lib (name PJ320D)(type KiCad)(uri ${KIPRJMOD}/PJ320D.pretty)(options "")(descr ""))
+  (lib (name Local)(type KiCad)(uri ${KIPRJMOD}/)(options "")(descr ""))
 )
