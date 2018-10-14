@@ -1299,4 +1299,26 @@ F 3 "~" H 2850 5700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2850 5850 2850 5900
+$Comp
+L Mechanical:MountingHole FID1
+U 1 1 5BC5F696
+P 8700 5900
+F 0 "FID1" H 8800 5946 50  0000 L CNN
+F 1 "Fiducial" H 8800 5855 50  0000 L CNN
+F 2 "Local:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 8700 5900 50  0001 C CNN
+F 3 "~" H 8700 5900 50  0001 C CNN
+	1    8700 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole FID2
+U 1 1 5BC636A0
+P 9450 5900
+F 0 "FID2" H 9550 5946 50  0000 L CNN
+F 1 "Fiducial" H 9550 5855 50  0000 L CNN
+F 2 "Local:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 9450 5900 50  0001 C CNN
+F 3 "~" H 9450 5900 50  0001 C CNN
+	1    9450 5900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
