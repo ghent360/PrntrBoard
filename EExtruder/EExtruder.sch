@@ -1266,4 +1266,26 @@ Connection ~ 1800 4800
 Wire Wire Line
 	1100 4700 1100 4800
 Connection ~ 1100 4800
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5BC3C6F1
+P 8700 5450
+F 0 "H1" H 8800 5496 50  0000 L CNN
+F 1 "MountingHole" H 8800 5405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 8700 5450 50  0001 C CNN
+F 3 "~" H 8700 5450 50  0001 C CNN
+	1    8700 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5BC42E42
+P 9450 5450
+F 0 "H2" H 9550 5496 50  0000 L CNN
+F 1 "MountingHole" H 9550 5405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9450 5450 50  0001 C CNN
+F 3 "~" H 9450 5450 50  0001 C CNN
+	1    9450 5450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
