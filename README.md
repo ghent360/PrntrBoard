@@ -66,4 +66,6 @@ The software for the board is a clone of Marlin at [bugfix-2.0.x branch](https:/
 
 Marlin is using Adruino IDE or Platform IO. I personally had issues with Platform IO not supporting the STM32F4 board, so I use Arduino version 1.8.5. To compile the firmware code you would need to install the [STM32 Arduino port](https://github.com/stm32duino/Arduino_Core_STM32 "www.stm32duino.com").
 
+I'm also porting Smoothieware V1 to the board. So far I got the heater control and the stepper drivers working. My smoothie port is available [here](https://github.com/ghent360/Smoothieware-STM32F4 "Gitgub.com"). Please not the Smoothie port is not ready yet. I have done only minimal tests so far.
+
 Visit [my blog](http://blog.pcbxprt.com/) for status updates on the development of the board.
