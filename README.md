@@ -53,11 +53,11 @@ Tested circuits:
   + Motor driver control
   + Z probe
   + End stops
+  + Thermocuple interface (tested MAX31855 with Smoothieware)
 
 Circuits that need verification:
   + Stall guard alert from the motor driver
   + LCD interface
-  + Thermocuple interface
 
 Software
 ------
