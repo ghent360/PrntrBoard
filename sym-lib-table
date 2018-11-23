@@ -10,4 +10,5 @@
   (lib (name 74ls02)(type Legacy)(uri ${KIPRJMOD}/74ls02.lib)(options "")(descr ""))
   (lib (name 74ls125)(type Legacy)(uri ${KIPRJMOD}/74ls125.lib)(options "")(descr ""))
   (lib (name PrntrBoardV1-rescue)(type Legacy)(uri ${KIPRJMOD}/PrntrBoardV1-rescue.lib)(options "")(descr ""))
+  (lib (name BuckConverter)(type Legacy)(uri ${KIPRJMOD}/BuckConverter.lib)(options "")(descr ""))
 )
