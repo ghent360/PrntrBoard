@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name PrntrBoardV1)(type KiCad)(uri "$(KIPRJMOD)")(options "")(descr ""))
+  (lib (name DCBuck)(type KiCad)(uri ${KIPRJMOD}/DCBuck.pretty)(options "")(descr ""))
 )
