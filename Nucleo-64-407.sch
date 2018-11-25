@@ -442,7 +442,7 @@ U 1 1 5BF95393
 P 1300 1150
 F 0 "SW1" H 1300 1435 50  0000 C CNN
 F 1 "RESET" H 1300 1344 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_B3SL-1002P" H 1300 1350 50  0001 C CNN
+F 2 "PrntrBoardV1:Button 4x4" H 1300 1350 50  0001 C CNN
 F 3 "" H 1300 1350 50  0001 C CNN
 	1    1300 1150
 	1    0    0    -1  
@@ -465,7 +465,7 @@ U 1 1 5BF9A9BA
 P 10100 3200
 F 0 "J3" H 9870 3097 50  0000 R CNN
 F 1 "USB_B_Micro" H 9870 3188 50  0000 R CNN
-F 2 "Connector_USB:USB_Micro-B_GCT_USB3076-30-A" H 10250 3150 50  0001 C CNN
+F 2 "PrntrBoardV1:MC-101C" H 10250 3150 50  0001 C CNN
 F 3 "~" H 10250 3150 50  0001 C CNN
 	1    10100 3200
 	-1   0    0    1   
@@ -537,19 +537,7 @@ F 3 "~" H 8550 1900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9200 1900 8700 1900
-Wire Wire Line
-	9200 1800 8700 1800
-Wire Wire Line
 	9200 1600 8700 1600
-Wire Wire Line
-	9200 1400 8700 1400
-Wire Wire Line
-	9200 1300 8700 1300
-Wire Wire Line
-	9200 1200 8700 1200
-Wire Wire Line
-	9200 1500 8350 1500
 Text Label 8000 1500 0    50   ~ 0
 3.3V
 Wire Wire Line
@@ -611,19 +599,6 @@ $EndComp
 Wire Wire Line
 	8200 1850 8200 1800
 $Comp
-L power:GND #PWR0106
-U 1 1 5BFC0CC7
-P 9100 1700
-F 0 "#PWR0106" H 9100 1450 50  0001 C CNN
-F 1 "GND" V 9050 1850 50  0000 R CNN
-F 2 "" H 9100 1700 50  0001 C CNN
-F 3 "" H 9100 1700 50  0001 C CNN
-	1    9100 1700
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9100 1700 9200 1700
-$Comp
 L Device:R R12
 U 1 1 5BFC65FE
 P 8550 2100
@@ -638,50 +613,18 @@ Connection ~ 8350 1900
 $Comp
 L power:GND #PWR0107
 U 1 1 5BFCD156
-P 10950 2150
-F 0 "#PWR0107" H 10950 1900 50  0001 C CNN
-F 1 "GND" H 10955 1977 50  0000 C CNN
-F 2 "" H 10950 2150 50  0001 C CNN
-F 3 "" H 10950 2150 50  0001 C CNN
-	1    10950 2150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10950 2150 10950 2100
-Wire Wire Line
-	10950 2100 10900 2100
-$Comp
-L Connector:Micro_SD_Card_Det J2
-U 1 1 5BFD09A3
-P 10100 1600
-F 0 "J2" H 10050 2417 50  0000 C CNN
-F 1 "Micro_SD_Card_Det" H 10050 2326 50  0000 C CNN
-F 2 "Connector_Card:microSD_HC_Hirose_DM3AT-SF-PEJM5" H 12150 2300 50  0001 C CNN
-F 3 "https://www.hirose.com/product/en/download_file/key_name/DM3/category/Catalog/doc_file_id/49662/?file_category_id=4&item_id=195&is_series=1" H 10100 1700 50  0001 C CNN
-	1    10100 1600
+P 10300 1000
+F 0 "#PWR0107" H 10300 750 50  0001 C CNN
+F 1 "GND" H 10305 827 50  0000 C CNN
+F 2 "" H 10300 1000 50  0001 C CNN
+F 3 "" H 10300 1000 50  0001 C CNN
+	1    10300 1000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	8400 2100 8350 2100
 Wire Wire Line
 	8350 1900 8350 2100
-Wire Wire Line
-	9200 2100 8700 2100
-NoConn ~ 9200 2000
-Text Label 8700 2100 0    50   ~ 0
-SD_DETECT
-Text Label 8700 1900 0    50   ~ 0
-SDIO_D1
-Text Label 8700 1800 0    50   ~ 0
-SDIO_D0
-Text Label 8700 1600 0    50   ~ 0
-SDIO_CLK
-Text Label 8700 1400 0    50   ~ 0
-SDIO_CMD
-Text Label 8700 1300 0    50   ~ 0
-SDIO_D3
-Text Label 8700 1200 0    50   ~ 0
-SDIO_D2
 $Comp
 L power:GND #PWR0108
 U 1 1 5BFDEF99
@@ -1001,7 +944,7 @@ U 1 1 5C0C25AA
 P 9450 6250
 F 0 "SW2" H 9450 6535 50  0000 C CNN
 F 1 "BOOT" H 9450 6444 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_B3SL-1002P" H 9450 6450 50  0001 C CNN
+F 2 "PrntrBoardV1:Button 4x4" H 9450 6450 50  0001 C CNN
 F 3 "" H 9450 6450 50  0001 C CNN
 	1    9450 6250
 	1    0    0    -1  
@@ -2374,4 +2317,79 @@ Text Label 7600 5400 0    50   ~ 0
 BOOT0
 Text Label 7900 5400 0    50   ~ 0
 BOOT1
+Wire Wire Line
+	10300 950  10300 1000
+Text Label 10050 2400 0    50   ~ 0
+3.3V
+Wire Wire Line
+	10050 950  10300 950 
+Text Label 8700 2100 0    50   ~ 0
+SD_DETECT
+Text Label 8700 1900 0    50   ~ 0
+SDIO_D1
+Text Label 8700 1800 0    50   ~ 0
+SDIO_D0
+Text Label 8700 1600 0    50   ~ 0
+SDIO_CLK
+Text Label 8700 1200 0    50   ~ 0
+SDIO_D2
+Text Label 8700 1300 0    50   ~ 0
+SDIO_D3
+Text Label 8700 1400 0    50   ~ 0
+SDIO_CMD
+$Comp
+L uSD_push-push_ebay:SD_ebay-uSD-push_push_SMD XS1
+U 1 1 5C556F48
+P 9900 1600
+F 0 "XS1" H 9622 1554 50  0000 R CNN
+F 1 "MicroSD" H 9622 1645 50  0000 R CNN
+F 2 "PrntrBoardV1:Conn_uSDcard" H 9900 1600 10  0001 C CNN
+F 3 "_" H 9900 1600 10  0001 C CNN
+F 4 "_" H 9900 1600 10  0001 C CNN "Manf#"
+F 5 "ebay" H 9900 1600 10  0001 C CNN "Manf"
+	1    9900 1600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10050 2250 10050 2450
+Wire Wire Line
+	9300 2100 9300 1150
+Wire Wire Line
+	9300 1150 9500 1150
+Wire Wire Line
+	8700 2100 9300 2100
+Wire Wire Line
+	9500 1900 9450 1900
+Wire Wire Line
+	9450 1900 9450 1400
+Wire Wire Line
+	8700 1400 9450 1400
+Wire Wire Line
+	9400 1800 9400 1300
+Wire Wire Line
+	9400 1300 9500 1300
+Wire Wire Line
+	8700 1800 9400 1800
+Wire Wire Line
+	9500 1450 9350 1450
+Wire Wire Line
+	9350 1450 9350 1900
+Wire Wire Line
+	8700 1900 9350 1900
+Wire Wire Line
+	9500 1600 9250 1600
+Wire Wire Line
+	9250 1600 9250 1200
+Wire Wire Line
+	8700 1200 9250 1200
+Wire Wire Line
+	9500 1750 9100 1750
+Wire Wire Line
+	9100 1750 9100 1300
+Wire Wire Line
+	9100 1300 8700 1300
+Wire Wire Line
+	9200 1600 9200 2050
+Wire Wire Line
+	9200 2050 9500 2050
 $EndSCHEMATC
