@@ -11,18 +11,18 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 2831)
+    (start_pass_no 3744)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 2.4)
+      (against_preferred_direction_trace_costs 2.6)
     )
     (layer_rule B.Cu
       (active on)
       (preferred_direction vertical)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 1.7)
+      (against_preferred_direction_trace_costs 1.6)
     )
   )
   (rule
@@ -52,6 +52,9 @@
   (via 
     "Via[0-1]_800:400_um-V33" "Via[0-1]_800:400_um" V33
   )
+  (via 
+    "Via[0-1]_800:400_um-V5" "Via[0-1]_800:400_um" V5
+  )
   (via_rule
     default "Via[0-1]_800:400_um"
   )
@@ -63,6 +66,9 @@
   )
   (via_rule
     V33 "Via[0-1]_800:400_um-V33"
+  )
+  (via_rule
+    V5 "Via[0-1]_800:400_um-V5"
   )
   (class default
     (clearance_class default)
@@ -83,6 +89,7 @@
     /TACH3 /PWM3 /TACH4 /PWM4 /TACH5 /PWM5 "Net-(Q1-Pad3)" /HEAT0
     "Net-(Q3-Pad3)" /HEAT1 "Net-(Q5-Pad1)" "Net-(Q6-Pad1)" "Net-(Q7-Pad1)" /SDA /SCL "Net-(R3-Pad1)"
     "Net-(R4-Pad1)" "/E0_FAN" "/E1_FAN" /PWM0 /SWDIO /SWCLK "/~TC0_CS" "/~TC1_CS"
+    "Net-(J2-PadR2)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
@@ -107,6 +114,17 @@
     GND /3.3V
     (clearance_class V33)
     (via_rule V33)
+    (rule
+      (width 508.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class V5
+    "Net-(C8-Pad1)" /5V "Net-(JP3-Pad2)"
+    (clearance_class V5)
+    (via_rule V5)
     (rule
       (width 508.0)
     )

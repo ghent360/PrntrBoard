@@ -1988,10 +1988,10 @@ Wire Wire Line
 	1350 5650 1750 5650
 Wire Wire Line
 	1350 5550 1750 5550
-Text Label 1550 5550 0    50   ~ 0
-3.3V
-Text Label 1650 5650 0    50   ~ 0
+Text Label 1650 5550 0    50   ~ 0
 5V
+Text Label 1550 5650 0    50   ~ 0
+3.3V
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J8
 U 1 1 5CC255C1
@@ -2013,10 +2013,10 @@ Wire Wire Line
 	1750 6400 1450 6400
 Wire Wire Line
 	1750 6500 1450 6500
-Text Label 1600 6400 0    50   ~ 0
-3.3V
-Text Label 1650 6500 0    50   ~ 0
+Text Label 1650 6400 0    50   ~ 0
 5V
+Text Label 1600 6500 0    50   ~ 0
+3.3V
 Wire Wire Line
 	950  6400 550  6400
 Wire Wire Line
@@ -2233,17 +2233,6 @@ Text Label 8450 4450 0    50   ~ 0
 Text Label 8100 4450 0    50   ~ 0
 VIN
 $Comp
-L Device:LED D2
-U 1 1 5C1EE5C9
-P 7600 5800
-F 0 "D2" V 7547 5878 50  0000 L CNN
-F 1 "B0" V 7638 5878 50  0000 L CNN
-F 2 "PrntrBoardV1:D_0603_1608Metric" H 7600 5800 50  0001 C CNN
-F 3 "~" H 7600 5800 50  0001 C CNN
-	1    7600 5800
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:LED D3
 U 1 1 5C1EEE8F
 P 7900 5800
@@ -2253,28 +2242,6 @@ F 2 "PrntrBoardV1:D_0603_1608Metric" H 7900 5800 50  0001 C CNN
 F 3 "~" H 7900 5800 50  0001 C CNN
 	1    7900 5800
 	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR06
-U 1 1 5C1EF408
-P 7750 6350
-F 0 "#PWR06" H 7750 6100 50  0001 C CNN
-F 1 "GND" H 7900 6250 50  0000 C CNN
-F 2 "" H 7750 6350 50  0001 C CNN
-F 3 "" H 7750 6350 50  0001 C CNN
-	1    7750 6350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R19
-U 1 1 5C1F0045
-P 7600 6150
-F 0 "R19" H 7670 6196 50  0000 L CNN
-F 1 "470" H 7670 6105 50  0000 L CNN
-F 2 "PrntrBoardV1:R_0603_1608Metric" V 7530 6150 50  0001 C CNN
-F 3 "~" H 7600 6150 50  0001 C CNN
-	1    7600 6150
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R20
@@ -2288,22 +2255,9 @@ F 3 "~" H 7900 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7600 5950 7600 6000
-Wire Wire Line
 	7900 5950 7900 6000
 Wire Wire Line
-	7600 6300 7750 6300
-Wire Wire Line
-	7750 6300 7750 6350
-Connection ~ 7750 6300
-Wire Wire Line
-	7750 6300 7900 6300
-Wire Wire Line
 	7900 5650 7900 5300
-Wire Wire Line
-	7600 5650 7600 5300
-Text Label 7600 5400 0    50   ~ 0
-BOOT0
 Text Label 7900 5400 0    50   ~ 0
 BOOT1
 Wire Wire Line
@@ -2446,4 +2400,17 @@ F 3 "~" H 4000 7300 50  0001 C CNN
 $EndComp
 NoConn ~ 4000 7300
 NoConn ~ 3600 7300
+$Comp
+L power:GND #PWR06
+U 1 1 5C1EF408
+P 7900 6350
+F 0 "#PWR06" H 7900 6100 50  0001 C CNN
+F 1 "GND" H 8050 6250 50  0000 C CNN
+F 2 "" H 7900 6350 50  0001 C CNN
+F 3 "" H 7900 6350 50  0001 C CNN
+	1    7900 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 6300 7900 6350
 $EndSCHEMATC

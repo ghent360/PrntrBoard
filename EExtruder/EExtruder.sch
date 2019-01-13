@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:EExtruder-cache
-EELAYER 28 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -583,10 +583,6 @@ Text Label 8300 3250 0    50   ~ 0
 TEMP1
 Text Label 8200 3350 0    50   ~ 0
 TEMP_EX
-Text Label 8250 3450 0    50   ~ 0
-~TC0_CS
-Text Label 8250 3550 0    50   ~ 0
-~TC1_CS
 Text Label 8250 3650 0    50   ~ 0
 SPI_CLK
 Text Label 8350 3750 0    50   ~ 0
@@ -669,10 +665,6 @@ Text Label 6550 3350 0    50   ~ 0
 E0_FAN
 Text Label 6550 4150 0    50   ~ 0
 E1_FAN
-Text Label 6550 4250 0    50   ~ 0
-HEAT0
-Text Label 6550 4350 0    50   ~ 0
-HEAT1
 Text Label 6550 4450 0    50   ~ 0
 TACH0
 Text Label 6550 4550 0    50   ~ 0
@@ -913,55 +905,16 @@ Text Label 4450 4400 0    50   ~ 0
 VIN
 Text Label 2050 850  0    50   ~ 0
 VIN
-$Comp
-L Connector:Conn_01x05_Male TC1
-U 1 1 5BEB14A1
-P 5000 4750
-F 0 "TC1" H 5108 5131 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 5108 5040 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 5000 4750 50  0001 C CNN
-F 3 "~" H 5000 4750 50  0001 C CNN
-	1    5000 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x05_Male TC0
-U 1 1 5BEB5291
-P 5000 5450
-F 0 "TC0" H 5100 5100 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 5250 5200 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 5000 5450 50  0001 C CNN
-F 3 "~" H 5000 5450 50  0001 C CNN
-	1    5000 5450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5200 5550 5800 5550
-Wire Wire Line
-	5200 4950 5450 4950
 Wire Wire Line
 	5200 4550 5250 4550
 Wire Wire Line
 	5200 4750 5400 4750
 Wire Wire Line
-	5200 4850 5800 4850
-Text Label 5600 4550 0    50   ~ 0
-3.3V
+	5200 4850 5450 4850
 Text Label 5600 4750 0    50   ~ 0
 MISO
-Text Label 5500 4850 0    50   ~ 0
-~TC1_CS
-Text Label 5500 4950 0    50   ~ 0
+Text Label 5550 4950 0    50   ~ 0
 SPI_CLK
-Text Label 5500 5550 0    50   ~ 0
-~TC0_CS
-Wire Wire Line
-	5200 5650 5450 5650
-Wire Wire Line
-	5450 5650 5450 4950
-Connection ~ 5450 4950
-Wire Wire Line
-	5450 4950 5800 4950
 Wire Wire Line
 	5200 5450 5400 5450
 Wire Wire Line
@@ -1037,8 +990,6 @@ Wire Wire Line
 Wire Wire Line
 	7350 5350 7350 5100
 Wire Wire Line
-	7350 5100 7200 5100
-Wire Wire Line
 	6250 5100 6250 5350
 Text Label 6500 5100 0    50   ~ 0
 3.3V
@@ -1052,9 +1003,6 @@ Wire Wire Line
 	7100 5900 7700 5900
 Wire Wire Line
 	7100 6000 7700 6000
-Connection ~ 7200 5100
-Wire Wire Line
-	7200 5100 6250 5100
 $Comp
 L power:GND #PWR06
 U 1 1 5C008B98
@@ -1187,9 +1135,6 @@ Wire Wire Line
 Wire Wire Line
 	7100 6200 7200 6200
 Wire Wire Line
-	7200 5100 7200 6200
-Connection ~ 7200 6200
-Wire Wire Line
 	7200 6500 6550 6500
 Connection ~ 6550 6500
 Wire Wire Line
@@ -1223,22 +1168,7 @@ Wire Wire Line
 	1100 3650 1850 3650
 Connection ~ 1850 3650
 Wire Wire Line
-	1800 4250 2300 4250
-Text Label 2050 4250 0    50   ~ 0
-3.3V
-Wire Wire Line
 	1800 4800 1800 5000
-$Comp
-L Connector:AudioJack4_Ground J2
-U 1 1 5C23C3B0
-P 1900 5550
-F 0 "J2" H 1868 5892 50  0000 C CNN
-F 1 "AudioJack4_Ground" H 1868 5801 50  0000 C CNN
-F 2 "PJ320D:Jack_3.5mm_PJ320D_Horizontal" H 1900 5550 50  0001 C CNN
-F 3 "~" H 1900 5550 50  0001 C CNN
-	1    1900 5550
-	1    0    0    -1  
-$EndComp
 $Comp
 L BuckConverter:DCBuck U2
 U 1 1 5BC116EF
@@ -1319,6 +1249,206 @@ F 1 "Fiducial" H 9550 5855 50  0000 L CNN
 F 2 "Local:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 9450 5900 50  0001 C CNN
 F 3 "~" H 9450 5900 50  0001 C CNN
 	1    9450 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Male TC0
+U 1 1 5C3BD554
+P 5000 4750
+F 0 "TC0" H 5108 5131 50  0000 C CNN
+F 1 "Conn_01x06_Male" H 5108 5040 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 5000 4750 50  0001 C CNN
+F 3 "~" H 5000 4750 50  0001 C CNN
+	1    5000 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Male TC1
+U 1 1 5C3BE824
+P 5000 5450
+F 0 "TC1" H 5100 5050 50  0000 C CNN
+F 1 "Conn_01x06_Male" H 5150 4950 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 5000 5450 50  0001 C CNN
+F 3 "~" H 5000 5450 50  0001 C CNN
+	1    5000 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4950 5500 4950
+Wire Wire Line
+	5200 5550 5450 5550
+Wire Wire Line
+	5450 5550 5450 4850
+Connection ~ 5450 4850
+Wire Wire Line
+	5450 4850 5800 4850
+Wire Wire Line
+	5500 5650 5500 4950
+Wire Wire Line
+	5200 5650 5500 5650
+Connection ~ 5500 4950
+Wire Wire Line
+	5500 4950 5800 4950
+Text Label 5600 4850 0    50   ~ 0
+MOSI
+Wire Wire Line
+	5200 5050 5800 5050
+Wire Wire Line
+	5200 5750 5800 5750
+Text Label 5500 5750 0    50   ~ 0
+~TC1_CS
+Text Label 5550 5050 0    50   ~ 0
+~TC0_CS
+$Comp
+L Regulator_Linear:AMS1117-3.3 U3
+U 1 1 5C40648A
+P 2850 4250
+F 0 "U3" H 2850 4492 50  0000 C CNN
+F 1 "AMS1117-3.3" H 2850 4401 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2850 4450 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 2950 4000 50  0001 C CNN
+	1    2850 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 4250 3300 4250
+Text Label 3400 4250 0    50   ~ 0
+3.3V
+$Comp
+L power:GND #PWR018
+U 1 1 5C41A303
+P 2850 4600
+F 0 "#PWR018" H 2850 4350 50  0001 C CNN
+F 1 "GND" H 3000 4500 50  0000 C CNN
+F 2 "" H 2850 4600 50  0001 C CNN
+F 3 "" H 2850 4600 50  0001 C CNN
+	1    2850 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 4600 2850 4550
+Wire Wire Line
+	1800 4250 2050 4250
+$Comp
+L Device:CP C15
+U 1 1 5C43F401
+P 2050 4400
+F 0 "C15" H 2168 4446 50  0000 L CNN
+F 1 "10uF" H 2150 4300 50  0000 L CNN
+F 2 "Local:C_0603_1608Metric" H 2088 4250 50  0001 C CNN
+F 3 "~" H 2050 4400 50  0001 C CNN
+	1    2050 4400
+	1    0    0    -1  
+$EndComp
+Connection ~ 2050 4250
+Wire Wire Line
+	2050 4250 2400 4250
+$Comp
+L Device:C C16
+U 1 1 5C440037
+P 2400 4400
+F 0 "C16" H 2515 4446 50  0000 L CNN
+F 1 "10nF" H 2500 4300 50  0000 L CNN
+F 2 "Local:C_0603_1608Metric" H 2438 4250 50  0001 C CNN
+F 3 "~" H 2400 4400 50  0001 C CNN
+	1    2400 4400
+	1    0    0    -1  
+$EndComp
+Connection ~ 2400 4250
+Wire Wire Line
+	2400 4250 2550 4250
+$Comp
+L Device:C C17
+U 1 1 5C4407B0
+P 3300 4400
+F 0 "C17" H 3415 4446 50  0000 L CNN
+F 1 "100nF" H 3415 4355 50  0000 L CNN
+F 2 "Local:C_0603_1608Metric" H 3338 4250 50  0001 C CNN
+F 3 "~" H 3300 4400 50  0001 C CNN
+	1    3300 4400
+	1    0    0    -1  
+$EndComp
+Connection ~ 3300 4250
+Wire Wire Line
+	3300 4250 3400 4250
+Wire Wire Line
+	2050 4550 2400 4550
+Connection ~ 2850 4550
+Connection ~ 2400 4550
+Wire Wire Line
+	2400 4550 2850 4550
+Wire Wire Line
+	3300 4550 2850 4550
+Wire Wire Line
+	2700 4800 3400 4800
+Wire Wire Line
+	3400 4800 3400 4250
+Connection ~ 2700 4800
+Connection ~ 3400 4250
+Wire Wire Line
+	3400 4250 3600 4250
+Text Label 2200 4250 0    50   ~ 0
+5V
+$Comp
+L Jumper:Jumper_3_Open JP3
+U 1 1 5C47C278
+P 5800 4400
+F 0 "JP3" H 5800 4624 50  0000 C CNN
+F 1 "Jumper_3_Open" H 5800 4533 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 5800 4400 50  0001 C CNN
+F 3 "~" H 5800 4400 50  0001 C CNN
+	1    5800 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 4400 5350 4400
+Wire Wire Line
+	6050 4400 6250 4400
+Text Label 6100 4400 0    50   ~ 0
+3.3V
+Text Label 5350 4400 0    50   ~ 0
+5V
+Wire Wire Line
+	6250 5100 7350 5100
+$Comp
+L Jumper:Jumper_3_Open JP4
+U 1 1 5C4A66D1
+P 7850 6200
+F 0 "JP4" V 7804 6287 50  0000 L CNN
+F 1 "Jumper_3_Open" V 7895 6287 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 7850 6200 50  0001 C CNN
+F 3 "~" H 7850 6200 50  0001 C CNN
+	1    7850 6200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7200 6200 7700 6200
+Connection ~ 7200 6200
+Wire Wire Line
+	7850 5950 7850 5750
+Wire Wire Line
+	7850 6450 8200 6450
+Text Label 7850 5850 0    50   ~ 0
+5V
+Text Label 8000 6450 0    50   ~ 0
+3.3V
+Text Label 8300 3450 0    50   ~ 0
+HEAT0
+Text Label 8300 3550 0    50   ~ 0
+HEAT1
+Text Label 6550 4250 0    50   ~ 0
+~TC0_CS
+Text Label 6550 4350 0    50   ~ 0
+~TC1_CS
+$Comp
+L Connector:AudioJack4 J2
+U 1 1 5C503546
+P 1900 5550
+F 0 "J2" H 1857 5875 50  0000 C CNN
+F 1 "AudioJack4" H 1857 5784 50  0000 C CNN
+F 2 "PJ320D:Jack_3.5mm_PJ320D_Horizontal" H 1900 5550 50  0001 C CNN
+F 3 "~" H 1900 5550 50  0001 C CNN
+	1    1900 5550
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
