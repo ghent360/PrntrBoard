@@ -4314,7 +4314,7 @@
   (gr_text "(c) iQury.us\nJan 2019" (at 144.78 111.76) (layer B.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
   )
-  (gr_text "EExtruder\nrev2" (at 192.1 92.9) (layer B.SilkS)
+  (gr_text "EExtruder\nrev3" (at 192.1 92.9) (layer B.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
   )
   (gr_text "Vin\n12-24V" (at 175.8 85.9) (layer B.SilkS)
