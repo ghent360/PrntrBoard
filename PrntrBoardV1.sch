@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:PrntrBoardV1-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -1091,90 +1091,6 @@ Wire Wire Line
 Wire Wire Line
 	3850 1950 3700 1950
 $Comp
-L Mechanical:Mounting_Hole MK1
-U 1 1 5ACC3347
-P 1000 1600
-F 0 "MK1" H 1100 1646 50  0000 L CNN
-F 1 "Mounting_Hole_3mm" H 1100 1555 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 1000 1600 50  0001 C CNN
-F 3 "" H 1000 1600 50  0001 C CNN
-	1    1000 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:Mounting_Hole MK2
-U 1 1 5ACC33D5
-P 1000 1850
-F 0 "MK2" H 1100 1896 50  0000 L CNN
-F 1 "Mounting_Hole_3mm" H 1100 1805 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 1000 1850 50  0001 C CNN
-F 3 "" H 1000 1850 50  0001 C CNN
-	1    1000 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:Mounting_Hole MK3
-U 1 1 5ACC3448
-P 1000 2100
-F 0 "MK3" H 1100 2146 50  0000 L CNN
-F 1 "Mounting_Hole_3mm" H 1100 2055 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 1000 2100 50  0001 C CNN
-F 3 "" H 1000 2100 50  0001 C CNN
-	1    1000 2100
-	1    0    0    -1  
-$EndComp
-NoConn ~ 1000 1600
-NoConn ~ 1000 1850
-NoConn ~ 1000 2100
-$Comp
-L Mechanical:Mounting_Hole FID1
-U 1 1 5ACF4B85
-P 1950 1600
-F 0 "FID1" H 2050 1646 50  0000 L CNN
-F 1 "Fiducial" H 2050 1555 50  0000 L CNN
-F 2 "PrntrBoardV1:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 1950 1600 50  0001 C CNN
-F 3 "" H 1950 1600 50  0001 C CNN
-	1    1950 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:Mounting_Hole FID2
-U 1 1 5ACF4C64
-P 1950 1850
-F 0 "FID2" H 2050 1896 50  0000 L CNN
-F 1 "Fiducial" H 2050 1805 50  0000 L CNN
-F 2 "PrntrBoardV1:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 1950 1850 50  0001 C CNN
-F 3 "" H 1950 1850 50  0001 C CNN
-	1    1950 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:Mounting_Hole FID3
-U 1 1 5ACF4CE0
-P 1950 2100
-F 0 "FID3" H 2050 2146 50  0000 L CNN
-F 1 "Fiducial" H 2050 2055 50  0000 L CNN
-F 2 "PrntrBoardV1:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 1950 2100 50  0001 C CNN
-F 3 "" H 1950 2100 50  0001 C CNN
-	1    1950 2100
-	1    0    0    -1  
-$EndComp
-NoConn ~ 1950 1600
-NoConn ~ 1950 1850
-NoConn ~ 1950 2100
-$Comp
-L Mechanical:Mounting_Hole FID4
-U 1 1 5AD38017
-P 1950 1400
-F 0 "FID4" H 2050 1446 50  0000 L CNN
-F 1 "Fiducial" H 2050 1355 50  0000 L CNN
-F 2 "PrntrBoardV1:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 1950 1400 50  0001 C CNN
-F 3 "" H 1950 1400 50  0001 C CNN
-	1    1950 1400
-	1    0    0    -1  
-$EndComp
-NoConn ~ 1950 1400
-$Comp
 L PrntrBoardV1-rescue:Screw_Terminal_01x02-Connector_Specialized J1
 U 1 1 5AEDA4A7
 P 3500 1950
@@ -1225,18 +1141,6 @@ Wire Wire Line
 Wire Wire Line
 	5050 1950 4700 1950
 Connection ~ 4700 1950
-$Comp
-L Mechanical:Mounting_Hole MK4
-U 1 1 5AE11BDF
-P 1000 1350
-F 0 "MK4" H 1100 1396 50  0000 L CNN
-F 1 "Mounting_Hole" H 1100 1305 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 1000 1350 50  0001 C CNN
-F 3 "" H 1000 1350 50  0001 C CNN
-	1    1000 1350
-	1    0    0    -1  
-$EndComp
-NoConn ~ 1000 1350
 $Comp
 L Jumper:Jumper_2_Open JP8
 U 1 1 5AF4F08D
@@ -1905,4 +1809,100 @@ Wire Wire Line
 Wire Wire Line
 	5450 4500 5350 4500
 Connection ~ 5350 4500
+$Comp
+L PrntrBoardV1-rescue:Mounting_Hole-Mechanical MK1
+U 1 1 5C45D06F
+P 750 1250
+F 0 "MK1" H 850 1296 50  0000 L CNN
+F 1 "Mounting_Hole-Mechanical" H 850 1205 50  0000 L CNN
+F 2 "" H 750 1250 50  0001 C CNN
+F 3 "" H 750 1250 50  0001 C CNN
+	1    750  1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L PrntrBoardV1-rescue:Mounting_Hole-Mechanical MK2
+U 1 1 5C45DD4F
+P 750 1500
+F 0 "MK2" H 850 1546 50  0000 L CNN
+F 1 "Mounting_Hole-Mechanical" H 850 1455 50  0000 L CNN
+F 2 "" H 750 1500 50  0001 C CNN
+F 3 "" H 750 1500 50  0001 C CNN
+	1    750  1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L PrntrBoardV1-rescue:Mounting_Hole-Mechanical MK3
+U 1 1 5C45E6B4
+P 750 1750
+F 0 "MK3" H 850 1796 50  0000 L CNN
+F 1 "Mounting_Hole-Mechanical" H 850 1705 50  0000 L CNN
+F 2 "" H 750 1750 50  0001 C CNN
+F 3 "" H 750 1750 50  0001 C CNN
+	1    750  1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L PrntrBoardV1-rescue:Mounting_Hole-Mechanical MK4
+U 1 1 5C45F2D3
+P 750 2000
+F 0 "MK4" H 850 2046 50  0000 L CNN
+F 1 "Mounting_Hole-Mechanical" H 850 1955 50  0000 L CNN
+F 2 "" H 750 2000 50  0001 C CNN
+F 3 "" H 750 2000 50  0001 C CNN
+	1    750  2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID1
+U 1 1 5C45FEDB
+P 2100 1300
+F 0 "FID1" H 2185 1346 50  0000 L CNN
+F 1 "Fiducial" H 2185 1255 50  0000 L CNN
+F 2 "PrntrBoardV1:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 2100 1300 50  0001 C CNN
+F 3 "~" H 2100 1300 50  0001 C CNN
+	1    2100 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID2
+U 1 1 5C460A81
+P 2100 1550
+F 0 "FID2" H 2185 1596 50  0000 L CNN
+F 1 "Fiducial" H 2185 1505 50  0000 L CNN
+F 2 "PrntrBoardV1:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 2100 1550 50  0001 C CNN
+F 3 "~" H 2100 1550 50  0001 C CNN
+	1    2100 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID3
+U 1 1 5C461405
+P 2100 1800
+F 0 "FID3" H 2185 1846 50  0000 L CNN
+F 1 "Fiducial" H 2185 1755 50  0000 L CNN
+F 2 "PrntrBoardV1:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 2100 1800 50  0001 C CNN
+F 3 "~" H 2100 1800 50  0001 C CNN
+	1    2100 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID4
+U 1 1 5C4620C1
+P 2100 2050
+F 0 "FID4" H 2185 2096 50  0000 L CNN
+F 1 "Fiducial" H 2185 2005 50  0000 L CNN
+F 2 "PrntrBoardV1:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 2100 2050 50  0001 C CNN
+F 3 "~" H 2100 2050 50  0001 C CNN
+	1    2100 2050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2100 1300
+NoConn ~ 2100 1550
+NoConn ~ 2100 1800
+NoConn ~ 2100 2050
+NoConn ~ 750  2000
+NoConn ~ 750  1750
+NoConn ~ 750  1500
+NoConn ~ 750  1250
 $EndSCHEMATC
