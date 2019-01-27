@@ -69,21 +69,13 @@ $EndSheet
 Wire Wire Line
 	3100 2900 3000 2900
 Wire Wire Line
-	3000 2900 3000 1250
-Wire Wire Line
 	3100 1250 3000 1250
-Connection ~ 3000 1250
 Wire Wire Line
 	3000 1250 3000 850 
-Wire Wire Line
-	2050 2900 1850 2900
-Wire Wire Line
-	1850 2900 1850 1250
 Wire Wire Line
 	1850 850  3000 850 
 Wire Wire Line
 	2050 1250 1850 1250
-Connection ~ 1850 1250
 Wire Wire Line
 	1850 1250 1850 850 
 $Sheet
@@ -95,11 +87,6 @@ F2 "VIN" I L 2050 3650 50
 F3 "PWM" I R 2700 3650 50 
 F4 "TACH" I R 2700 3800 50 
 $EndSheet
-Wire Wire Line
-	2050 3650 1850 3650
-Wire Wire Line
-	1850 3650 1850 2900
-Connection ~ 1850 2900
 $Comp
 L MCU_ST_STM32F0:STM32F030C8Tx U1
 U 1 1 5BBEADBB
@@ -474,7 +461,7 @@ Wire Wire Line
 	2950 1900 2950 2200
 Wire Wire Line
 	2950 2200 3100 2200
-Text Label 2350 1900 0    50   ~ 0
+Text Label 1600 1900 0    50   ~ 0
 AVREF
 $Comp
 L Device:R R1
@@ -1163,11 +1150,6 @@ Wire Wire Line
 	1800 5000 1400 5000
 Connection ~ 1400 5000
 Wire Wire Line
-	1100 4250 1100 3650
-Wire Wire Line
-	1100 3650 1850 3650
-Connection ~ 1850 3650
-Wire Wire Line
 	1800 4800 1800 5000
 $Comp
 L BuckConverter:DCBuck U2
@@ -1394,7 +1376,7 @@ L Jumper:Jumper_3_Open JP3
 U 1 1 5C47C278
 P 5800 4400
 F 0 "JP3" H 5800 4624 50  0000 C CNN
-F 1 "Jumper_3_Open" H 5800 4533 50  0000 C CNN
+F 1 "TC Power Select" H 5800 4533 50  0000 C CNN
 F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 5800 4400 50  0001 C CNN
 F 3 "~" H 5800 4400 50  0001 C CNN
 	1    5800 4400
@@ -1415,7 +1397,7 @@ L Jumper:Jumper_3_Open JP4
 U 1 1 5C4A66D1
 P 7850 6200
 F 0 "JP4" V 7804 6287 50  0000 L CNN
-F 1 "Jumper_3_Open" V 7895 6287 50  0000 L CNN
+F 1 "LCD Power Select" V 7895 6287 50  0000 L CNN
 F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 7850 6200 50  0001 C CNN
 F 3 "~" H 7850 6200 50  0001 C CNN
 	1    7850 6200
@@ -1451,4 +1433,54 @@ F 3 "~" H 1900 5550 50  0001 C CNN
 	1    1900 5550
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2000 1900 1550 1900
+Connection ~ 2000 1900
+Wire Wire Line
+	1100 650  1850 650 
+Wire Wire Line
+	1850 650  1850 850 
+Wire Wire Line
+	1100 650  1100 3250
+$Comp
+L Jumper:Jumper_3_Open JP5
+U 1 1 5C51FB51
+P 1450 2900
+F 0 "JP5" V 1496 2987 50  0000 L CNN
+F 1 "Fan Power Select" V 1405 2987 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1450 2900 50  0001 C CNN
+F 3 "~" H 1450 2900 50  0001 C CNN
+	1    1450 2900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3000 2900 3000 2600
+Wire Wire Line
+	3000 2600 1800 2600
+Wire Wire Line
+	1800 2600 1800 2900
+Wire Wire Line
+	1800 2900 1600 2900
+Wire Wire Line
+	2050 2900 1800 2900
+Connection ~ 1800 2900
+Wire Wire Line
+	2050 3650 1800 3650
+Wire Wire Line
+	1800 3650 1800 2900
+Wire Wire Line
+	1450 3150 1450 3250
+Wire Wire Line
+	1450 3250 1100 3250
+Connection ~ 1100 3250
+Wire Wire Line
+	1100 3250 1100 4250
+Wire Wire Line
+	1450 2650 1450 2400
+Wire Wire Line
+	1450 2400 1900 2400
+Text Label 1600 2400 0    50   ~ 0
+5V
+Text Label 1600 2900 0    50   ~ 0
+Vfan
 $EndSCHEMATC
