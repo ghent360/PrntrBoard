@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew 6.0.0-rc1-unknown-170ff66~66~ubuntu18.10.1)
+(kicad_pcb (version 20171130) (host pcbnew 5.1.0-unknown-a7270f8~82~ubuntu18.10.1)
 
   (general
     (thickness 1.6)
@@ -4421,7 +4421,7 @@
   )
   (gr_line (start 127.9525 130.175) (end 127.9525 83.1215) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 201.4 130.2) (end 127.9525 130.175) (layer Edge.Cuts) (width 0.05))
-  (gr_line (start 201.4 83.1215) (end 201.4 130.175) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 201.4 83.1215) (end 201.4 130.2) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 127.9525 83.1215) (end 201.4 83.1215) (layer Edge.Cuts) (width 0.05))
 
   (segment (start 153.3182 113.526) (end 152.704545 114.139655) (width 0.3048) (layer F.Cu) (net 1))
