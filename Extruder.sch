@@ -1,4 +1,4 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 5
 LIBS:PrntrBoardV1-cache
 EELAYER 29 0
 EELAYER END
@@ -96,7 +96,7 @@ U 1 1 5AD4BF35
 P 2400 4000
 AR Path="/5AC337B6/5ACBE919/5AD4BF35" Ref="J17"  Part="1" 
 AR Path="/5AC337B6/5AD9F95A/5AD4BF35" Ref="J31"  Part="1" 
-F 0 "J31" H 2450 4217 50  0000 C CNN
+F 0 "J17" H 2450 4217 50  0000 C CNN
 F 1 "Probe" H 2450 4126 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2400 4000 50  0001 C CNN
 F 3 "~" H 2400 4000 50  0001 C CNN
@@ -111,7 +111,7 @@ U 1 1 5AD4C143
 P 2100 4100
 AR Path="/5AC337B6/5ACBE919/5AD4C143" Ref="#PWR022"  Part="1" 
 AR Path="/5AC337B6/5AD9F95A/5AD4C143" Ref="#PWR067"  Part="1" 
-F 0 "#PWR067" H 2100 3850 50  0001 C CNN
+F 0 "#PWR022" H 2100 3850 50  0001 C CNN
 F 1 "GND" H 2105 3927 50  0000 C CNN
 F 2 "" H 2100 4100 50  0001 C CNN
 F 3 "" H 2100 4100 50  0001 C CNN
@@ -179,15 +179,15 @@ Wire Wire Line
 $Comp
 L PrntrBoardV1-rescue:Screw_Terminal_01x02-Connector_Specialized J18
 U 1 1 5AD53BDD
-P 6750 2700
+P 6750 2800
 AR Path="/5AC337B6/5ACBE919/5AD53BDD" Ref="J18"  Part="1" 
 AR Path="/5AC337B6/5AD9F95A/5AD53BDD" Ref="J32"  Part="1" 
-F 0 "J32" H 6829 2692 50  0000 L CNN
-F 1 "Extruder Heater" H 6829 2601 50  0000 L CNN
-F 2 "PrntrBoardV1:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 6750 2700 50  0001 C CNN
-F 3 "~" H 6750 2700 50  0001 C CNN
-	1    6750 2700
-	1    0    0    -1  
+F 0 "J18" H 6829 2792 50  0000 L CNN
+F 1 "Extruder Heater" H 6829 2701 50  0000 L CNN
+F 2 "PrntrBoardV1:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 6750 2800 50  0001 C CNN
+F 3 "~" H 6750 2800 50  0001 C CNN
+	1    6750 2800
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	6000 2800 6550 2800

@@ -1,4 +1,4 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 5
 LIBS:PrntrBoardV1-cache
 EELAYER 29 0
 EELAYER END
@@ -149,13 +149,13 @@ $EndSheet
 $Comp
 L PrntrBoardV1-rescue:Screw_Terminal_01x02-Connector_Specialized J7
 U 1 1 5AB8F2FF
-P 8100 4050
-F 0 "J7" H 8180 4042 50  0000 L CNN
-F 1 "Bed Heater" H 8180 3951 50  0000 L CNN
-F 2 "PrntrBoardV1:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 8100 4050 50  0001 C CNN
-F 3 "~" H 8100 4050 50  0001 C CNN
-	1    8100 4050
-	1    0    0    -1  
+P 8100 4150
+F 0 "J7" H 8180 4142 50  0000 L CNN
+F 1 "Bed Heater" H 8180 4051 50  0000 L CNN
+F 2 "PrntrBoardV1:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 8100 4150 50  0001 C CNN
+F 3 "~" H 8100 4150 50  0001 C CNN
+	1    8100 4150
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	7650 3950 7900 3950
@@ -1043,17 +1043,6 @@ Connection ~ 4400 3400
 Wire Wire Line
 	4400 3400 4400 2750
 Connection ~ 4100 2900
-$Comp
-L PrntrBoardV1-rescue:Screw_Terminal_01x02-Connector_Specialized J1
-U 1 1 5ACB9063
-P 1600 900
-F 0 "J1" H 1520 575 50  0000 C CNN
-F 1 "12-24V" H 1520 666 50  0000 C CNN
-F 2 "PrntrBoardV1:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 1600 900 50  0001 C CNN
-F 3 "~" H 1600 900 50  0001 C CNN
-	1    1600 900 
-	-1   0    0    1   
-$EndComp
 $Comp
 L power:GND #PWR02
 U 1 1 5ACB9195
@@ -1973,4 +1962,15 @@ F 3 "~" H 2400 800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1800 800  2250 800 
+$Comp
+L PrntrBoardV1-rescue:Screw_Terminal_01x02-Connector_Specialized J1
+U 1 1 5ACB9063
+P 1600 800
+F 0 "J1" H 1750 850 50  0000 C CNN
+F 1 "12-24V" H 1600 950 50  0000 C CNN
+F 2 "PrntrBoardV1:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 1600 800 50  0001 C CNN
+F 3 "~" H 1600 800 50  0001 C CNN
+	1    1600 800 
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 5
 LIBS:PrntrBoardV1-cache
 EELAYER 29 0
 EELAYER END
