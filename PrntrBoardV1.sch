@@ -171,7 +171,6 @@ Wire Wire Line
 	5900 1150 5900 800 
 Wire Wire Line
 	5900 800  7900 800 
-Connection ~ 7900 3950
 Wire Wire Line
 	6050 1250 5950 1250
 Wire Wire Line
@@ -329,9 +328,6 @@ F 3 "~" H 8950 1050 50  0001 C CNN
 	1    8950 1050
 	1    0    0    -1  
 $EndComp
-Connection ~ 7900 1050
-Wire Wire Line
-	7900 1050 7900 3950
 Wire Wire Line
 	8950 1200 8950 1250
 Connection ~ 8950 1250
@@ -1050,29 +1046,25 @@ Connection ~ 4100 2900
 $Comp
 L PrntrBoardV1-rescue:Screw_Terminal_01x02-Connector_Specialized J1
 U 1 1 5ACB9063
-P 2350 900
-F 0 "J1" H 2270 575 50  0000 C CNN
-F 1 "12-24V" H 2270 666 50  0000 C CNN
-F 2 "PrntrBoardV1:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 2350 900 50  0001 C CNN
-F 3 "~" H 2350 900 50  0001 C CNN
-	1    2350 900 
+P 1600 900
+F 0 "J1" H 1520 575 50  0000 C CNN
+F 1 "12-24V" H 1520 666 50  0000 C CNN
+F 2 "PrntrBoardV1:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 1600 900 50  0001 C CNN
+F 3 "~" H 1600 900 50  0001 C CNN
+	1    1600 900 
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR02
 U 1 1 5ACB9195
-P 2600 950
-F 0 "#PWR02" H 2600 700 50  0001 C CNN
-F 1 "GND" H 2605 777 50  0000 C CNN
-F 2 "" H 2600 950 50  0001 C CNN
-F 3 "" H 2600 950 50  0001 C CNN
-	1    2600 950 
+P 1850 950
+F 0 "#PWR02" H 1850 700 50  0001 C CNN
+F 1 "GND" H 1855 777 50  0000 C CNN
+F 2 "" H 1850 950 50  0001 C CNN
+F 3 "" H 1850 950 50  0001 C CNN
+	1    1850 950 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2600 950  2600 900 
-Wire Wire Line
-	2600 900  2550 900 
 Wire Wire Line
 	3700 1850 4100 1850
 Wire Wire Line
@@ -1942,4 +1934,43 @@ F 3 "~" H 4400 7300 50  0001 C CNN
 	1    4400 7300
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:Fuse F2
+U 1 1 5C49EAB2
+P 7900 3700
+F 0 "F2" H 7960 3746 50  0000 L CNN
+F 1 "15A" H 7960 3655 50  0000 L CNN
+F 2 "Fuse:Fuseholder_Blade_Mini_Keystone_3568" V 7830 3700 50  0001 C CNN
+F 3 "~" H 7900 3700 50  0001 C CNN
+	1    7900 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 3850 7900 3950
+Connection ~ 7900 3950
+Wire Wire Line
+	7900 3550 7900 3500
+Wire Wire Line
+	7900 3500 7500 3500
+Text Label 7650 3500 0    50   ~ 0
+Vin
+Wire Wire Line
+	1850 950  1850 900 
+Wire Wire Line
+	1850 900  1800 900 
+Text Label 1850 800  0    50   ~ 0
+Vin
+$Comp
+L Device:Fuse F1
+U 1 1 5C5249D8
+P 2400 800
+F 0 "F1" V 2203 800 50  0000 C CNN
+F 1 "10A" V 2294 800 50  0000 C CNN
+F 2 "Fuse:Fuseholder_Blade_Mini_Keystone_3568" V 2330 800 50  0001 C CNN
+F 3 "~" H 2400 800 50  0001 C CNN
+	1    2400 800 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1800 800  2250 800 
 $EndSCHEMATC
