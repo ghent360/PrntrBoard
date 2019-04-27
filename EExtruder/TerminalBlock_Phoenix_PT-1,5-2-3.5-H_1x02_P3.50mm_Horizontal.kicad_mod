@@ -1,4 +1,4 @@
-(module TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal (layer F.Cu) (tedit 5AD447B1)
+(module TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal (layer F.Cu) (tedit 5CAABF71)
   (descr "Terminal Block Phoenix PT-1,5-2-3.5-H, 2 pins, pitch 3.5mm, size 7.0x7.6mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix")
   (tags "THT Terminal Block Phoenix PT-1.5-2-3.5-H pitch 3.5mm size 7.0x7.6mm^2 drill 1.2mm pad 2.4mm")
   (fp_text reference REF** (at 1.75 -4.16) (layer F.SilkS)
@@ -52,9 +52,9 @@
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )
-  (model :V4:TerminalBlock_Phoenix.3dshapes/TerminalBlock_Phoenix_PT-3.5mm_2pol.wrl
-    (at (xyz 0 0 0))
+  (model /home/vne/Downloads/DG350-3,5-02P.step
+    (offset (xyz 1.75 0 0.15))
     (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
+    (rotate (xyz 90 0 0))
   )
 )
