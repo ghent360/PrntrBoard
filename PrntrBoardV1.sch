@@ -1054,7 +1054,7 @@ U 1 1 5ACB9063
 P 2350 900
 F 0 "J29" H 2270 575 50  0000 C CNN
 F 1 "12-24V" H 2270 666 50  0000 C CNN
-F 2 "PrntrBoardV1:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 2350 900 50  0001 C CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type701_RT11L02HGLU_1x02_P6.35mm_Horizontal" H 2350 900 50  0001 C CNN
 F 3 "~" H 2350 900 50  0001 C CNN
 	1    2350 900 
 	-1   0    0    1   
