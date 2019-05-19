@@ -35,7 +35,7 @@
   )
 
   (setup
-    (last_trace_width 0.5)
+    (last_trace_width 0.1524)
     (user_trace_width 0.1524)
     (user_trace_width 0.2032)
     (user_trace_width 0.3)
@@ -10918,7 +10918,7 @@
   (gr_text "E2" (at 52.45 22.025) (layer "F.SilkS")
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
-  (gr_text "E1" (at 22.2 58.525 90) (layer "F.SilkS")
+  (gr_text "E1" (at 21.6 50 90) (layer "F.SilkS")
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
   (gr_text "Z" (at 116.1 61.65 90) (layer "F.SilkS")
