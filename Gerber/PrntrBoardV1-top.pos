@@ -1,5 +1,5 @@
-### Module positions - created on Sun 19 May 2019 04:17:18 PM PDT ###
-### Printed by Pcbnew version kicad 6.0.0-unknown-952108d~86~ubuntu19.04.1
+### Module positions - created on Sun 19 May 2019 04:56:14 PM PDT ###
+### Printed by Pcbnew version kicad 6.0.0-unknown-813de6a~86~ubuntu19.04.1
 ## Unit = mm, Angle = deg.
 ## Side : top
 # Ref     Val           Package                                                           PosX       PosY       Rot  Side
@@ -64,7 +64,7 @@ C58       0.1uF         C_0603_1608Metric                                       
 C59       0.01uF        C_0603_1608Metric                                              52.5610    86.2340   90.0000  top
 C60       1000pF        C_0603_1608Metric                                              64.5485    95.9465  180.0000  top
 C61       1000pF        C_0603_1608Metric                                              65.5610    92.2465   90.0000  top
-C62       1000pF        C_0603_1608Metric                                              49.5610    94.5465   90.0000  top
+C62       1000pF        C_0603_1608Metric                                              52.2610    92.5090   90.0000  top
 C63       1000pF        C_0603_1608Metric                                              57.9485    89.0465  180.0000  top
 C64       0.01uF        C_0603_1608Metric                                              61.7610    86.4340   90.0000  top
 C65       1000pF        C_0603_1608Metric                                              46.0610    51.7340   90.0000  top
@@ -88,10 +88,10 @@ C82       1000pF        C_0603_1608Metric                                       
 C83       10uF_50V      C_1206_3216Metric                                              19.8610    86.6465  180.0000  top
 C84       1000pF        C_0603_1608Metric                                              42.6485    42.0465  180.0000  top
 C85       0.1uF         C_0603_1608Metric                                              45.6735    42.0465    0.0000  top
-D1        LED           LED_0603_1608Metric                                            68.6610    95.6465   90.0000  top
+D1        LED           LED_0603_1608Metric                                            37.6360    56.2465    0.0000  top
 D2        LED           LED_0603_1608Metric                                            37.6610    52.9465    0.0000  top
-D3        LED           LED_0603_1608Metric                                            12.5610    86.9465   90.0000  top
-D4        LED           LED_0603_1608Metric                                            61.6610     6.2465    0.0000  top
+D3        LED           LED_0603_1608Metric                                            37.6360    54.5965    0.0000  top
+D4        LED           LED_0603_1608Metric                                            10.6610    10.9715  180.0000  top
 D5        LED           LED_0603_1608Metric                                            60.5610    40.3465    0.0000  top
 D6        LED           LED_0603_1608Metric                                            33.7610    80.9465    0.0000  top
 D7        1N4148        D_SOD-323_HandSoldering                                        31.0610    82.7965   90.0000  top
@@ -116,15 +116,15 @@ FID1      Fiducial      Fiducial_1mm_Dia_2.54mm_Outer_CopperTop                 
 FID2      Fiducial      Fiducial_1mm_Dia_2.54mm_Outer_CopperTop                         1.7860     1.7465    0.0000  top
 FID3      Fiducial      Fiducial_1mm_Dia_2.54mm_Outer_CopperTop                        97.3360     1.7465    0.0000  top
 FID4      Fiducial      Fiducial_1mm_Dia_2.54mm_Outer_CopperTop                        97.3360    97.2965    0.0000  top
-R1        10k           R_0603_1608Metric                                              68.6610    92.3340  270.0000  top
+R1        10k           R_0603_1608Metric                                              34.2985    56.1965  180.0000  top
 R2        1k            R_0603_1608Metric                                              34.2735    52.9465    0.0000  top
 R3        10k           R_0603_1608Metric                                              27.8485    46.2465    0.0000  top
 R4        10k           R_0603_1608Metric                                              40.2735    43.7465  180.0000  top
 R5        10k           R_0603_1608Metric                                              40.2735    45.8465  180.0000  top
 R6        10k           R_0603_1608Metric                                              27.8485    44.5465    0.0000  top
-R7        10k           R_0603_1608Metric                                              14.1610    86.9590   90.0000  top
+R7        10k           R_0603_1608Metric                                              34.2985    54.5215  180.0000  top
 R8        1k            R_0603_1608Metric                                              23.2735    50.6465  180.0000  top
-R9        10k           R_0603_1608Metric                                              59.3610     6.9340   90.0000  top
+R9        10k           R_0603_1608Metric                                              10.6985    12.6465  180.0000  top
 R10       22R           R_0603_1608Metric                                              88.5735    65.9465  180.0000  top
 R11       0R051         R_1206_3216Metric                                              85.9610    68.1465    0.0000  top
 R12       22R           R_0603_1608Metric                                              88.5610    53.7465  180.0000  top
