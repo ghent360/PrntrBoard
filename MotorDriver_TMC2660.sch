@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 26 35
+Sheet 9 35
 Title ""
 Date ""
 Rev ""
@@ -493,8 +493,6 @@ Wire Wire Line
 Wire Wire Line
 	3800 4450 3800 4550
 Wire Wire Line
-	3800 6000 3700 6000
-Wire Wire Line
 	4000 4550 3800 4550
 Connection ~ 3800 4550
 Wire Wire Line
@@ -519,11 +517,6 @@ Wire Wire Line
 Wire Wire Line
 	3800 4300 3800 4450
 Connection ~ 3800 4450
-Wire Wire Line
-	4000 3950 3700 3950
-Wire Wire Line
-	3700 3950 3700 6000
-Connection ~ 3700 6000
 Wire Wire Line
 	7500 3700 7500 3550
 Wire Wire Line
@@ -660,8 +653,6 @@ NoConn ~ 4000 4200
 Wire Wire Line
 	2950 6300 2950 6000
 Wire Wire Line
-	2950 6000 3700 6000
-Wire Wire Line
 	6350 3150 6450 3150
 $Comp
 L Device:C C25
@@ -688,4 +679,10 @@ Wire Wire Line
 	2600 1850 2600 2000
 Wire Wire Line
 	2600 2000 3300 2000
+Wire Wire Line
+	2950 6000 3800 6000
+Text HLabel 3250 3950 0    50   Input ~ 0
+CLOCK
+Wire Wire Line
+	3250 3950 4000 3950
 $EndSCHEMATC
