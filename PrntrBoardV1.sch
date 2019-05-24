@@ -907,9 +907,9 @@ Wire Wire Line
 Wire Wire Line
 	1750 3500 1000 3500
 Wire Wire Line
-	1750 2800 950  2800
+	1750 2800 1000 2800
 Wire Wire Line
-	1750 2700 950  2700
+	1750 2700 1000 2700
 Text Label 3700 4200 0    50   ~ 0
 X_STEP
 Text Label 3500 4300 0    50   ~ 0
@@ -918,9 +918,9 @@ Text Label 3650 2800 0    50   ~ 0
 X_END
 Text Label 3600 2700 0    50   ~ 0
 Y_START
-Text Label 1000 2700 0    50   ~ 0
+Text Label 1050 2700 0    50   ~ 0
 X_START
-Text Label 1000 2800 0    50   ~ 0
+Text Label 1050 2800 0    50   ~ 0
 Z_START
 Text Label 1050 3500 0    50   ~ 0
 STALL
