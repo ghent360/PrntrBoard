@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 28 35
+Sheet 6 35
 Title ""
 Date ""
 Rev ""
@@ -24,9 +24,9 @@ AR Path="/5AC337B6/5AD0CC96/5AD04DCC" Ref="J28"  Part="1"
 AR Path="/5AC337B6/5AD1664A/5AD1665B/5AD04DCC" Ref="J29"  Part="1" 
 AR Path="/5AC337B6/5AD1664A/5AD1665E/5AD04DCC" Ref="J30"  Part="1" 
 AR Path="/5AC337B6/5AD9F95A/5AD4C411/5AD04DCC" Ref="J33"  Part="1" 
-F 0 "J33" H 4480 2692 50  0000 L CNN
+F 0 "J19" H 4480 2692 50  0000 L CNN
 F 1 "Stepper" H 4480 2601 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4400 2700 50  0001 C CNN
+F 2 "kicad-molex-sl-footprints:Molex-SL-4POS" H 4400 2700 50  0001 C CNN
 F 3 "~" H 4400 2700 50  0001 C CNN
 	1    4400 2700
 	1    0    0    -1  
