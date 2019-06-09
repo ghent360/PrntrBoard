@@ -710,7 +710,7 @@ U 1 1 5AE532AA
 P 8550 5100
 F 0 "J8" H 8470 4675 50  0000 C CNN
 F 1 "Z Probe" H 8470 4766 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8550 5100 50  0001 C CNN
+F 2 "kicad-molex-sl-footprints:Molex-SL-4POS" H 8550 5100 50  0001 C CNN
 F 3 "~" H 8550 5100 50  0001 C CNN
 	1    8550 5100
 	-1   0    0    1   
@@ -1327,8 +1327,6 @@ F 3 "~" H 3000 950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Connection ~ 3000 800 
-Wire Wire Line
-	3000 800  2700 800 
 $Comp
 L Device:LED D4
 U 1 1 5AF9C4CA
@@ -1934,8 +1932,6 @@ F 3 "~" H 7900 3700 50  0001 C CNN
 	1    7900 3700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7900 3850 7900 3900
 Connection ~ 7900 3950
 Wire Wire Line
 	7900 3550 7900 3500
@@ -1973,56 +1969,8 @@ F 3 "~" H 1600 800 50  0001 C CNN
 	1    1600 800 
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Device:D D23
-U 1 1 5CB3F2AD
-P 2700 1100
-F 0 "D23" V 2654 1179 50  0000 L CNN
-F 1 "D" V 2745 1179 50  0000 L CNN
-F 2 "Diode_SMD:D_SMC" H 2700 1100 50  0001 C CNN
-F 3 "~" H 2700 1100 50  0001 C CNN
-	1    2700 1100
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	2700 950  2700 800 
-Connection ~ 2700 800 
+	2550 800  3000 800 
 Wire Wire Line
-	2700 800  2550 800 
-Wire Wire Line
-	2700 1250 2700 1500
-Wire Wire Line
-	2700 1500 3000 1500
-Connection ~ 3000 1500
-$Comp
-L Device:D D24
-U 1 1 5CB4448E
-P 8500 4100
-F 0 "D24" V 8454 4179 50  0000 L CNN
-F 1 "D" V 8545 4179 50  0000 L CNN
-F 2 "Diode_SMD:D_SMC" H 8500 4100 50  0001 C CNN
-F 3 "~" H 8500 4100 50  0001 C CNN
-	1    8500 4100
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR087
-U 1 1 5CB4A85C
-P 8500 4300
-F 0 "#PWR087" H 8500 4050 50  0001 C CNN
-F 1 "GND" H 8505 4127 50  0000 C CNN
-F 2 "" H 8500 4300 50  0001 C CNN
-F 3 "" H 8500 4300 50  0001 C CNN
-	1    8500 4300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8500 4250 8500 4300
-Wire Wire Line
-	8500 3950 8500 3900
-Wire Wire Line
-	8500 3900 7900 3900
-Connection ~ 7900 3900
-Wire Wire Line
-	7900 3900 7900 3950
+	7900 3850 7900 3950
 $EndSCHEMATC
