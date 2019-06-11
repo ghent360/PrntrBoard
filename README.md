@@ -38,6 +38,9 @@ Both PCB designs use the QFP version of the driver ICs, because they can handle 
 
 Status
 ------
+I've been running a prototype of this board for a few months now and I'm very happy with the board stability. I'm trying to figure out how to make these at scale.
+
+old status:
 I have made prototypes of the TMC2130 board design (rev0) - the board has a few bugs, that are corrected in the rev1 version. Rev0 did not have LCD screen, it was added in Rev1. I'm trying to work-out the thermal design issues.
 Rev1 board have been ordered and the dev branch is now switched to Rev2. The thermocouple connectors are added Rev2.
 Rev2 borads have been ordered. The current working board is rev3. Added 2 more pins to the LCD connector
