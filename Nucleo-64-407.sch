@@ -1,4 +1,4 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 5
 LIBS:Nucleo-64-407-cache
 EELAYER 29 0
 EELAYER END
@@ -442,7 +442,7 @@ U 1 1 5BF95393
 P 1300 1150
 F 0 "SW1" H 1300 1435 50  0000 C CNN
 F 1 "RESET" H 1300 1344 50  0000 C CNN
-F 2 "PrntrBoardV1:Button 4x4" H 1300 1350 50  0001 C CNN
+F 2 "PrntrBoardV1:Button_4x4" H 1300 1350 50  0001 C CNN
 F 3 "" H 1300 1350 50  0001 C CNN
 	1    1300 1150
 	1    0    0    -1  
@@ -933,7 +933,7 @@ U 1 1 5C0C25AA
 P 9450 6250
 F 0 "SW2" H 9450 6535 50  0000 C CNN
 F 1 "BOOT" H 9450 6444 50  0000 C CNN
-F 2 "PrntrBoardV1:Button 4x4" H 9450 6450 50  0001 C CNN
+F 2 "PrntrBoardV1:Button_4x4" H 9450 6450 50  0001 C CNN
 F 3 "" H 9450 6450 50  0001 C CNN
 	1    9450 6250
 	1    0    0    -1  
