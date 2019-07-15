@@ -1326,7 +1326,6 @@ F 3 "~" H 3000 950 50  0001 C CNN
 	1    3000 950 
 	0    -1   -1   0   
 $EndComp
-Connection ~ 3000 800 
 $Comp
 L Device:LED D4
 U 1 1 5AF9C4CA
@@ -1943,21 +1942,17 @@ Wire Wire Line
 	1850 950  1850 900 
 Wire Wire Line
 	1850 900  1800 900 
-Text Label 1850 800  0    50   ~ 0
-Vin
 $Comp
 L Device:Fuse F1
 U 1 1 5C5249D8
-P 2400 800
-F 0 "F1" V 2203 800 50  0000 C CNN
-F 1 "10A" V 2294 800 50  0000 C CNN
-F 2 "PrntrBoardV1:2410_FuseFolder" V 2330 800 50  0001 C CNN
-F 3 "~" H 2400 800 50  0001 C CNN
-	1    2400 800 
+P 2150 800
+F 0 "F1" V 1953 800 50  0000 C CNN
+F 1 "10A" V 2044 800 50  0000 C CNN
+F 2 "PrntrBoardV1:2410_FuseFolder" V 2080 800 50  0001 C CNN
+F 3 "~" H 2150 800 50  0001 C CNN
+	1    2150 800 
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	1800 800  2250 800 
 $Comp
 L PrntrBoardV1-rescue:Screw_Terminal_01x02-Connector_Specialized J1
 U 1 1 5ACB9063
@@ -1970,7 +1965,25 @@ F 3 "~" H 1600 800 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	2550 800  3000 800 
-Wire Wire Line
 	7900 3850 7900 3950
+Text Label 1850 800  0    50   ~ 0
+Vin
+Wire Wire Line
+	1800 800  2000 800 
+$Comp
+L pspice:DIODE D23
+U 1 1 5D2C83BB
+P 2600 800
+F 0 "D23" H 2600 600 50  0000 C CNN
+F 1 "S10M" H 2600 974 50  0000 C CNN
+F 2 "" H 2600 800 50  0001 C CNN
+F 3 "~" H 2600 800 50  0001 C CNN
+	1    2600 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 800  3000 800 
+Connection ~ 3000 800 
+Wire Wire Line
+	2400 800  2300 800 
 $EndSCHEMATC
