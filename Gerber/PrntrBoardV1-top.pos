@@ -1,5 +1,5 @@
-### Module positions - created on Thu 13 Jun 2019 07:43:17 PM PDT ###
-### Printed by Pcbnew version kicad 6.0.0-unknown-35da498~86~ubuntu19.04.1
+### Module positions - created on Fri 19 Jul 2019 12:39:53 AM PDT ###
+### Printed by Pcbnew version 6.0.0-unknown-920f128~86~ubuntu19.04.1
 ## Unit = mm, Angle = deg.
 ## Side : top
 # Ref     Val           Package                                                           PosX       PosY       Rot  Side
@@ -110,6 +110,9 @@ D19       1N4148        D_SOD-323_HandSoldering                                 
 D20       1N4148        D_SOD-323_HandSoldering                                        42.4110     9.8465    0.0000  top
 D21       1N4148        D_SOD-323_HandSoldering                                        26.1110     9.9465    0.0000  top
 D22       1N4148        D_SOD-323_HandSoldering                                        50.4110     9.8465    0.0000  top
+D23       S10M          D_SMC                                                          34.3535    72.9615    0.0000  top
+F1        10A           2410_FuseFolder                                                22.0760    71.8965  180.0000  top
+F2        15A           2410_FuseFolder                                                11.4860    75.8865   90.0000  top
 FID1      Fiducial      Fiducial_1mm_Dia_2.54mm_Outer_CopperTop                         1.7860    97.2965    0.0000  top
 FID2      Fiducial      Fiducial_1mm_Dia_2.54mm_Outer_CopperTop                         1.7860     1.7465    0.0000  top
 FID3      Fiducial      Fiducial_1mm_Dia_2.54mm_Outer_CopperTop                        97.3360     1.7465    0.0000  top
