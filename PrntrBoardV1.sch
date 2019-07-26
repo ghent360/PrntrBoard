@@ -947,7 +947,7 @@ Text Label 3650 5150 0    50   ~ 0
 E0_DIR
 Text Label 3650 5350 0    50   ~ 0
 Y_STEP
-Text Label 3600 4850 0    50   ~ 0
+Text Label 1175 7675 0    50   ~ 0
 E0_COOL_PWM
 Text Label 1050 5650 0    50   ~ 0
 ~EN_MOTORS
@@ -965,8 +965,6 @@ Text Label 1050 6350 0    50   ~ 0
 SCK
 Text Label 1050 6450 0    50   ~ 0
 Y_END
-Text Label 1050 6550 0    50   ~ 0
-Z_END
 Text Label 3750 5850 0    50   ~ 0
 Y_DIR
 Text Label 3450 6150 0    50   ~ 0
@@ -1060,9 +1058,6 @@ F 3 "" H 1000 2100 50  0001 C CNN
 	1    1000 2100
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1000 1600
-NoConn ~ 1000 1850
-NoConn ~ 1000 2100
 $Comp
 L Mechanical:MountingHole FID2
 U 1 1 5ACF4B85
@@ -1096,9 +1091,6 @@ F 3 "" H 1950 2100 50  0001 C CNN
 	1    1950 2100
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1950 1600
-NoConn ~ 1950 1850
-NoConn ~ 1950 2100
 $Comp
 L Mechanical:MountingHole FID1
 U 1 1 5AD38017
@@ -1110,7 +1102,6 @@ F 3 "" H 1950 1400 50  0001 C CNN
 	1    1950 1400
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1950 1400
 $Comp
 L PrntrBoardV1-rescue:Screw_Terminal_01x02-Connector_Specialized J2
 U 1 1 5AEDA4A7
@@ -1173,7 +1164,6 @@ F 3 "" H 1000 1350 50  0001 C CNN
 	1    1000 1350
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1000 1350
 $Comp
 L Jumper:Jumper_2_Open JP2
 U 1 1 5AF4F08D
@@ -1503,7 +1493,7 @@ U 1 1 5B0DCBB0
 P 10400 6000
 F 0 "J15" H 10450 5950 50  0000 L CNN
 F 1 "TC1" H 10350 6550 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 10400 6000 50  0001 C CNN
+F 2 "kicad-molex-sl-footprints:Molex-SL-6POS" H 10400 6000 50  0001 C CNN
 F 3 "~" H 10400 6000 50  0001 C CNN
 	1    10400 6000
 	1    0    0    -1  
@@ -1514,7 +1504,7 @@ U 1 1 5B0DCCBB
 P 10900 6000
 F 0 "J16" H 10950 5950 50  0000 L CNN
 F 1 "TC2" H 10850 6550 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 10900 6000 50  0001 C CNN
+F 2 "kicad-molex-sl-footprints:Molex-SL-6POS" H 10900 6000 50  0001 C CNN
 F 3 "~" H 10900 6000 50  0001 C CNN
 	1    10900 6000
 	1    0    0    -1  
@@ -1607,53 +1597,24 @@ Text Label 9650 6300 0    50   ~ 0
 Text Label 9650 6500 0    50   ~ 0
 ~TC2_CS
 $Comp
-L Jumper:Jumper_3_Bridged12 JP4
-U 1 1 5B24639E
-P 4200 5250
-F 0 "JP4" V 4154 5317 50  0000 L CNN
-F 1 "E0_TC1" V 4245 5317 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4200 5250 50  0001 C CNN
-F 3 "~" H 4200 5250 50  0001 C CNN
-	1    4200 5250
-	0    1    1    0   
-$EndComp
-$Comp
 L Jumper:Jumper_3_Bridged12 JP1
 U 1 1 5B2464D1
 P 750 6250
 F 0 "JP1" V 796 6316 50  0000 L CNN
-F 1 "E1_TC2" H 300 6350 50  0000 L CNN
+F 1 "E1_TC2" H 900 6450 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 750 6250 50  0001 C CNN
 F 3 "~" H 750 6250 50  0001 C CNN
 	1    750  6250
 	0    -1   -1   0   
 $EndComp
-Text Label 900  7200 0    50   ~ 0
-E1_COOL_PWM
-Wire Wire Line
-	750  6500 750  7200
-Wire Wire Line
-	750  7200 1450 7200
 Wire Wire Line
 	900  6250 1750 6250
 Wire Wire Line
 	750  6000 750  5650
 Text Label 750  6000 1    50   ~ 0
 ~TC2_CS
-Wire Wire Line
-	4200 5000 4200 4850
-Wire Wire Line
-	4200 4850 3500 4850
-Wire Wire Line
-	3250 5250 4050 5250
-Wire Wire Line
-	4200 5500 4200 5850
-Text Label 4200 5550 3    50   ~ 0
-~TC1_CS
 Text Label 1000 6250 0    50   ~ 0
 E1_COOL_TC2
-Text Label 3450 5250 0    50   ~ 0
-E0_COOL_TC1
 $Comp
 L Device:C C1
 U 1 1 5B2D209E
@@ -1734,7 +1695,7 @@ U 1 1 5B3CD5DC
 P 3800 950
 F 0 "J3" H 3879 942 50  0000 L CNN
 F 1 "Vin" H 3879 851 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3800 950 50  0001 C CNN
+F 2 "kicad-molex-sl-footprints:Molex-SL-2POS" H 3800 950 50  0001 C CNN
 F 3 "~" H 3800 950 50  0001 C CNN
 	1    3800 950 
 	1    0    0    -1  
@@ -1745,7 +1706,7 @@ U 1 1 5B3CD7CC
 P 4250 950
 F 0 "J4" H 4329 942 50  0000 L CNN
 F 1 "Vin" H 4329 851 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4250 950 50  0001 C CNN
+F 2 "kicad-molex-sl-footprints:Molex-SL-2POS" H 4250 950 50  0001 C CNN
 F 3 "~" H 4250 950 50  0001 C CNN
 	1    4250 950 
 	1    0    0    -1  
@@ -1786,7 +1747,7 @@ U 1 1 5B43FEE6
 P 5150 4300
 F 0 "J5" H 5229 4292 50  0000 L CNN
 F 1 "5V" H 5229 4201 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5150 4300 50  0001 C CNN
+F 2 "kicad-molex-sl-footprints:Molex-SL-2POS" H 5150 4300 50  0001 C CNN
 F 3 "~" H 5150 4300 50  0001 C CNN
 	1    5150 4300
 	1    0    0    -1  
@@ -1797,7 +1758,7 @@ U 1 1 5B440078
 P 5600 4300
 F 0 "J6" H 5679 4292 50  0000 L CNN
 F 1 "5V" H 5679 4201 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5600 4300 50  0001 C CNN
+F 2 "kicad-molex-sl-footprints:Molex-SL-2POS" H 5600 4300 50  0001 C CNN
 F 3 "~" H 5600 4300 50  0001 C CNN
 	1    5600 4300
 	1    0    0    -1  
@@ -1951,4 +1912,55 @@ Text Label 7450 2150 0    50   ~ 0
 UART_XYZ
 Text Label 7475 2300 0    50   ~ 0
 UART_EX
+Text Label 1050 6550 0    50   ~ 0
+UART_XYZ
+Wire Wire Line
+	3250 5750 3950 5750
+Text Label 3725 5750 0    50   ~ 0
+Z_END
+Wire Wire Line
+	3250 5250 3950 5250
+Text Label 3625 5250 0    50   ~ 0
+UART_EX
+Text Label 1075 6925 2    50   ~ 0
+~TC1_CS
+$Comp
+L Jumper:Jumper_3_Bridged12 JP4
+U 1 1 5B24639E
+P 1075 7225
+F 0 "JP4" V 1029 7292 50  0000 L CNN
+F 1 "E0_TC1" V 1120 7292 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1075 7225 50  0001 C CNN
+F 3 "~" H 1075 7225 50  0001 C CNN
+	1    1075 7225
+	0    -1   -1   0   
+$EndComp
+Text Label 600  6650 3    50   ~ 0
+E1_COOL_PWM
+Wire Wire Line
+	1225 7225 1400 7225
+Wire Wire Line
+	1400 7225 1400 6750
+Wire Wire Line
+	1400 6750 1750 6750
+Wire Wire Line
+	1075 7475 1075 7675
+Wire Wire Line
+	1075 7675 1850 7675
+Wire Wire Line
+	1075 6975 1075 6925
+Wire Wire Line
+	1075 6925 775  6925
+Wire Wire Line
+	750  6500 600  6500
+Wire Wire Line
+	600  6500 600  7225
+Text Label 1150 6750 0    50   ~ 0
+E0_COOL_TC1
+Wire Wire Line
+	1000 6750 1400 6750
+Connection ~ 1400 6750
+NoConn ~ 3250 5650
+NoConn ~ 3250 6250
+NoConn ~ 1750 6650
 $EndSCHEMATC

@@ -23,7 +23,7 @@ AR Path="/5AC337B6/5AD9F95A/5AD4D269/5AD4D3D5" Ref="J?"  Part="1"
 AR Path="/5AB8F10D/5AD4D3D5" Ref="J35"  Part="1" 
 F 0 "J35" V 4054 4280 50  0000 L CNN
 F 1 "Thermistor" V 4145 4280 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4050 4200 50  0001 C CNN
+F 2 "kicad-molex-sl-footprints:Molex-SL-2POS" H 4050 4200 50  0001 C CNN
 F 3 "~" H 4050 4200 50  0001 C CNN
 	1    4050 4200
 	0    1    1    0   

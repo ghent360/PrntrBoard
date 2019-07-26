@@ -82,7 +82,7 @@ AR Path="/5AC337B6/5ACBE919/5AD4BF35" Ref="J17"  Part="1"
 AR Path="/5AC337B6/5AD9F95A/5AD4BF35" Ref="J31"  Part="1" 
 F 0 "J17" H 2450 4217 50  0000 C CNN
 F 1 "Probe" H 2450 4126 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2400 4000 50  0001 C CNN
+F 2 "kicad-molex-sl-footprints:Molex-SL-2POS" H 2400 4000 50  0001 C CNN
 F 3 "~" H 2400 4000 50  0001 C CNN
 	1    2400 4000
 	-1   0    0    -1  
