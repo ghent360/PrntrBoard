@@ -939,8 +939,6 @@ Wire Wire Line
 	1750 6350 1000 6350
 Wire Wire Line
 	1750 6450 1000 6450
-Wire Wire Line
-	1750 6550 1000 6550
 Text Label 1050 5150 0    50   ~ 0
 E1_STEP
 Text Label 3650 5150 0    50   ~ 0
@@ -1912,15 +1910,13 @@ Text Label 7450 2150 0    50   ~ 0
 UART_XYZ
 Text Label 7475 2300 0    50   ~ 0
 UART_EX
-Text Label 1050 6550 0    50   ~ 0
+Text Label 950  6550 0    50   ~ 0
 UART_XYZ
 Wire Wire Line
 	3250 5750 3950 5750
 Text Label 3725 5750 0    50   ~ 0
 Z_END
-Wire Wire Line
-	3250 5250 3950 5250
-Text Label 3625 5250 0    50   ~ 0
+Text Label 3825 5250 0    50   ~ 0
 UART_EX
 Text Label 1075 6925 2    50   ~ 0
 ~TC1_CS
@@ -1963,4 +1959,78 @@ Connection ~ 1400 6750
 NoConn ~ 3250 5650
 NoConn ~ 3250 6250
 NoConn ~ 1750 6650
+$Comp
+L Device:R R12
+U 1 1 5D3D273F
+P 3625 5250
+F 0 "R12" V 3375 5200 50  0000 C CNN
+F 1 "1k" V 3375 5350 50  0000 C CNN
+F 2 "PrntrBoardV1:R_0603_1608Metric" V 3555 5250 50  0001 C CNN
+F 3 "~" H 3625 5250 50  0001 C CNN
+	1    3625 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3250 5250 3300 5250
+Wire Wire Line
+	3775 5250 3950 5250
+$Comp
+L Device:R R10
+U 1 1 5D3D4135
+P 1475 6550
+F 0 "R10" V 1550 6475 50  0000 C CNN
+F 1 "1k" V 1525 6325 50  0000 C CNN
+F 2 "PrntrBoardV1:R_0603_1608Metric" V 1405 6550 50  0001 C CNN
+F 3 "~" H 1475 6550 50  0001 C CNN
+	1    1475 6550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1750 6550 1650 6550
+Wire Wire Line
+	1325 6550 900  6550
+$Comp
+L Device:R R44
+U 1 1 5D3DCFC1
+P 3300 4925
+F 0 "R44" H 3100 4975 50  0000 L CNN
+F 1 "10k" H 3100 4875 50  0000 L CNN
+F 2 "PrntrBoardV1:R_0603_1608Metric" V 3230 4925 50  0001 C CNN
+F 3 "~" H 3300 4925 50  0001 C CNN
+	1    3300 4925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 5075 3300 5250
+Connection ~ 3300 5250
+Wire Wire Line
+	3300 5250 3475 5250
+Wire Wire Line
+	3300 4775 3300 4700
+Wire Wire Line
+	3300 4700 3875 4700
+Text Label 3650 4700 0    50   ~ 0
+3.3V
+$Comp
+L Device:R R38
+U 1 1 5D3DDD26
+P 1650 6975
+F 0 "R38" H 1450 7000 50  0000 L CNN
+F 1 "10k" H 1450 6900 50  0000 L CNN
+F 2 "PrntrBoardV1:R_0603_1608Metric" V 1580 6975 50  0001 C CNN
+F 3 "~" H 1650 6975 50  0001 C CNN
+	1    1650 6975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 6825 1650 6550
+Connection ~ 1650 6550
+Wire Wire Line
+	1650 6550 1625 6550
+Wire Wire Line
+	1650 7125 1650 7175
+Wire Wire Line
+	1650 7175 1450 7175
+Text Label 1450 7175 0    50   ~ 0
+3.3V
 $EndSCHEMATC

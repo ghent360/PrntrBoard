@@ -430,7 +430,7 @@ Wire Wire Line
 Wire Wire Line
 	4400 3600 6650 3600
 Wire Wire Line
-	4350 3550 6600 3550
+	4350 3550 4600 3550
 Connection ~ 4750 3000
 Wire Wire Line
 	6950 3000 8600 3000
@@ -727,40 +727,17 @@ Wire Wire Line
 Text HLabel 4350 3300 0    50   BiDi ~ 0
 UART_XYZ
 Wire Wire Line
-	4600 3300 4600 1750
-Wire Wire Line
 	4600 1750 4300 1750
-Wire Wire Line
-	4600 3300 6650 3300
-Wire Wire Line
-	6650 3300 6650 1750
 Wire Wire Line
 	6650 1750 6300 1750
 Wire Wire Line
-	9150 3300 9150 1750
-Wire Wire Line
 	9150 1750 8550 1750
-Connection ~ 6650 3300
 Wire Wire Line
 	6450 4500 6800 4500
-Wire Wire Line
-	6650 3300 9150 3300
-Wire Wire Line
-	4350 3300 4600 3300
-Connection ~ 4600 3300
 Text HLabel 4350 3450 0    50   BiDi ~ 0
 UART_EX
 Wire Wire Line
-	4350 3450 4600 3450
-Wire Wire Line
-	4600 3450 4600 4500
-Wire Wire Line
 	4600 4500 4250 4500
-Wire Wire Line
-	4600 3450 6800 3450
-Wire Wire Line
-	6800 3450 6800 4500
-Connection ~ 4600 3450
 $Comp
 L power:GND #PWR0103
 U 1 1 5D3B6123
@@ -855,4 +832,92 @@ Wire Wire Line
 Wire Wire Line
 	8650 2000 8650 1400
 Connection ~ 8650 1400
+Wire Wire Line
+	4350 3300 4600 3300
+$Comp
+L Device:R R20
+U 1 1 5D3CF898
+P 4600 2025
+F 0 "R20" H 4670 2071 50  0000 L CNN
+F 1 "1k" H 4670 1980 50  0000 L CNN
+F 2 "PrntrBoardV1:R_0603_1608Metric" V 4530 2025 50  0001 C CNN
+F 3 "~" H 4600 2025 50  0001 C CNN
+	1    4600 2025
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R28
+U 1 1 5D3CFCEF
+P 6650 2025
+F 0 "R28" H 6720 2071 50  0000 L CNN
+F 1 "1k" H 6720 1980 50  0000 L CNN
+F 2 "PrntrBoardV1:R_0603_1608Metric" V 6580 2025 50  0001 C CNN
+F 3 "~" H 6650 2025 50  0001 C CNN
+	1    6650 2025
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R36
+U 1 1 5D3D001F
+P 9150 2025
+F 0 "R36" H 9220 2071 50  0000 L CNN
+F 1 "1k" H 9220 1980 50  0000 L CNN
+F 2 "PrntrBoardV1:R_0603_1608Metric" V 9080 2025 50  0001 C CNN
+F 3 "~" H 9150 2025 50  0001 C CNN
+	1    9150 2025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 1875 4600 1750
+Wire Wire Line
+	4600 2175 4600 3300
+Connection ~ 4600 3300
+Wire Wire Line
+	4600 3300 6650 3300
+Wire Wire Line
+	6650 1875 6650 1750
+Wire Wire Line
+	6650 2175 6650 3300
+Connection ~ 6650 3300
+Wire Wire Line
+	6650 3300 9150 3300
+Wire Wire Line
+	9150 1875 9150 1750
+Wire Wire Line
+	9150 2175 9150 3300
+Wire Wire Line
+	4350 3450 6800 3450
+$Comp
+L Device:R R22
+U 1 1 5D3D090C
+P 4600 4200
+F 0 "R22" H 4670 4246 50  0000 L CNN
+F 1 "1k" H 4670 4155 50  0000 L CNN
+F 2 "PrntrBoardV1:R_0603_1608Metric" V 4530 4200 50  0001 C CNN
+F 3 "~" H 4600 4200 50  0001 C CNN
+	1    4600 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R30
+U 1 1 5D3D1107
+P 6800 4200
+F 0 "R30" H 6870 4246 50  0000 L CNN
+F 1 "1k" H 6870 4155 50  0000 L CNN
+F 2 "PrntrBoardV1:R_0603_1608Metric" V 6730 4200 50  0001 C CNN
+F 3 "~" H 6800 4200 50  0001 C CNN
+	1    6800 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 4500 6800 4350
+Wire Wire Line
+	6800 3450 6800 4050
+Wire Wire Line
+	4600 4050 4600 3550
+Connection ~ 4600 3550
+Wire Wire Line
+	4600 3550 6600 3550
+Wire Wire Line
+	4600 4350 4600 4500
 $EndSCHEMATC
