@@ -601,7 +601,7 @@
     (tags "resistor")
     (path "/5D3F19ED")
     (attr smd)
-    (fp_text reference "R67" (at 0 -1.43 90) (layer "F.SilkS")
+    (fp_text reference "R67" (at 0 -1.43 90) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value "470" (at 0 1.43 90) (layer "F.Fab")
@@ -637,7 +637,7 @@
     (tags "resistor")
     (path "/5D3F1912")
     (attr smd)
-    (fp_text reference "R66" (at 0 -1.43 90) (layer "F.SilkS")
+    (fp_text reference "R66" (at 0 -1.43 90) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value "470" (at 0 1.43 90) (layer "F.Fab")
@@ -673,7 +673,7 @@
     (tags "resistor")
     (path "/5D3F107D")
     (attr smd)
-    (fp_text reference "R46" (at 0 -1.43 90) (layer "F.SilkS")
+    (fp_text reference "R46" (at 0 -1.43 90) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value "470" (at 0 1.43 90) (layer "F.Fab")
@@ -706,10 +706,10 @@
   (module "kicad-molex-sl-footprints:Molex-SL-4POS" (layer "F.Cu") (tedit 5D3BB24E) (tstamp 5D3EF6CC)
     (at 35.7632 107.9754 180)
     (path "/5D3EFAE7")
-    (fp_text reference "J37" (at -1.143 -1.524) (layer "F.SilkS")
+    (fp_text reference "J37" (at -1.143 -1.524) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value "RGB" (at -0.889 7.112) (layer "F.SilkS")
+    (fp_text value "RGB" (at -0.889 7.112) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 5.842 1.016) (end 3.302 1.016) (layer "F.SilkS") (width 0.15))
@@ -777,7 +777,7 @@
     (tags "resistor")
     (path "/5D3DDD26")
     (attr smd)
-    (fp_text reference "R38" (at 0 -1.43 90) (layer "F.SilkS")
+    (fp_text reference "R38" (at 0 -1.43 90) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value "10k" (at 0 1.43 90) (layer "F.Fab")
@@ -993,7 +993,7 @@
     (tags "resistor")
     (path "/5D3D273F")
     (attr smd)
-    (fp_text reference "R12" (at 0 -1.43 90) (layer "F.SilkS")
+    (fp_text reference "R12" (at 0 -1.43 90) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value "1k" (at 0 1.43 90) (layer "F.Fab")
@@ -1029,7 +1029,7 @@
     (tags "resistor")
     (path "/5D3D4135")
     (attr smd)
-    (fp_text reference "R10" (at 0 -1.43 90) (layer "F.SilkS")
+    (fp_text reference "R10" (at 0 -1.43 90) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value "1k" (at 0 1.43 90) (layer "F.Fab")
