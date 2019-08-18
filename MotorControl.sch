@@ -1,6 +1,6 @@
 EESchema Schematic File Version 5
 LIBS:PrntrBoardV1-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -429,8 +429,6 @@ Wire Wire Line
 	6650 3600 9600 3600
 Wire Wire Line
 	4400 3600 6650 3600
-Wire Wire Line
-	4350 3550 4600 3550
 Connection ~ 4750 3000
 Wire Wire Line
 	6950 3000 8600 3000
@@ -886,7 +884,7 @@ Wire Wire Line
 Wire Wire Line
 	9150 2175 9150 3300
 Wire Wire Line
-	4350 3450 6800 3450
+	4350 3450 4600 3450
 $Comp
 L Device:R R22
 U 1 1 5D3D090C
@@ -914,10 +912,12 @@ Wire Wire Line
 Wire Wire Line
 	6800 3450 6800 4050
 Wire Wire Line
-	4600 4050 4600 3550
-Connection ~ 4600 3550
-Wire Wire Line
-	4600 3550 6600 3550
-Wire Wire Line
 	4600 4350 4600 4500
+Wire Wire Line
+	4350 3550 6600 3550
+Wire Wire Line
+	4600 4050 4600 3450
+Connection ~ 4600 3450
+Wire Wire Line
+	4600 3450 6800 3450
 $EndSCHEMATC

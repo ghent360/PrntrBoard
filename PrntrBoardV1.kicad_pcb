@@ -941,7 +941,7 @@
     (fp_line (start -0.8 -0.4) (end 0.8 -0.4) (layer "F.Fab") (width 0.1))
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer "F.Fab") (width 0.1))
     (pad "1" smd rect (at -0.7875 0) (size 0.875 0.95) (layers "F.Cu" "F.Paste" "F.Mask")
-      (net 10 "/3.3V"))
+      (net 164 "/UART_EX"))
     (pad "2" smd rect (at 0.7875 0) (size 0.875 0.95) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 170 "/MotorControl/UART_1"))
     (model "${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
