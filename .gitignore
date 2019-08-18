@@ -4,6 +4,7 @@
 *.step
 *.stp
 *.kicad_pcb-bak
+*.sch-bak
 fp-info-cache
 ZProbe/
 Gerber/PrntrBoard.zip
