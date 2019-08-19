@@ -1,12 +1,12 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,6.0.0-unknown-a0ed408~86~ubuntu19.04.1*%
-%TF.CreationDate,2019-08-18T20:16:58-07:00*%
+%TF.CreationDate,2019-08-18T21:46:02-07:00*%
 %TF.ProjectId,PrntrBoardV1,50726e74-7242-46f6-9172-6456312e6b69,rev?*%
 %TF.SameCoordinates,PX1303eb8PY7093f24*%
 %TF.FileFunction,Soldermask,Top*%
 %TF.FilePolarity,Negative*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 6.0.0-unknown-a0ed408~86~ubuntu19.04.1) date 2019-08-18 20:16:58*
+G04 Created by KiCad (PCBNEW 6.0.0-unknown-a0ed408~86~ubuntu19.04.1) date 2019-08-18 21:46:02*
 %MOMM*%
 %LPD*%
 G04 APERTURE LIST*
