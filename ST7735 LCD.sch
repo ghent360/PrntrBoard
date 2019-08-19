@@ -1,6 +1,6 @@
 EESchema Schematic File Version 5
 LIBS:PrntrBoardV1-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -26,8 +26,8 @@ Text HLabel 4100 1850 2    50   Input ~ 0
 VCC
 Text HLabel 4100 1950 2    50   Input ~ 0
 LED+
-Text HLabel 4100 2050 2    50   Input ~ 0
-LED-
+Text HLabel 4100 2050 2    50   Output ~ 0
+MISO
 $Comp
 L power:GND #PWR086
 U 1 1 5AFA6291
