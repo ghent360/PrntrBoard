@@ -22,7 +22,7 @@ Because the NUCLEO-64 has limited number of IO pins, some compromises had to be 
 Generic shortcuts I don't plan to improve:
 ------
   + ~~5V power supply is external. These are available from various resellers and fairly cheap - less than $1. No need to waste board layout space and component count.~~ (this has beed addresses with the new NUCLEO-64 compatible daugherboard)
-  + Heated bed MOSFET - large heated beds consume a lot of power and it is challenging to provision the design for > 20A current (there is simply not enough copper space on the board to support this current). External heated bed MOSFETs are very affordable < $10 and support 20A-40A with no issues. If you have large bet use one.
+  + Heated bed MOSFET - large heated beds consume a lot of power and it is challenging to provision the design for > 20A current (there is simply not enough copper space on the board to support this current). External heated bed MOSFETs are very affordable < $10 and support 20A-40A with no issues. If you have large heated bed - use external MOSFET or SSR.
 
 Details
 ------
