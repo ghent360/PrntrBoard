@@ -5,13 +5,14 @@ PrntrBoard is a 3D printer controller board designed to work with STM32 NUCLEO d
 ![Picture of Rev2 Kicad Rendering](Rev2660v4.png)
 Some features of the board:
 -----
-  + 5x Trinamic super quiet drivers (TMC2130 or TMC2660)
+  + 5x Trinamic super quiet drivers (TMC2130, TMC2660 or TMC2209)
   + Marlin 2.0 firmware
   + (2+2) controllable fans and 2x "always on" fan connectors
   + 3x min and max endstops for the x, y and z axis
   + 2x end stops for fillament end detection
   + SPI or I2C display connector for ST7735 or SSD1306 screen + one button and rotary encoder
   + Dual thermocouple connectors (for MAX31866, MAX31855 or MAX6675 boards)
+  + Input voltage (Vin): 12-24V
   + selectable fan voltage (5V or Vin)
 
 Because the NUCLEO-64 has limited number of IO pins, some compromises had to be made:
@@ -21,11 +22,11 @@ Because the NUCLEO-64 has limited number of IO pins, some compromises had to be 
 Generic shortcuts I don't plan to improve:
 ------
   + ~~5V power supply is external. These are available from various resellers and fairly cheap - less than $1. No need to waste board layout space and component count.~~ (this has beed addresses with the new NUCLEO-64 compatible daugherboard)
-  + Heated bed MOSFET - large heated beds consume a lot of power and it is challenging to provision the design for > 20A current. External heated bed MOSFETs are very affordable < $10 and claim to support 20A minimum. If you have large bet use one.
+  + Heated bed MOSFET - large heated beds consume a lot of power and it is challenging to provision the design for > 20A current (there is simply not enough copper space on the board to support this current). External heated bed MOSFETs are very affordable < $10 and support 20A-40A with no issues. If you have large bet use one.
 
 Details
 ------
-I use the daily build of KiCad (soon to be released V5) - let me know if you have trouble opening the files.
+I use the daily build of KiCad (soon to be released V6) - let me know if you have trouble opening the files.
 
 The current PCB desing is using 4 layer board, 6/6 mil track width/clearance, 12 mil min via hole size and 20 mil via diameter.
 
@@ -33,11 +34,17 @@ There are tree active branches:
   + tmc2130 - the board design for TMC2130 drivers
   + tmc2130-redesign - redesign of the TMC2130 branch with the nucleo board flipped
   + tmc2660 - the board design for TMC2660 drivers
+  + tmc2209 - the board design for TMC2209 drivers
 
-Both PCB designs use the QFP version of the driver ICs, because they can handle a bit more power.
+TMC2130 and TMC2660 PCB designs use the QFP version of the driver ICs, because they can handle a bit more power. The TMC2209 is available only in QFN package.
 
 Status
 ------
+TMC2130 version is table and been running for over a year. TMC2660 is being tested at the moment. Prototypes of the TMC2209 are being made.
+
+old status:
+I've been running a prototype of this board for a few months now and I'm very happy with the board stability. I'm trying to figure out how to make these at scale.
+
 I have made prototypes of the TMC2130 board design (rev0) - the board has a few bugs, that are corrected in the rev1 version. Rev0 did not have LCD screen, it was added in Rev1. I'm trying to work-out the thermal design issues.
 Rev1 board have been ordered and the dev branch is now switched to Rev2. The thermocouple connectors are added Rev2.
 Rev2 borads have been ordered. The current working board is rev3. Added 2 more pins to the LCD connector

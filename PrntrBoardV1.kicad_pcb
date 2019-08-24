@@ -1,4 +1,4 @@
-(kicad_pcb (version 20190605) (host pcbnew "6.0.0-unknown-920f128~86~ubuntu19.04.1")
+(kicad_pcb (version 20190605) (host pcbnew "6.0.0-unknown-30c724e~86~ubuntu19.04.1")
 
   (general
     (thickness 1.6)
@@ -1820,11 +1820,6 @@
       (net 197 "Net-(U4-Pad12)"))
     (pad "4" smd rect (at -1.45 -0.775) (size 1.75 0.9) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 11 "/3.3V"))
-    (model "${KISYS3DMOD}/Oscillator.3dshapes/Oscillator_SMD_EuroQuartz_XO32-4Pin_3.2x2.5mm_HandSoldering.wrl"
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
     (model "${KIPRJMOD}/xtal_osc_3.2x2.5.step"
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
@@ -11061,13 +11056,13 @@
   (gr_text "Min" (at 60.15 58.45) (layer "F.SilkS")
     (effects (font (size 1 1) (thickness 0.2)))
   )
-  (gr_text "Z" (at 77.2 56.6) (layer "F.SilkS")
+  (gr_text "Z" (at 63.4365 56.642) (layer "F.SilkS")
     (effects (font (size 1 1) (thickness 0.2)))
   )
   (gr_text "Y" (at 70.3 56.6) (layer "F.SilkS")
     (effects (font (size 1 1) (thickness 0.2)))
   )
-  (gr_text "X" (at 63.6 56.5) (layer "F.SilkS")
+  (gr_text "X" (at 77.216 56.5785) (layer "F.SilkS")
     (effects (font (size 1 1) (thickness 0.2)))
   )
   (gr_text "Z Probe" (at 44.9 61.43) (layer "F.SilkS")
