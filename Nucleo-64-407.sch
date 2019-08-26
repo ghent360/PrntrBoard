@@ -1,6 +1,6 @@
 EESchema Schematic File Version 5
 LIBS:Nucleo-64-407-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -370,36 +370,6 @@ BOOT0
 Text Label 2300 1500 0    50   ~ 0
 RST
 $Comp
-L Device:R R5
-U 1 1 5BF8A956
-P 4750 3400
-F 0 "R5" V 4700 3600 50  0000 C CNN
-F 1 "10k" V 4850 3500 50  0000 C CNN
-F 2 "PrntrBoardV1:R_0603_1608Metric" V 4680 3400 50  0001 C CNN
-F 3 "~" H 4750 3400 50  0001 C CNN
-	1    4750 3400
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0104
-U 1 1 5BF8AE0F
-P 5000 3450
-F 0 "#PWR0104" H 5000 3200 50  0001 C CNN
-F 1 "GND" H 5005 3277 50  0000 C CNN
-F 2 "" H 5000 3450 50  0001 C CNN
-F 3 "" H 5000 3450 50  0001 C CNN
-	1    5000 3450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5000 3450 5000 3400
-Wire Wire Line
-	5000 3400 4900 3400
-Wire Wire Line
-	4300 3400 4600 3400
-Text Label 4350 3400 0    50   ~ 0
-BOOT1
-$Comp
 L Device:R R1
 U 1 1 5BF8DD7B
 P 1650 1300
@@ -470,146 +440,21 @@ F 3 "~" H 10250 3150 50  0001 C CNN
 	1    10100 3200
 	-1   0    0    1   
 $EndComp
-$Comp
-L Device:R R6
-U 1 1 5BF9CAAC
-P 8550 1200
-F 0 "R6" V 8050 700 50  0000 C CNN
-F 1 "10k" V 8050 850 50  0000 C CNN
-F 2 "PrntrBoardV1:R_0603_1608Metric" V 8480 1200 50  0001 C CNN
-F 3 "~" H 8550 1200 50  0001 C CNN
-	1    8550 1200
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R7
-U 1 1 5BF9D04E
-P 8550 1300
-F 0 "R7" V 8050 800 50  0000 C CNN
-F 1 "10k" V 8050 950 50  0000 C CNN
-F 2 "PrntrBoardV1:R_0603_1608Metric" V 8480 1300 50  0001 C CNN
-F 3 "~" H 8550 1300 50  0001 C CNN
-	1    8550 1300
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R8
-U 1 1 5BF9D1A4
-P 8550 1400
-F 0 "R8" V 8050 900 50  0000 C CNN
-F 1 "10k" V 8050 1050 50  0000 C CNN
-F 2 "PrntrBoardV1:R_0603_1608Metric" V 8480 1400 50  0001 C CNN
-F 3 "~" H 8550 1400 50  0001 C CNN
-	1    8550 1400
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R9
-U 1 1 5BF9D35D
-P 8550 1600
-F 0 "R9" V 7950 1100 50  0000 C CNN
-F 1 "10k" V 7950 1250 50  0000 C CNN
-F 2 "PrntrBoardV1:R_0603_1608Metric" V 8480 1600 50  0001 C CNN
-F 3 "~" H 8550 1600 50  0001 C CNN
-	1    8550 1600
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R10
-U 1 1 5BF9D441
-P 8550 1800
-F 0 "R10" V 7850 1300 50  0000 C CNN
-F 1 "10k" V 7850 1450 50  0000 C CNN
-F 2 "PrntrBoardV1:R_0603_1608Metric" V 8480 1800 50  0001 C CNN
-F 3 "~" H 8550 1800 50  0001 C CNN
-	1    8550 1800
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R11
-U 1 1 5BF9D54B
-P 8550 1900
-F 0 "R11" V 7850 1400 50  0000 C CNN
-F 1 "10k" V 7850 1550 50  0000 C CNN
-F 2 "PrntrBoardV1:R_0603_1608Metric" V 8480 1900 50  0001 C CNN
-F 3 "~" H 8550 1900 50  0001 C CNN
-	1    8550 1900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9200 1600 8700 1600
-Text Label 8000 1500 0    50   ~ 0
+Text Label 7850 1500 0    50   ~ 0
 3.3V
-Wire Wire Line
-	8400 1200 8350 1200
-Wire Wire Line
-	8350 1200 8350 1300
-Connection ~ 8350 1500
-Wire Wire Line
-	8400 1300 8350 1300
-Connection ~ 8350 1300
-Wire Wire Line
-	8350 1300 8350 1400
-Wire Wire Line
-	8400 1400 8350 1400
-Connection ~ 8350 1400
-Wire Wire Line
-	8350 1400 8350 1500
-Wire Wire Line
-	8400 1600 8350 1600
-Wire Wire Line
-	8350 1600 8350 1500
-Wire Wire Line
-	8400 1900 8350 1900
-Wire Wire Line
-	8350 1900 8350 1800
-Connection ~ 8350 1600
-Wire Wire Line
-	8400 1800 8350 1800
-Connection ~ 8350 1800
-Wire Wire Line
-	8350 1800 8350 1600
 $Comp
 L Device:C C15
 U 1 1 5BFBA3EA
-P 8200 1650
-F 0 "C15" H 8000 1700 50  0000 L CNN
-F 1 "100nF" H 7850 1600 50  0000 L CNN
-F 2 "PrntrBoardV1:C_0603_1608Metric" H 8238 1500 50  0001 C CNN
-F 3 "~" H 8200 1650 50  0001 C CNN
-	1    8200 1650
-	1    0    0    -1  
-$EndComp
-Connection ~ 8200 1500
-Wire Wire Line
-	8200 1500 8000 1500
-Wire Wire Line
-	8200 1500 8350 1500
-$Comp
-L power:GND #PWR0105
-U 1 1 5BFBDCBA
-P 8200 1850
-F 0 "#PWR0105" H 8200 1600 50  0001 C CNN
-F 1 "GND" H 8205 1677 50  0000 C CNN
-F 2 "" H 8200 1850 50  0001 C CNN
-F 3 "" H 8200 1850 50  0001 C CNN
-	1    8200 1850
+P 8050 1650
+F 0 "C15" H 7775 1710 50  0000 L CNN
+F 1 "100nF" H 7700 1600 50  0000 L CNN
+F 2 "PrntrBoardV1:C_0603_1608Metric" H 8088 1500 50  0001 C CNN
+F 3 "~" H 8050 1650 50  0001 C CNN
+	1    8050 1650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8200 1850 8200 1800
-$Comp
-L Device:R R12
-U 1 1 5BFC65FE
-P 8550 2100
-F 0 "R12" V 7750 1600 50  0000 C CNN
-F 1 "10k" V 7750 1750 50  0000 C CNN
-F 2 "PrntrBoardV1:R_0603_1608Metric" V 8480 2100 50  0001 C CNN
-F 3 "~" H 8550 2100 50  0001 C CNN
-	1    8550 2100
-	0    1    1    0   
-$EndComp
-Connection ~ 8350 1900
+	8050 1850 8050 1800
 $Comp
 L power:GND #PWR0107
 U 1 1 5BFCD156
@@ -621,10 +466,6 @@ F 3 "" H 10300 1000 50  0001 C CNN
 	1    10300 1000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8400 2100 8350 2100
-Wire Wire Line
-	8350 1900 8350 2100
 $Comp
 L power:GND #PWR0108
 U 1 1 5BFDEF99
@@ -813,7 +654,7 @@ $Comp
 L Device:C C16
 U 1 1 5C06CCC7
 P 9000 4700
-F 0 "C16" H 9115 4746 50  0000 L CNN
+F 0 "C16" H 9050 4800 50  0000 L CNN
 F 1 "10uF" H 9050 4600 50  0000 L CNN
 F 2 "PrntrBoardV1:C_0603_1608Metric" H 9038 4550 50  0001 C CNN
 F 3 "~" H 9000 4700 50  0001 C CNN
@@ -902,7 +743,7 @@ U 1 1 5C0AF6F5
 P 9100 3400
 F 0 "D1" H 8950 3300 50  0000 C CNN
 F 1 "SS14" H 9050 3550 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123F" H 9100 3400 50  0001 C CNN
+F 2 "Diode_SMD:D_SMA" H 9100 3400 50  0001 C CNN
 F 3 "~" H 9100 3400 50  0001 C CNN
 	1    9100 3400
 	-1   0    0    1   
@@ -1037,8 +878,6 @@ Wire Wire Line
 	4300 3600 4750 3600
 Wire Wire Line
 	4300 3700 4750 3700
-Text Label 4300 3500 0    50   ~ 0
-SPI_SCK
 Text Label 4400 3700 0    50   ~ 0
 SPI_MOSI
 Text Label 4400 3600 0    50   ~ 0
@@ -1918,23 +1757,6 @@ IOA_8
 Text Label 600  4650 0    50   ~ 0
 IOA_15
 $Comp
-L power:GND #PWR01
-U 1 1 5C8C2F95
-P 600 4800
-F 0 "#PWR01" H 600 4550 50  0001 C CNN
-F 1 "GND" H 605 4627 50  0000 C CNN
-F 2 "" H 600 4800 50  0001 C CNN
-F 3 "" H 600 4800 50  0001 C CNN
-	1    600  4800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	600  4800 600  4750
-Text Label 1550 4650 0    50   ~ 0
-5V
-Text Label 1500 4750 0    50   ~ 0
-VIN
-$Comp
 L Connector_Generic:Conn_02x05_Odd_Even J7
 U 1 1 5C8F4627
 P 1050 5450
@@ -1985,13 +1807,7 @@ Wire Wire Line
 Wire Wire Line
 	850  5550 500  5550
 Wire Wire Line
-	1350 5650 1750 5650
-Wire Wire Line
 	1350 5550 1750 5550
-Text Label 1650 5550 0    50   ~ 0
-5V
-Text Label 1550 5650 0    50   ~ 0
-3.3V
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J8
 U 1 1 5CC255C1
@@ -2013,9 +1829,9 @@ Wire Wire Line
 	1750 6400 1450 6400
 Wire Wire Line
 	1750 6500 1450 6500
-Text Label 1650 6400 0    50   ~ 0
-5V
 Text Label 1600 6500 0    50   ~ 0
+5V
+Text Label 1600 6400 0    50   ~ 0
 3.3V
 Wire Wire Line
 	950  6400 550  6400
@@ -2204,7 +2020,7 @@ $Comp
 L Device:R R23
 U 1 1 5C086C65
 P 8800 4700
-F 0 "R23" H 8700 4550 50  0000 L CNN
+F 0 "R23" H 8850 4500 50  0000 L CNN
 F 1 "1k" H 8850 4600 50  0000 L CNN
 F 2 "PrntrBoardV1:R_0603_1608Metric" V 8730 4700 50  0001 C CNN
 F 3 "~" H 8800 4700 50  0001 C CNN
@@ -2266,19 +2082,17 @@ Text Label 10050 2400 0    50   ~ 0
 3.3V
 Wire Wire Line
 	10050 950  10300 950 
-Text Label 8700 2100 0    50   ~ 0
-SD_DETECT
 Text Label 8700 1900 0    50   ~ 0
 SDIO_D1
 Text Label 8700 1800 0    50   ~ 0
 SDIO_D0
-Text Label 8700 1600 0    50   ~ 0
+Text Label 8735 1500 0    50   ~ 0
 SDIO_CLK
-Text Label 8700 1200 0    50   ~ 0
+Text Label 8730 1200 0    50   ~ 0
 SDIO_D2
-Text Label 8700 1300 0    50   ~ 0
+Text Label 8735 1300 0    50   ~ 0
 SDIO_D3
-Text Label 8700 1400 0    50   ~ 0
+Text Label 8735 1400 0    50   ~ 0
 SDIO_CMD
 $Comp
 L uSD_push-push_ebay:SD_ebay-uSD-push_push_SMD XS1
@@ -2296,17 +2110,11 @@ $EndComp
 Wire Wire Line
 	10050 2250 10050 2450
 Wire Wire Line
-	9300 2100 9300 1150
-Wire Wire Line
 	9300 1150 9500 1150
-Wire Wire Line
-	8700 2100 9300 2100
 Wire Wire Line
 	9500 1900 9450 1900
 Wire Wire Line
 	9450 1900 9450 1400
-Wire Wire Line
-	8700 1400 9450 1400
 Wire Wire Line
 	9400 1800 9400 1300
 Wire Wire Line
@@ -2324,15 +2132,9 @@ Wire Wire Line
 Wire Wire Line
 	9250 1600 9250 1200
 Wire Wire Line
-	8700 1200 9250 1200
-Wire Wire Line
 	9500 1750 9100 1750
 Wire Wire Line
-	9100 1750 9100 1300
-Wire Wire Line
-	9100 1300 8700 1300
-Wire Wire Line
-	9200 1600 9200 2050
+	9200 1500 9200 2050
 Wire Wire Line
 	9200 2050 9500 2050
 $Comp
@@ -2413,4 +2215,133 @@ F 3 "" H 7900 6350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7900 6300 7900 6350
+Text Label 1400 4650 0    50   ~ 0
+ENC_A
+Text Label 1400 4750 0    50   ~ 0
+ENC_B
+Text Label 610  4750 0    50   ~ 0
+BTN_IN
+Text Label 1365 5550 0    50   ~ 0
+~LCD_CS
+Wire Wire Line
+	8700 2000 9300 2000
+Wire Wire Line
+	9300 2000 9300 1150
+Text Label 8700 2000 0    50   ~ 0
+SD_DETECT
+$Comp
+L Device:R_Pack04 RN1
+U 1 1 5D639A34
+P 8500 2000
+F 0 "RN1" V 8165 2215 50  0000 C CNN
+F 1 "4x10k" V 8174 2000 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 8775 2000 50  0001 C CNN
+F 3 "~" H 8500 2000 50  0001 C CNN
+	1    8500 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7850 1500 8050 1500
+Wire Wire Line
+	9100 1750 9100 1300
+$Comp
+L power:GND #PWR0105
+U 1 1 5BFBDCBA
+P 8050 1850
+F 0 "#PWR0105" H 8050 1600 50  0001 C CNN
+F 1 "GND" H 8055 1677 50  0000 C CNN
+F 2 "" H 8050 1850 50  0001 C CNN
+F 3 "" H 8050 1850 50  0001 C CNN
+	1    8050 1850
+	1    0    0    -1  
+$EndComp
+Text Label 4300 3500 0    50   ~ 0
+SPI_SCK
+Wire Wire Line
+	4300 3400 4600 3400
+Text Label 4350 3400 0    50   ~ 0
+BOOT1
+$Comp
+L power:GND #PWR0104
+U 1 1 5BF8AE0F
+P 5000 3450
+F 0 "#PWR0104" H 5000 3200 50  0001 C CNN
+F 1 "GND" H 5005 3277 50  0000 C CNN
+F 2 "" H 5000 3450 50  0001 C CNN
+F 3 "" H 5000 3450 50  0001 C CNN
+	1    5000 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3450 5000 3400
+Wire Wire Line
+	5000 3400 4900 3400
+$Comp
+L Device:R R5
+U 1 1 5BF8A956
+P 4750 3400
+F 0 "R5" V 4700 3600 50  0000 C CNN
+F 1 "10k" V 4850 3500 50  0000 C CNN
+F 2 "PrntrBoardV1:R_0603_1608Metric" V 4680 3400 50  0001 C CNN
+F 3 "~" H 4750 3400 50  0001 C CNN
+	1    4750 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Pack04 RN2
+U 1 1 5D638731
+P 8500 1400
+F 0 "RN2" V 8180 1200 50  0000 C CNN
+F 1 "4x10k" V 8174 1400 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 8775 1400 50  0001 C CNN
+F 3 "~" H 8500 1400 50  0001 C CNN
+	1    8500 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8300 2000 8200 2000
+Wire Wire Line
+	8200 2000 8200 1900
+Wire Wire Line
+	8200 1500 8050 1500
+Connection ~ 8050 1500
+Wire Wire Line
+	8300 1500 8200 1500
+Connection ~ 8200 1500
+Wire Wire Line
+	8300 1400 8200 1400
+Wire Wire Line
+	8200 1400 8200 1500
+Wire Wire Line
+	8300 1300 8200 1300
+Wire Wire Line
+	8200 1300 8200 1400
+Connection ~ 8200 1400
+Wire Wire Line
+	8300 1200 8200 1200
+Wire Wire Line
+	8200 1200 8200 1300
+Connection ~ 8200 1300
+Wire Wire Line
+	8300 1800 8200 1800
+Connection ~ 8200 1800
+Wire Wire Line
+	8200 1800 8200 1500
+Wire Wire Line
+	8300 1900 8200 1900
+Connection ~ 8200 1900
+Wire Wire Line
+	8200 1900 8200 1800
+Wire Wire Line
+	9250 1200 8700 1200
+Wire Wire Line
+	9100 1300 8700 1300
+Wire Wire Line
+	9200 1500 8700 1500
+Wire Wire Line
+	8700 1400 9450 1400
+Wire Wire Line
+	1350 5650 1750 5650
+Text Label 1375 5650 0    50   ~ 0
+5V
 $EndSCHEMATC
