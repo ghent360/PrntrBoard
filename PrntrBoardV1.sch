@@ -1,6 +1,6 @@
 EESchema Schematic File Version 5
 LIBS:PrntrBoardV1-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -60,6 +60,7 @@ F39 "E1_TEMP" O L 6050 2350 50
 F40 "E1_PWM" I L 6050 2600 50 
 F41 "MOSI_BUF" O L 6050 2000 50 
 F42 "SCK_BUF" O L 6050 2100 50 
+F43 "V_HEATERS" I L 6050 1350 50 
 $EndSheet
 $Comp
 L my_4xxx:4078 U2
@@ -1986,4 +1987,21 @@ Wire Wire Line
 Connection ~ 3000 800 
 Wire Wire Line
 	2400 800  2300 800 
+$Comp
+L Device:Fuse F3
+U 1 1 5D652971
+P 5750 1350
+F 0 "F3" V 5553 1350 50  0000 C CNN
+F 1 "10A" V 5644 1350 50  0000 C CNN
+F 2 "PrntrBoardV1:2410_FuseFolder" V 5680 1350 50  0001 C CNN
+F 3 "~" H 5750 1350 50  0001 C CNN
+	1    5750 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5900 1350 6050 1350
+Wire Wire Line
+	5600 1350 5425 1350
+Text Label 5575 1350 2    50   ~ 0
+Vin
 $EndSCHEMATC

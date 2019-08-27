@@ -1,10 +1,10 @@
 EESchema Schematic File Version 5
 LIBS:PrntrBoardV1-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 25 35
+Sheet 3 35
 Title ""
 Date ""
 Rev ""
@@ -161,20 +161,11 @@ Wire Wire Line
 Text HLabel 6150 2900 2    50   Input ~ 0
 PWM
 Wire Wire Line
-	3650 2300 3950 2300
-Wire Wire Line
 	3750 2100 4050 2100
-Wire Wire Line
-	3950 2300 3950 2200
-Wire Wire Line
-	3950 2200 6150 2200
 Wire Wire Line
 	6150 2200 6150 2700
 Wire Wire Line
 	6150 2700 6000 2700
-Connection ~ 3950 2300
-Wire Wire Line
-	3950 2300 4050 2300
 Wire Wire Line
 	6000 2900 6150 2900
 $Comp
@@ -199,4 +190,10 @@ Text HLabel 2600 3600 0    50   Input ~ 0
 CLOCK
 Wire Wire Line
 	2700 3600 2600 3600
+Wire Wire Line
+	3650 2300 4050 2300
+Wire Wire Line
+	6150 2200 6750 2200
+Text HLabel 6750 2200 2    50   Input ~ 0
+V_HEATERS
 $EndSCHEMATC
