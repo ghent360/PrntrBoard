@@ -1,4 +1,4 @@
-### Module positions - created on Tue 27 Aug 2019 02:54:19 AM PDT ###
+### Module positions - created on Tue 27 Aug 2019 11:07:26 PM PDT ###
 ### Printed by Pcbnew version 6.0.0-unknown-0ba0c17~86~ubuntu19.04.1
 ## Unit = mm, Angle = deg.
 ## Side : top
@@ -26,7 +26,7 @@ C20       1000pF        C_0603_1608Metric                                       
 C21       0.01uF        C_0603_1608Metric                                              90.3485    55.3465    0.0000  top
 C22       1000pF        C_0603_1608Metric                                              59.7610    42.6340   90.0000  top
 C23       1000pF        C_0603_1608Metric                                              56.2610    23.6590   90.0000  top
-C24       10uF_50V      C_1206_3216Metric                                              31.0610    87.7465  270.0000  top
+C24       10uF_50V      C_1206_3216Metric                                              32.7630    80.3529    0.0000  top
 C25       10uF_50V      C_1206_3216Metric                                              73.7110    22.7965  180.0000  top
 C26       10uF_50V      C_1206_3216Metric                                              73.7110    10.7965  180.0000  top
 C27       100uF_35V     CP_Elec_6.3x7.7                                                72.8610    27.5465  180.0000  top
@@ -83,7 +83,7 @@ C77       1000pF        C_0603_1608Metric                                       
 C78       0.01uF        C_0603_1608Metric                                              90.3985    77.5465    0.0000  top
 C79       1000pF        C_0603_1608Metric                                              52.9610    42.6465   90.0000  top
 C80       1000pF        C_0603_1608Metric                                              56.2610    17.3590   90.0000  top
-C81       10uF_50V      C_1206_3216Metric                                              39.1610    87.7465  270.0000  top
+C81       10uF_50V      C_1206_3216Metric                                              40.6878    80.4037    0.0000  top
 C82       1000pF        C_0603_1608Metric                                              49.1610    17.3340   90.0000  top
 C83       10uF_50V      C_1206_3216Metric                                              19.8610    86.6465  180.0000  top
 C84       1000pF        C_0603_1608Metric                                              42.6485    42.0465  180.0000  top
@@ -94,7 +94,7 @@ D3        LED           LED_0603_1608Metric                                     
 D4        LED           LED_0603_1608Metric                                            37.6360    57.8965    0.0000  top
 D5        LED           LED_0603_1608Metric                                            60.5610    40.3465    0.0000  top
 D6        LED           LED_0603_1608Metric                                            28.2990    59.1040  270.0000  top
-D7        1N4148        D_SOD-323_HandSoldering                                        31.0610    82.7965   90.0000  top
+D7        1N4148        D_SOD-323_HandSoldering                                        34.1122    78.1177    0.0000  top
 D8        LED           LED_0603_1608Metric                                            60.6610    49.3465    0.0000  top
 D9        LED           LED_0603_1608Metric                                            60.6610    56.5465    0.0000  top
 D10       LED           LED_0603_1608Metric                                            53.7610    49.3465    0.0000  top
@@ -103,7 +103,7 @@ D12       LED           LED_0603_1608Metric                                     
 D13       LED           LED_0603_1608Metric                                            46.8610    56.5465    0.0000  top
 D14       LED           LED_0603_1608Metric                                            53.7610    40.3465    0.0000  top
 D15       LED           LED_0603_1608Metric                                            26.5990    59.1040  270.0000  top
-D16       1N4148        D_SOD-323_HandSoldering                                        39.1610    82.6465   90.0000  top
+D16       1N4148        D_SOD-323_HandSoldering                                        40.7670    78.1685    0.0000  top
 D17       LED           LED_0603_1608Metric                                            29.9990    59.1040  270.0000  top
 D18       1N4148        D_SOD-323_HandSoldering                                        23.2610    85.4965  270.0000  top
 D19       1N4148        D_SOD-323_HandSoldering                                        34.2110     9.8465    0.0000  top
@@ -169,7 +169,7 @@ R48       1k            R_0603_1608Metric                                       
 R49       10k           R_0603_1608Metric                                              53.7485    38.7465  180.0000  top
 R50       4k7_1%        R_0603_1608Metric                                              56.2610    20.3590  270.0000  top
 R51       10k           R_0603_1608Metric                                              57.7610    17.4340   90.0000  top
-R52       180R          R_0603_1608Metric                                              43.2735    80.8465  180.0000  top
+R52       180R          R_0603_1608Metric                                              43.9674    80.1750  270.0000  top
 R53       10k           R_0603_1608Metric                                              24.2950    58.4200    0.0000  top
 R54       4k7_1%        R_0603_1608Metric                                              49.1610    20.3590  270.0000  top
 R55       10k           R_0603_1608Metric                                              50.6610    17.3340   90.0000  top
