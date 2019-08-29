@@ -1680,17 +1680,11 @@ Wire Wire Line
 Wire Wire Line
 	850  3900 650  3900
 Wire Wire Line
-	850  4000 650  4000
-Wire Wire Line
 	1350 3600 1550 3600
 Wire Wire Line
 	1350 3700 1550 3700
 Wire Wire Line
 	1350 3800 1550 3800
-Wire Wire Line
-	1350 3900 1550 3900
-Wire Wire Line
-	1350 4000 1550 4000
 Text Label 650  3600 0    50   ~ 0
 IOE_0
 Text Label 650  3700 0    50   ~ 0
@@ -1705,23 +1699,6 @@ Text Label 1350 3700 0    50   ~ 0
 IOE_3
 Text Label 1350 3800 0    50   ~ 0
 IOE_5
-$Comp
-L power:GND #PWR02
-U 1 1 5C6C1C05
-P 650 4050
-F 0 "#PWR02" H 650 3800 50  0001 C CNN
-F 1 "GND" H 655 3877 50  0000 C CNN
-F 2 "" H 650 4050 50  0001 C CNN
-F 3 "" H 650 4050 50  0001 C CNN
-	1    650  4050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	650  4000 650  4050
-Text Label 1450 3900 0    50   ~ 0
-5V
-Text Label 1400 4000 0    50   ~ 0
-3.3V
 Wire Wire Line
 	850  4350 600  4350
 Wire Wire Line
@@ -2344,4 +2321,16 @@ Wire Wire Line
 	1350 5650 1750 5650
 Text Label 1375 5650 0    50   ~ 0
 5V
+Wire Wire Line
+	1350 3900 1550 3900
+Text Label 1350 3900 0    50   ~ 0
+~Z_CS
+Wire Wire Line
+	1350 4000 1550 4000
+Text Label 1350 4000 0    50   ~ 0
+~E1_CS
+Wire Wire Line
+	850  4000 625  4000
+Text Label 625  4000 0    50   ~ 0
+~E0_CS
 $EndSCHEMATC
