@@ -1,0 +1,79 @@
+
+(rules PCB IOBoard
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 506)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.6)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.6)
+    )
+  )
+  (rule
+    (width 152.4)
+    (clear 152.6)
+    (clear 76.2 (type smd_to_turn_gap))
+    (clear 38.2 (type smd_smd))
+  )
+  (padstack "Via[0-1]_450:200_um"
+    (shape
+      (circle F.Cu 450.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 450.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_450:200_um" "Via[0-1]_450:200_um" default
+  )
+  (via 
+    "Via[0-1]_450:200_um-kicad_default" "Via[0-1]_450:200_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_450:200_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_450:200_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 152.4)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    GND "/IOE_6" "/IOE_5" "/IOE_4" "/IOE_3" "/IOE_2" "/IOE_1" "/IOE_0"
+    "/ENC_B" "/BTN_IN" "/ENC_A" "/IOA_6" "/IOA_5" "/IOA_4" "/IOA_3" "/BTN_ENC"
+    "/~LCD_CS" "/LCD_D4" "/LCD_D5" "/LCD_D6" "/LCD_D7" /5V "/MISO_IN" "/SPI2_SCK"
+    "/ENC_EN1" "/ENC_EN2" "/SPI2_MOSI" "/SPI2_MISO" "Net-(JP1-Pad2)" "Net-(JP2-Pad2)" "Net-(JP3-Pad2)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 152.4)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
