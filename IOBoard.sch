@@ -1,4 +1,5 @@
 EESchema Schematic File Version 5
+LIBS:IOBoard-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -12,6 +13,11 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
 $EndDescr
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J1
@@ -27,12 +33,12 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J5
 U 1 1 5D6A37F4
-P 5150 2175
-F 0 "J5" H 5200 2592 50  0000 C CNN
-F 1 "EXP3" H 5200 2501 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical" H 5150 2175 50  0001 C CNN
-F 3 "~" H 5150 2175 50  0001 C CNN
-	1    5150 2175
+P 6650 2200
+F 0 "J5" H 6700 2617 50  0000 C CNN
+F 1 "EXP3" H 6700 2526 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical" H 6650 2200 50  0001 C CNN
+F 3 "~" H 6650 2200 50  0001 C CNN
+	1    6650 2200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -49,12 +55,12 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J6
 U 1 1 5D6A5662
-P 5150 3350
-F 0 "J6" H 5200 3767 50  0000 C CNN
-F 1 "EXP4" H 5200 3676 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical" H 5150 3350 50  0001 C CNN
-F 3 "~" H 5150 3350 50  0001 C CNN
-	1    5150 3350
+P 6675 3375
+F 0 "J6" H 6725 3792 50  0000 C CNN
+F 1 "EXP4" H 6725 3701 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical" H 6675 3375 50  0001 C CNN
+F 3 "~" H 6675 3375 50  0001 C CNN
+	1    6675 3375
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -98,43 +104,43 @@ Wire Wire Line
 Wire Wire Line
 	3150 3175 2775 3175
 Wire Wire Line
-	4950 3550 4575 3550
+	6475 3575 6100 3575
 Wire Wire Line
-	4950 3350 4500 3350
+	6475 3375 6025 3375
 Wire Wire Line
-	5450 3450 5900 3450
+	6975 3475 7425 3475
 Wire Wire Line
-	5450 3350 5900 3350
+	6975 3375 7425 3375
 Wire Wire Line
-	5450 3150 5900 3150
+	6975 3175 7425 3175
 Wire Wire Line
-	5450 3550 5900 3550
+	6975 3575 7425 3575
 Wire Wire Line
-	5450 3250 5900 3250
+	6975 3275 7425 3275
 Wire Wire Line
-	4950 3450 4575 3450
+	6475 3475 6100 3475
 Wire Wire Line
-	4950 3250 4575 3250
+	6475 3275 6100 3275
 Wire Wire Line
-	4950 3150 4575 3150
+	6475 3175 6100 3175
 Wire Wire Line
-	4950 2175 4575 2175
+	6450 2200 6075 2200
 Wire Wire Line
-	5450 2275 5900 2275
+	6950 2300 7400 2300
 Wire Wire Line
-	5450 2175 5900 2175
+	6950 2200 7400 2200
 Wire Wire Line
-	5450 1975 5900 1975
+	6950 2000 7400 2000
 Wire Wire Line
-	5450 2375 5900 2375
+	6950 2400 7400 2400
 Wire Wire Line
-	5450 2075 5900 2075
+	6950 2100 7400 2100
 Wire Wire Line
-	4950 2275 4575 2275
+	6450 2300 6075 2300
 Wire Wire Line
-	4950 2075 4575 2075
+	6450 2100 6075 2100
 Wire Wire Line
-	4950 1975 4575 1975
+	6450 2000 6075 2000
 Text Label 2825 1975 0    50   ~ 0
 IOE_0
 Text Label 2825 2075 0    50   ~ 0
@@ -175,41 +181,37 @@ Text Label 3725 3475 0    50   ~ 0
 ENC_A
 Text Label 3725 3575 0    50   ~ 0
 ENC_B
-Text Label 4600 1975 0    50   ~ 0
+Text Label 6100 2000 0    50   ~ 0
 UART2_TX
-Text Label 4600 2075 0    50   ~ 0
+Text Label 6100 2100 0    50   ~ 0
 UART2_RX
-Text Label 4600 2175 0    50   ~ 0
+Text Label 6100 2200 0    50   ~ 0
 I2C_SDA
-Text Label 4600 2275 0    50   ~ 0
+Text Label 6100 2300 0    50   ~ 0
 I2C_SCL
-Text Label 5475 1975 0    50   ~ 0
+Text Label 6975 2000 0    50   ~ 0
 SPI2_MISO
-Text Label 5475 2075 0    50   ~ 0
+Text Label 6975 2100 0    50   ~ 0
 SPI2_MOSI
-Text Label 5475 2175 0    50   ~ 0
+Text Label 6975 2200 0    50   ~ 0
 SPI2_SCK
-Text Label 5475 2275 0    50   ~ 0
+Text Label 6975 2300 0    50   ~ 0
 ~LCD_CS
-Text Label 5475 2375 0    50   ~ 0
+Text Label 6975 2400 0    50   ~ 0
 5V
-Text Label 4650 3150 0    50   ~ 0
-IOA_4
-Text Label 4650 3250 0    50   ~ 0
-IOA_5
-Text Label 4500 3350 0    50   ~ 0
+Text Label 6025 3375 0    50   ~ 0
 ~EN_MOTORS
-Text Label 4650 3450 0    50   ~ 0
+Text Label 6175 3475 0    50   ~ 0
 VIN
-Text Label 5525 3550 0    50   ~ 0
+Text Label 7050 3575 0    50   ~ 0
 5V
-Text Label 5525 3450 0    50   ~ 0
+Text Label 7050 3475 0    50   ~ 0
 3.3V
-Text Label 5525 3350 0    50   ~ 0
+Text Label 7050 3375 0    50   ~ 0
 SPI_SCK
-Text Label 5525 3250 0    50   ~ 0
+Text Label 7050 3275 0    50   ~ 0
 SPI_MOSI
-Text Label 5525 3150 0    50   ~ 0
+Text Label 7050 3175 0    50   ~ 0
 SPI_MISO
 Text Notes 2275 2375 0    50   ~ 0
 (GND)
@@ -223,7 +225,7 @@ Text Notes 4175 3575 0    50   ~ 0
 VIN
 Text Notes 2450 3575 0    50   ~ 0
 (GND)
-Text Notes 5975 2275 0    50   ~ 0
+Text Notes 7475 2300 0    50   ~ 0
 3.3V
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J3
@@ -300,11 +302,11 @@ Wire Wire Line
 	3900 5625 4250 5625
 Text Label 3950 4500 0    50   ~ 0
 GND
-Text Label 4650 3550 0    50   ~ 0
+Text Label 6175 3575 0    50   ~ 0
 GND
 Wire Wire Line
-	4950 2375 4575 2375
-Text Label 4600 2375 0    50   ~ 0
+	6450 2400 6075 2400
+Text Label 6100 2400 0    50   ~ 0
 GND
 Text Label 3900 5225 0    50   ~ 0
 GND
@@ -528,9 +530,17 @@ Wire Wire Line
 Text Label 5775 4550 0    50   ~ 0
 IOA_3
 Text Label 5775 4650 0    50   ~ 0
-IOA_4
-Text Label 5775 4750 0    50   ~ 0
-IOA_5
-Text Label 5775 4850 0    50   ~ 0
 IOA_6
+Text Label 5775 4750 0    50   ~ 0
+IOA_7
+Text Label 5775 4850 0    50   ~ 0
+IOA_8
+Text Notes 4150 3150 0    50   ~ 0
+(3.3V)
+Text Notes 2450 3275 0    50   ~ 0
+(3.3V)
+Text Notes 6000 3175 0    50   ~ 0
+IOA_4 (3.3V)
+Text Notes 6000 3275 0    50   ~ 0
+IOA_5 (3.3V)
 $EndSCHEMATC
