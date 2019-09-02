@@ -737,22 +737,11 @@ Text Label 10700 4500 0    50   ~ 0
 3.3V
 Text Label 8850 4500 0    50   ~ 0
 5V
-$Comp
-L pspice:DIODE D1
-U 1 1 5C0AF6F5
-P 9100 3400
-F 0 "D1" H 8950 3300 50  0000 C CNN
-F 1 "SS14" H 9050 3550 50  0000 C CNN
-F 2 "Diode_SMD:D_SMA" H 9100 3400 50  0001 C CNN
-F 3 "~" H 9100 3400 50  0001 C CNN
-	1    9100 3400
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	9300 3400 9350 3400
 Wire Wire Line
-	8900 3400 8750 3400
-Text Label 8750 3400 0    50   ~ 0
+	9000 3400 8750 3400
+Text Label 8850 3400 0    50   ~ 0
 5V
 $Comp
 L power:GND #PWR0111
@@ -1504,8 +1493,6 @@ Wire Wire Line
 Wire Wire Line
 	5650 6250 5400 6250
 Connection ~ 5650 6250
-Text Label 5300 6250 0    50   ~ 0
-VIN
 $Comp
 L Device:CP C22
 U 1 1 5C07AE57
@@ -1517,9 +1504,6 @@ F 3 "~" H 5400 6650 50  0001 C CNN
 	1    5400 6650
 	1    0    0    -1  
 $EndComp
-Connection ~ 5400 6250
-Wire Wire Line
-	5400 6250 5250 6250
 Connection ~ 5650 6950
 $Comp
 L Device:C C21
@@ -2333,4 +2317,31 @@ Wire Wire Line
 	850  4000 625  4000
 Text Label 625  4000 0    50   ~ 0
 ~E0_CS
+$Comp
+L Device:D_Schottky D2
+U 1 1 5D6DBCCC
+P 5250 6250
+F 0 "D2" H 5250 6034 50  0000 C CNN
+F 1 "SS14" H 5250 6125 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 5250 6250 50  0001 C CNN
+F 3 "~" H 5250 6250 50  0001 C CNN
+	1    5250 6250
+	-1   0    0    1   
+$EndComp
+Connection ~ 5400 6250
+Wire Wire Line
+	5100 6250 4925 6250
+Text Label 4950 6250 0    50   ~ 0
+VIN
+$Comp
+L Device:D_Schottky D1
+U 1 1 5D6E0286
+P 9150 3400
+F 0 "D1" H 9050 3300 50  0000 C CNN
+F 1 "SS14" H 9150 3525 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 9150 3400 50  0001 C CNN
+F 3 "~" H 9150 3400 50  0001 C CNN
+	1    9150 3400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
