@@ -13,11 +13,6 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
-Comment5 ""
-Comment6 ""
-Comment7 ""
-Comment8 ""
-Comment9 ""
 $EndDescr
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J1
@@ -258,8 +253,6 @@ Wire Wire Line
 Wire Wire Line
 	3900 4900 4250 4900
 Wire Wire Line
-	3900 4800 4250 4800
-Wire Wire Line
 	3900 4700 4250 4700
 Wire Wire Line
 	3900 4600 4250 4600
@@ -337,7 +330,7 @@ MISO
 Text Notes 4375 4900 0    50   ~ 0
 BEEP
 Text Notes 4375 4800 0    50   ~ 0
-~LCD_EN
+LCD_EN
 Text Notes 4375 4700 0    50   ~ 0
 LCD_D4
 Text Notes 4375 4600 0    50   ~ 0
@@ -371,7 +364,7 @@ ENC_EN2
 Text Label 3925 4900 0    50   ~ 0
 IOE_5
 Text Label 3925 4800 0    50   ~ 0
-~LCD_CS
+LCD_EN
 Text Label 3075 4800 0    50   ~ 0
 IOE_4
 Text Label 3075 4900 0    50   ~ 0
@@ -495,45 +488,45 @@ LCD_D4
 $Comp
 L Device:R_Pack04 RN2
 U 1 1 5D6BDFE6
-P 5550 4750
-F 0 "RN2" V 5133 4750 50  0000 C CNN
-F 1 "4x10k" V 5224 4750 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 5825 4750 50  0001 C CNN
-F 3 "~" H 5550 4750 50  0001 C CNN
-	1    5550 4750
+P 7275 4750
+F 0 "RN2" V 6858 4750 50  0000 C CNN
+F 1 "4x10k" V 6949 4750 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 7550 4750 50  0001 C CNN
+F 3 "~" H 7275 4750 50  0001 C CNN
+	1    7275 4750
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5350 4550 5000 4550
+	7075 4550 6725 4550
 Wire Wire Line
-	5350 4650 5000 4650
+	7075 4650 6725 4650
 Wire Wire Line
-	5350 4750 5000 4750
+	7075 4750 6725 4750
 Wire Wire Line
-	5350 4850 5000 4850
-Text Label 5050 4550 0    50   ~ 0
+	7075 4850 6725 4850
+Text Label 6775 4550 0    50   ~ 0
 LCD_D4
-Text Label 5050 4650 0    50   ~ 0
+Text Label 6775 4650 0    50   ~ 0
 LCD_D5
-Text Label 5050 4750 0    50   ~ 0
+Text Label 6775 4750 0    50   ~ 0
 LCD_D6
-Text Label 5050 4850 0    50   ~ 0
+Text Label 6775 4850 0    50   ~ 0
 LCD_D7
 Wire Wire Line
-	5750 4550 6000 4550
+	7475 4550 7725 4550
 Wire Wire Line
-	5750 4650 6000 4650
+	7475 4650 7725 4650
 Wire Wire Line
-	5750 4750 6000 4750
+	7475 4750 7725 4750
 Wire Wire Line
-	5750 4850 6000 4850
-Text Label 5775 4550 0    50   ~ 0
+	7475 4850 7725 4850
+Text Label 7500 4550 0    50   ~ 0
 IOA_3
-Text Label 5775 4650 0    50   ~ 0
+Text Label 7500 4650 0    50   ~ 0
 IOA_6
-Text Label 5775 4750 0    50   ~ 0
+Text Label 7500 4750 0    50   ~ 0
 IOA_7
-Text Label 5775 4850 0    50   ~ 0
+Text Label 7500 4850 0    50   ~ 0
 IOA_8
 Text Notes 4150 3150 0    50   ~ 0
 (3.3V)
@@ -543,4 +536,27 @@ Text Notes 6000 3175 0    50   ~ 0
 IOA_4 (3.3V)
 Text Notes 6000 3275 0    50   ~ 0
 IOA_5 (3.3V)
+$Comp
+L Jumper:Jumper_3_Bridged12 JP4
+U 1 1 5D7E36F0
+P 5250 4600
+F 0 "JP4" H 5150 4500 50  0000 C CNN
+F 1 "JP_LCD_EN" H 5525 4500 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5250 4600 50  0001 C CNN
+F 3 "~" H 5250 4600 50  0001 C CNN
+	1    5250 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 4600 4700 4600
+Wire Wire Line
+	5500 4600 5925 4600
+Text Label 4725 4600 0    50   ~ 0
+~LCD_CS
+Text Label 5575 4600 0    50   ~ 0
+IOA_15
+Wire Wire Line
+	5250 4800 5250 4750
+Wire Wire Line
+	3900 4800 5250 4800
 $EndSCHEMATC

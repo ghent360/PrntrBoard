@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 506)
+    (start_pass_no 632)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -64,9 +64,10 @@
   )
   (class "kicad_default"
     GND "/IOE_6" "/IOE_5" "/IOE_4" "/IOE_3" "/IOE_2" "/IOE_1" "/IOE_0"
-    "/ENC_B" "/BTN_IN" "/ENC_A" "/IOA_6" "/IOA_5" "/IOA_4" "/IOA_3" "/BTN_ENC"
-    "/~LCD_CS" "/LCD_D4" "/LCD_D5" "/LCD_D6" "/LCD_D7" /5V "/MISO_IN" "/SPI2_SCK"
-    "/ENC_EN1" "/ENC_EN2" "/SPI2_MOSI" "/SPI2_MISO" "Net-(JP1-Pad2)" "Net-(JP2-Pad2)" "Net-(JP3-Pad2)"
+    "/ENC_B" "/BTN_IN" "/ENC_A" "/IOA_6" "/IOA_3" "/BTN_ENC" "/~LCD_CS" "/LCD_D4"
+    "/LCD_D5" "/LCD_D6" "/LCD_D7" /5V "/MISO_IN" "/SPI2_SCK" "/ENC_EN1" "/ENC_EN2"
+    "/SPI2_MOSI" "/SPI2_MISO" "Net-(JP1-Pad2)" "Net-(JP2-Pad2)" "Net-(JP3-Pad2)" "/IOA_8" "/IOA_7" "/IOA_15"
+    "/LCD_EN"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule

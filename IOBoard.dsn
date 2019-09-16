@@ -3,7 +3,7 @@
     (string_quote ")
     (space_in_quoted_tokens on)
     (host_cad "KiCad's Pcbnew")
-    (host_version "6.0.0-unknown-0ba0c17~86~ubuntu19.04.1")
+    (host_version "(5.1.0-1558-g0ba0c1724)")
   )
   (resolution um 10)
   (unit um)
@@ -48,18 +48,19 @@
     )
   )
   (placement
+    (component Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+      (place JP4 103910 -93562.4 front 270 (PN JP_LCD_EN))
+      (place JP3 103861 -97231.2 front 270 (PN JP_ENC_A))
+      (place JP2 103861 -104597 front 270 (PN JP_ENC_B))
+      (place JP1 103861 -100914 front 270 (PN JP_BTN_IN))
+    )
     (component "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical"
       (place J4 78765.4 -90398.6 front 90 (PN LCD_EXP2))
       (place J3 78841.6 -101524 front 90 (PN LCD_EXP1))
     )
     (component Resistor_SMD:R_Array_Convex_4x0603
       (place RN2 109946 -94596 front 0 (PN 4x10k))
-      (place RN1 98856.8 -93167.2 front 270 (PN 4x10k))
-    )
-    (component Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
-      (place JP3 103861 -97231.2 front 270 (PN JP_ENC_A))
-      (place JP2 103861 -104597 front 270 (PN JP_ENC_B))
-      (place JP1 103861 -100914 front 270 (PN JP_BTN_IN))
+      (place RN1 103046 -109158 front 270 (PN 4x10k))
     )
     (component Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical
       (place J6 64516 -89154 back 0 (PN EXP4))
@@ -69,6 +70,26 @@
     )
   )
   (library
+    (image Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+      (outline (path signal 100  -635 1270  1270 1270))
+      (outline (path signal 100  1270 1270  1270 -6350))
+      (outline (path signal 100  1270 -6350  -1270 -6350))
+      (outline (path signal 100  -1270 -6350  -1270 635))
+      (outline (path signal 100  -1270 635  -635 1270))
+      (outline (path signal 120  -1330 -6410  1330 -6410))
+      (outline (path signal 120  -1330 -1270  -1330 -6410))
+      (outline (path signal 120  1330 -1270  1330 -6410))
+      (outline (path signal 120  -1330 -1270  1330 -1270))
+      (outline (path signal 120  -1330 0  -1330 1330))
+      (outline (path signal 120  -1330 1330  0 1330))
+      (outline (path signal 50  -1800 1800  -1800 -6850))
+      (outline (path signal 50  -1800 -6850  1800 -6850))
+      (outline (path signal 50  1800 -6850  1800 1800))
+      (outline (path signal 50  1800 1800  -1800 1800))
+      (pin Oval[A]Pad_1700x1700_um 3 0 -5080)
+      (pin Oval[A]Pad_1700x1700_um 2 0 -2540)
+      (pin Rect[A]Pad_1700x1700_um 1 0 0)
+    )
     (image "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical"
       (outline (path signal 100  5695 5100  5695 -15260))
       (outline (path signal 100  5145 4560  5145 -14700))
@@ -125,26 +146,6 @@
       (pin Rect[T]Pad_800x400_um 2 -900 400)
       (pin Rect[T]Pad_800x400_um 3 -900 -400)
       (pin Rect[T]Pad_800x500_um 1 -900 1200)
-    )
-    (image Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
-      (outline (path signal 100  -635 1270  1270 1270))
-      (outline (path signal 100  1270 1270  1270 -6350))
-      (outline (path signal 100  1270 -6350  -1270 -6350))
-      (outline (path signal 100  -1270 -6350  -1270 635))
-      (outline (path signal 100  -1270 635  -635 1270))
-      (outline (path signal 120  -1330 -6410  1330 -6410))
-      (outline (path signal 120  -1330 -1270  -1330 -6410))
-      (outline (path signal 120  1330 -1270  1330 -6410))
-      (outline (path signal 120  -1330 -1270  1330 -1270))
-      (outline (path signal 120  -1330 0  -1330 1330))
-      (outline (path signal 120  -1330 1330  0 1330))
-      (outline (path signal 50  -1800 1800  -1800 -6850))
-      (outline (path signal 50  -1800 -6850  1800 -6850))
-      (outline (path signal 50  1800 -6850  1800 1800))
-      (outline (path signal 50  1800 1800  -1800 1800))
-      (pin Oval[A]Pad_1700x1700_um 3 0 -5080)
-      (pin Oval[A]Pad_1700x1700_um 2 0 -2540)
-      (pin Rect[A]Pad_1700x1700_um 1 0 0)
     )
     (image Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical
       (outline (path signal 100  -3810 1270  270 1270))
@@ -241,13 +242,7 @@
       (pins JP3-1 J2-8)
     )
     (net /IOA_6
-      (pins RN2-5 J2-4)
-    )
-    (net /IOA_5
-      (pins RN2-6 J6-3 J2-3)
-    )
-    (net /IOA_4
-      (pins RN2-7 J6-1 J2-2)
+      (pins RN2-7 J2-4)
     )
     (net /IOA_3
       (pins RN2-8 J2-1)
@@ -256,7 +251,7 @@
       (pins J3-9 RN1-1)
     )
     (net /~LCD_CS
-      (pins J3-8 J5-8)
+      (pins JP4-1 J5-8)
     )
     (net /LCD_D4
       (pins J3-6 RN2-1)
@@ -303,13 +298,25 @@
     (net "Net-(JP3-Pad2)"
       (pins RN1-6 JP3-2)
     )
+    (net /IOA_8
+      (pins RN2-5 J2-6)
+    )
+    (net /IOA_7
+      (pins RN2-6 J2-5)
+    )
+    (net /IOA_15
+      (pins JP4-3 J2-7)
+    )
+    (net /LCD_EN
+      (pins JP4-2 J3-8)
+    )
     (class kicad_default "" /3.3V /5V /BTN_ENC /BTN_IN /ENC_A /ENC_B /ENC_EN1
       /ENC_EN2 /I2C_SCL /I2C_SDA /IOA_15 /IOA_3 /IOA_4 /IOA_5 /IOA_6 /IOA_7
       /IOA_8 /IOE_0 /IOE_1 /IOE_2 /IOE_3 /IOE_4 /IOE_5 /IOE_6 /IOE_7 /KILL_IN
-      /LCD_D4 /LCD_D5 /LCD_D6 /LCD_D7 /MISO_IN /SPI2_MISO /SPI2_MOSI /SPI2_SCK
-      /SPI_MISO /SPI_MOSI /SPI_SCK /UART2_RX /UART2_TX /VIN "/~E0_CS{slash}BLUE"
-      "/~E1_CS{slash}GREEN" /~EN_MOTORS /~LCD_CS "/~Z_CS{slash}RED" GND "Net-(JP1-Pad2)"
-      "Net-(JP2-Pad2)" "Net-(JP3-Pad2)"
+      /LCD_D4 /LCD_D5 /LCD_D6 /LCD_D7 /LCD_EN /MISO_IN /SPI2_MISO /SPI2_MOSI
+      /SPI2_SCK /SPI_MISO /SPI_MOSI /SPI_SCK /UART2_RX /UART2_TX /VIN "/~E0_CS{slash}BLUE"
+      "/~E1_CS{slash}GREEN" /~EN_MOTORS /~LCD_CS "/~Z_CS{slash}RED" GND "Net-(J6-Pad1)"
+      "Net-(J6-Pad3)" "Net-(JP1-Pad2)" "Net-(JP2-Pad2)" "Net-(JP3-Pad2)"
       (circuit
         (use_via Via[0-1]_450:200_um)
       )
@@ -320,7 +327,7 @@
     )
   )
   (wiring
-    (wire (path F.Cu 508  78841.6 -101524  78841.6 -106578  76517.5 -108902)(net /5V)(type protect))
-    (wire (path F.Cu 508  67056 -99314  76631.8 -99314  78841.6 -101524)(net /5V)(type protect))
+    (wire (path F.Cu 762  76517.5 -108902  76517.5 -102222  77216 -101524  78841.6 -101524)(net /5V)(type protect))
+    (wire (path F.Cu 762  67056 -99314  76631.6 -99314  78841.6 -101524)(net /5V)(type protect))
   )
 )
