@@ -81,5 +81,3 @@ I'm also porting [Smoothieware](http://smoothieware.org) V1 to the board. So far
 
 Visit [my blog](https://blog.pcbxprt.com/) for status updates on the development of the board.
 
-[![Analytics](https://ga-beacon.appspot.com/UA-111584522-4/README-v1-2130)](https://github.com/igrigorik/ga-beacon)
-
