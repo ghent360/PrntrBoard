@@ -1,5 +1,10 @@
 Prntr Board V1
 ======================
+## *Deprecated*
+**This project has run it's course. Most of the features are complete and there is little I can improve further. I have switched my focus to the [V2 design](https://github.com/ghent360/PrntrBoardV2).**
+
+------------------
+
 PrntrBoard is a 3D printer controller board designed to work with STM32 NUCLEO dev kits. The current version (V1) supports NUCLEO-64 series kits. The design is being developed on F446-RE kit, but other models could work as well. IMO the STM32F446 NUCLEO-64 kit offers very good performance (180MHz CPU) for the price ($15).
 
 ![Picture of Rev2 Kicad Rendering](2660_r4.jpg)
