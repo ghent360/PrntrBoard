@@ -7,8 +7,7 @@ DEF 74ls02_74HCT02 U 0 40 Y Y 5 L N
 F0 "U" 0 50 50 H V C CNN
 F1 "74ls02_74HCT02" 0 -50 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-ALIAS 74HC02 74HCT02 7402 74LS28
+F3 "http://www.ti.com/lit/gpn/sn74hct02" 0 0 50 H I C CNN
 $FPLIST
  SO14*
  DIP*W7.62mm*
@@ -82,8 +81,7 @@ DEF 74ls125_74LVC125 U 0 40 Y Y 5 L N
 F0 "U" 0 50 50 H V C CNN
 F1 "74ls125_74LVC125" 0 -50 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-ALIAS 74LVC125
+F3 "http://www.ti.com/lit/gpn/sn74LVC125" 0 0 50 H I C CNN
 $FPLIST
  DIP?14*
 $ENDFPLIST
@@ -116,7 +114,7 @@ DEF Connector_Generic_Conn_01x02 J 0 40 Y N 1 F N
 F0 "J" 0 100 50 H V C CNN
 F1 "Connector_Generic_Conn_01x02" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+F3 "~" 0 0 50 H I C CNN
 $FPLIST
  Connector*:*_1x??_*
 $ENDFPLIST
@@ -135,7 +133,7 @@ DEF Connector_Generic_Conn_01x04 J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
 F1 "Connector_Generic_Conn_01x04" 0 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+F3 "~" 0 0 50 H I C CNN
 $FPLIST
  Connector*:*_1x??_*
 $ENDFPLIST
@@ -158,7 +156,7 @@ DEF Connector_Generic_Conn_01x06 J 0 40 Y N 1 F N
 F0 "J" 0 300 50 H V C CNN
 F1 "Connector_Generic_Conn_01x06" 0 -400 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+F3 "~" 0 0 50 H I C CNN
 $FPLIST
  Connector*:*_1x??_*
 $ENDFPLIST
@@ -185,7 +183,7 @@ DEF Connector_Generic_Conn_02x01 J 0 40 Y N 1 F N
 F0 "J" 50 100 50 H V C CNN
 F1 "Connector_Generic_Conn_02x01" 50 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+F3 "~" 0 0 50 H I C CNN
 $FPLIST
  Connector*:*_2x??_*
 $ENDFPLIST
@@ -204,7 +202,7 @@ DEF Connector_Generic_Conn_02x06_Odd_Even J 0 40 Y N 1 F N
 F0 "J" 50 300 50 H V C CNN
 F1 "Connector_Generic_Conn_02x06_Odd_Even" 50 -400 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+F3 "~" 0 0 50 H I C CNN
 $FPLIST
  Connector*:*_2x??_*
 $ENDFPLIST
@@ -243,7 +241,7 @@ DEF Device_C C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
 F1 "Device_C" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+F3 "~" 0 0 50 H I C CNN
 $FPLIST
  C_*
 $ENDFPLIST
@@ -261,7 +259,7 @@ DEF Device_CP C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
 F1 "Device_CP" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+F3 "~" 0 0 50 H I C CNN
 $FPLIST
  CP_*
 $ENDFPLIST
@@ -281,7 +279,7 @@ DEF Device_CP1_Small C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
 F1 "Device_CP1_Small" 10 -80 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+F3 "~" 0 0 50 H I C CNN
 $FPLIST
  CP_*
 $ENDFPLIST
@@ -301,7 +299,7 @@ DEF Device_D D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
 F1 "Device_D" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+F3 "~" 0 0 50 H I C CNN
 $FPLIST
  TO-???*
  *_Diode_*
@@ -323,7 +321,7 @@ DEF Device_LED D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
 F1 "Device_LED" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+F3 "~" 0 0 50 H I C CNN
 $FPLIST
  LED*
  LED_SMD:*
@@ -346,7 +344,7 @@ DEF Device_R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
 F1 "Device_R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
-F3 "" 0 0 50 H I C CNN
+F3 "~" 0 0 50 H I C CNN
 $FPLIST
  R_*
 $ENDFPLIST
@@ -363,7 +361,7 @@ DEF Jumper_Jumper_2_Open JP 0 0 Y N 1 F N
 F0 "JP" 0 110 50 H V C CNN
 F1 "Jumper_Jumper_2_Open" 0 -90 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+F3 "~" 0 0 50 H I C CNN
 $FPLIST
  SolderJumper*Open*
 $ENDFPLIST
@@ -382,7 +380,7 @@ DEF Jumper_Jumper_3_Bridged12 JP 0 0 Y N 1 F N
 F0 "JP" -100 -100 50 H V C CNN
 F1 "Jumper_Jumper_3_Bridged12" 0 110 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+F3 "~" 0 0 50 H I C CNN
 $FPLIST
  SolderJumper*Bridged12*
 $ENDFPLIST
@@ -404,7 +402,7 @@ DEF Jumper_Jumper_3_Open JP 0 0 Y N 1 F N
 F0 "JP" -100 -100 50 H V C CNN
 F1 "Jumper_Jumper_3_Open" 0 110 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+F3 "~" 0 0 50 H I C CNN
 $FPLIST
  SolderJumper*Open*
 $ENDFPLIST
@@ -427,7 +425,7 @@ DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
 F0 "H" 0 200 50 H V C CNN
 F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+F3 "~" 0 0 50 H I C CNN
 $FPLIST
  MountingHole*
 $ENDFPLIST
@@ -531,7 +529,7 @@ DEF Oscillator_XO32 X 0 10 Y Y 1 F N
 F0 "X" -200 250 50 H V L CNN
 F1 "Oscillator_XO32" 50 -250 50 H V L CNN
 F2 "Oscillator:Oscillator_SMD_EuroQuartz_XO32-4Pin_3.2x2.5mm" 700 -350 50 H I C CNN
-F3 "" -100 0 50 H I C CNN
+F3 "http://cdn-reichelt.de/documents/datenblatt/B400/XO32.pdf" -100 0 50 H I C CNN
 $FPLIST
  Oscillator*SMD*EuroQuartz*XO32*3.2x2.5mm*
 $ENDFPLIST

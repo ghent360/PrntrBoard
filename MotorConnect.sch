@@ -1,6 +1,5 @@
 EESchema Schematic File Version 5
-LIBS:PrntrBoardV1-cache
-EELAYER 29 0
+EELAYER 34 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -13,7 +12,28 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
 $EndDescr
+Wire Wire Line
+	3900 2600 4200 2600
+Wire Wire Line
+	3900 2700 4200 2700
+Wire Wire Line
+	3900 2800 4200 2800
+Wire Wire Line
+	3900 2900 4200 2900
+Text HLabel 3900 2600 0    50   Input ~ 0
+MOTB1
+Text HLabel 3900 2700 0    50   Input ~ 0
+MOTB2
+Text HLabel 3900 2800 0    50   Input ~ 0
+MOTA1
+Text HLabel 3900 2900 0    50   Input ~ 0
+MOTA2
 $Comp
 L Connector_Generic:Conn_01x04 J12
 U 1 1 5AD04DCC
@@ -31,20 +51,4 @@ F 3 "~" H 4400 2700 50  0001 C CNN
 	1    4400 2700
 	1    0    0    -1  
 $EndComp
-Text HLabel 3900 2600 0    50   Input ~ 0
-MOTB1
-Text HLabel 3900 2700 0    50   Input ~ 0
-MOTB2
-Text HLabel 3900 2900 0    50   Input ~ 0
-MOTA2
-Text HLabel 3900 2800 0    50   Input ~ 0
-MOTA1
-Wire Wire Line
-	3900 2600 4200 2600
-Wire Wire Line
-	3900 2700 4200 2700
-Wire Wire Line
-	3900 2800 4200 2800
-Wire Wire Line
-	3900 2900 4200 2900
 $EndSCHEMATC

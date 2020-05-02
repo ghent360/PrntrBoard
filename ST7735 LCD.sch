@@ -1,6 +1,5 @@
 EESchema Schematic File Version 5
-LIBS:PrntrBoardV1-cache
-EELAYER 29 0
+EELAYER 34 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -13,7 +12,38 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
 $EndDescr
+Wire Wire Line
+	3450 2250 3500 2250
+Wire Wire Line
+	3450 2350 3450 2400
+Wire Wire Line
+	3500 1850 3450 1850
+Wire Wire Line
+	3500 1950 3450 1950
+Wire Wire Line
+	3500 2050 3450 2050
+Wire Wire Line
+	3500 2150 3450 2150
+Wire Wire Line
+	3500 2350 3450 2350
+Wire Wire Line
+	4100 1850 4000 1850
+Wire Wire Line
+	4100 1950 4000 1950
+Wire Wire Line
+	4100 2050 4000 2050
+Wire Wire Line
+	4100 2150 4000 2150
+Wire Wire Line
+	4100 2250 4000 2250
+Wire Wire Line
+	4100 2350 4000 2350
 Text HLabel 3450 1850 0    50   Input ~ 0
 SDA
 Text HLabel 3450 1950 0    50   Input ~ 0
@@ -22,12 +52,20 @@ Text HLabel 3450 2050 0    50   Input ~ 0
 A0
 Text HLabel 3450 2150 0    50   Input ~ 0
 ~RESET
+Text HLabel 3450 2250 0    50   Input ~ 0
+~CS
 Text HLabel 4100 1850 2    50   Input ~ 0
 VCC
 Text HLabel 4100 1950 2    50   Input ~ 0
 LED+
 Text HLabel 4100 2050 2    50   Input ~ 0
 LED-
+Text HLabel 4100 2150 2    50   Input ~ 0
+BTN_IN
+Text HLabel 4100 2250 2    50   Input ~ 0
+ENC_A
+Text HLabel 4100 2350 2    50   Input ~ 0
+ENC_B
 $Comp
 L power:GND #PWR090
 U 1 1 5AFA6291
@@ -39,28 +77,6 @@ F 3 "" H 3450 2400 50  0001 C CNN
 	1    3450 2400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4100 2050 4000 2050
-Wire Wire Line
-	4100 1950 4000 1950
-Wire Wire Line
-	4100 1850 4000 1850
-Wire Wire Line
-	3500 1850 3450 1850
-Wire Wire Line
-	3500 1950 3450 1950
-Wire Wire Line
-	3500 2050 3450 2050
-Wire Wire Line
-	3500 2150 3450 2150
-Text HLabel 3450 2250 0    50   Input ~ 0
-~CS
-Wire Wire Line
-	3450 2250 3500 2250
-Text HLabel 4100 2150 2    50   Input ~ 0
-BTN_IN
-Wire Wire Line
-	4100 2150 4000 2150
 $Comp
 L Connector_Generic:Conn_02x06_Odd_Even J30
 U 1 1 5B6CF880
@@ -72,16 +88,4 @@ F 3 "~" H 3700 2050 50  0001 C CNN
 	1    3700 2050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3500 2350 3450 2350
-Wire Wire Line
-	3450 2350 3450 2400
-Text HLabel 4100 2250 2    50   Input ~ 0
-ENC_A
-Text HLabel 4100 2350 2    50   Input ~ 0
-ENC_B
-Wire Wire Line
-	4100 2250 4000 2250
-Wire Wire Line
-	4100 2350 4000 2350
 $EndSCHEMATC
